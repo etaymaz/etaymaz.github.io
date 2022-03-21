@@ -1,0 +1,300 @@
+/* css font Maze files */
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700,900&subset=latin-ext'); 
+
+
+/* DİĞERLERİ */
+
+a {
+  color: #cf4170;
+  text-decoration: none; }
+  a:visited {
+    color: #b12c58; }
+  a:hover {
+    color: #cf4170;
+    text-decoration: underline; }
+
+/* Setting image size per page, add {.useSmallImage} next to the headline */
+.useSmallImage img {
+  width: 50% !important;
+}
+
+.useSMImage img {
+  width: 50% !important;
+}
+
+.useMedImage img {
+  width: 80% !important;
+}
+
+ @media screen and (max-width: 800px) {
+    .col-ls.useSMImage img {
+        width: 30% !important;} 
+    .useSmallImage img, .useMedImage img {
+        width: 100% !important};
+} 
+
+.useAutoImage img {
+  width: auto !important;
+}
+
+/* Image width */
+img {
+  width: 100%;
+  max-width: 1600px;
+}
+
+
+.section h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+h1.title {font-size: 2.5em}
+
+h1 {
+  color: #000;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h2 {
+  color: #000;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h3 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+a.footnoteRef {
+  padding-top: 55px;
+  margin-top: -55px;
+}
+
+.screenshot {border: 1px solid #ccc}
+
+table.table td a:only-child:link,
+table.table td a:only-child:visited {text-decoration: none}
+
+table.table td a:only-child:hover,
+table.table td a:only-child:active {text-decoration: underline}
+
+body {font-size: 18px}
+
+#footer {
+  clear:both;
+  position: relative;
+  z-index: 10;
+  margin-top: 50px;
+  padding-top: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.navbar-brand {font-size: 120%}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	background-color: #882288;
+	border-color: #882288;
+	margin-left: 23.5%;
+	font-size: 120%;
+}
+
+@media screen and (max-width: 990px) {
+	.nav > li > a {
+	padding: 10px 5px; }}
+
+@media screen and (max-width: 800px) {
+	.navbar-fixed-top {
+	position: absolute;}}
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #882288;
+	border-color: #882288;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+	background-color: #882288;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: #882288;
+}
+
+.navbar-inverse {
+	background-color: #882288;
+	border-color: #882288;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: #3e152b;
+}
+
+.list-group-item:hover, .list-group-item:focus {
+	background-color: #CF5980;
+	color: #fff;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #B04C6D;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #B04C6D;
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+/* Stripped regression tables, add {.tableRegStrip} next to the heading */
+.tableRegStrip table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+}
+.tableRegStrip table tr:nth-of-type(3n+6) {background: #f5f5f5}
+.tableRegStrip table tr:nth-last-of-type(-n+8) {background: #fff}
+.tableRegStrip table tr:nth-of-type(2) {font-weight: 600}
+.tableRegStrip table tr:nth-of-type(1) {border-bottom: 2px solid #333}
+.tableRegStrip table tr:nth-of-type(5) {border-bottom: 2px solid #333}
+.tableRegStrip table tr:nth-last-of-type(2) {border-bottom: 2px solid #333}
+
+/* Stripped summary tables, add {.tableSumStrip} next to the heading */
+.tableSumStrip table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+}
+.tableSumStrip table tr:nth-of-type(2n+4) {background: #f5f5f5}
+.tableSumStrip table tr:nth-last-of-type(-n+1) {background: #fff}
+.tableSumStrip table tr:nth-of-type(1) {border-bottom: 2px solid #333}
+.tableSumStrip table tr:nth-of-type(2) {font-weight: 600}
+.tableSumStrip table tr:nth-of-type(3) {border-bottom: 2px solid #333}
+.tableSumStrip table tr:nth-last-of-type(1) {border-bottom: 2px solid #333}
+
+td, th {padding: 0 0.6em 0.1em 0.2em}
+
+td:hover {background-color:#eeeeef}
+
+/* Source code formatting */
+pre {
+  color: #515151;
+  background: #FEFEFE;
+  border: 1px solid #AEBDCC;
+  border-radius: 3px;
+  font-weight: normal;
+  display: block;
+  overflow: auto;
+}
+
+pre:hover {
+    box-shadow: 3px 3px 3px gray;
+    border: 1px solid #A2B2C0;
+}
+
+pre.sourceCode {
+  font-size: 95%;
+  background: #F6F6F6;
+}
+
+code.sourceCode {
+  font-size: 85%;
+  background: transparent
+}
+
+div.toolbar {
+	height: 1.3em;
+	font-size: 75%;
+	color: #a68898;
+	background-color: #882288;
+	border-top: none;
+	top: 0;
+	bottom: auto;
+}
+
+.toolbar a:link {color: #a68898}
+.toolbar a:hover {color: #999}
+
+div.toolbar span.copyright {
+	color: #fff;
+	margin-left: 1em;
+}
+
+/* Columns */
+.col-l, .col-r, .col-B, .col-K {
+  position: absolute;
+  min-height: 1px;
+  padding: 0;
+  float: left;
+}
+
+.col-l {
+  width: 48%;
+  margin-left: 0;
+}
+
+.col-r {
+  width: 48%;
+  margin-left: 49%;
+}
+
+.col-B {
+  width: 64%;
+  margin-left: 0;
+}
+
+.col-K {
+  width: 32%;
+  margin-left: 65%;
+}
+
+.col-rb {
+  width: 75%;
+  float: right; }
+  @media screen and (max-width: 800px) {
+    .col-rb {
+      width: 100%;
+      float: left; } }
+
+.col-ls {
+  float: left;
+  max-width: 280px;
+  width: 24%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  margin-bottom: 2em;}
+  @media screen and (max-width: 800px) {
+    .col-ls {
+      width: 100%;
+      top: 0em;
+      margin-bottom: 0em;
+        position: relative;} }
+
+
+pres {
+	display: block;
+	font-size: 24px;
+	color: #333;
+	margin: 0;
+}
+
+pres a:link, pres a:visited {color: #333}
+
+date {color: #828282}
+
+
