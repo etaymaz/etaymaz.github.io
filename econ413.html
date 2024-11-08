@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+
+
+<title>ECON413</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+		<p><br/></p>
+<div id="introduction-to-data-science" class="section level2">
+<h2>Introduction to Data Science</h2>
+<p><strong>Lectures:</strong> Friday 09:40-12:30 (Computer Lab)</p>
+<p><strong>Course prerequisites:</strong> IS 100, ECON 206</p>
+<p><strong>Course credits:</strong> 3</p>
+<p><strong>Course description</strong></p>
+<p>Data science is an interdisciplinary field about scientific processes
+and systems to extract knowledge or insights from data in various forms.
+With the availability of substantial amount of data in various forms and
+resources, it has become essential for economists to be equipped with
+skills needed to collect, process, analyze, and present the data. The
+course will be taught as a series of workshops. Main topics and methods
+will be summarized and discussed in each lecture, and the students will
+write the code to perform the task assigned to them during the lecture.
+The students will learn how to write basic programs in R which is one of
+the most popular open-source programming language currently in use by
+data scientists.</p>
+<p><strong>Course objectives</strong></p>
+<p>By the end of the course the students will know how they use the data
+science for economic analysis, and learn the basic tools that they need
+for data analysis. At the end of the course the students apply these
+tools and techniques to analyze a real-world problem by using R in all
+stages of the research process.</p>
+<p><strong>Learning outcomes</strong></p>
+<p>Thus the students at the end of the semester will be able to:</p>
+<ul>
+<li>Learn basic programming skills with R Programming</li>
+<li>Access the data from various sources and formats</li>
+<li>Reshape and clean the data for reporting and further analysis</li>
+<li>Explore and visualize the data</li>
+<li>Conduct statistics analysis by using R</li>
+<li>Perform reproducible research</li>
+</ul>
+<p><strong>Grading</strong></p>
+<p>The course consists of lectures, quizzes, homeworks and projects.</p>
+<p>Course grades will be based on 6 quizzes (10 pts each), 1 project (40
+pts), and forum participation (as a bonus, up to 10 pts).</p>
+<p>There will be 7 quizzes in total, and you can take any 6 of them.
+There will be no make-up.</p>
+<p>The project teams will consist of 3 students. Projects will be
+presented on-line on January 23, 2024, and be submitted by midnight, the
+same day.</p>
+<p><strong>DataCamp support</strong></p>
+<p>“This class is supported by
+<a href="https://www.datacamp.com/">DataCamp</a>, the most intuitive
+learning platform for data science and analytics. Learn any time,
+anywhere and become an expert in R, Python, SQL, and more. DataCamp’s
+learn-by-doing methodology combines short expert videos and
+hands-on-the-keyboard exercises to help learners retain knowledge.
+DataCamp offers 350+ courses by expert instructors on topics such as
+importing data, data visualization, and machine learning. They’re
+constantly expanding their curriculum to keep up with the latest
+technology trends and to provide the best learning experience for all
+skill levels. Join over 6 million learners around the world and close
+your skills gap.”</p>
+<p>Information on (free) registration to
+<a href="https://www.datacamp.com/">DataCamp</a> will be provided in due
+course.</p>
+<p><strong>Textbooks</strong></p>
+<ul>
+<li>Venables, W. N., Smith, D. M. and the R Core Team (2015),
+<a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">An
+Introduction to R</a>, R Core Team.</li>
+<li>Grolemund, Garrett, and Wickham, Hadley (2017),
+<a href = "https://r4ds.had.co.nz/">R for Data Science</a>,
+O’Reilly.</li>
+<li>Heiss, Florian (2020),
+<a href="http://urfie.net/downloads/PDF/URfIE_web.pdf">Using R for
+Introductory Econometrics, 2nd edition</a>.</li>
+<li>Wickham, Hadley (2014), <a href="https://adv-r.hadley.nz/">Advanced
+R</a>, Chapman &amp; Hall/CRC.</li>
+<li>Grolemund, Garrett (2014),
+<a href="https://rstudio-education.github.io/hopr/index.html">Hands-On
+Programming with R</a>, O’Reilly.</li>
+<li>Peng, Roger D. (2015),
+<a href="https://www.cs.upc.edu/~robert/teaching/estadistica/rprogramming.pdf">R
+Programming for Data Science</a>, Leanpub.</li>
+<li>Hanck, C., Arnold, M., Gerber,A. and Schmelzer, M. (2020),
+<a href="https://www.econometrics-with-r.org/">Introduction to
+Econometrics with R</a></li>
+<li>Wilke, Claus O. (2021),
+<a href="https://clauswilke.com/dataviz/preface.html">Fundamentals of
+Data Visualization</a></li>
+<li>Healy, Kieran (2018), <a href="https://socviz.co/">Data
+Visualization: A practical Introduction</a></li>
+</ul>
+<p><strong>To do list for the second week</strong></p>
+<ul>
+<li>Please install, first,
+<ul>
+<li>R (<a href="https://cran.r-project.org/"
+class="uri">https://cran.r-project.org/</a>) and then,</li>
+<li>Rstudio (<a href="https://rstudio.com/products/rstudio/"
+class="uri">https://rstudio.com/products/rstudio/</a>)</li>
+</ul></li>
+<li>Register at CBRT’s Electronic Data Delivery System to get access to
+the CBRT data (EVDS) (<a href="https://evds2.tcmb.gov.tr/index.php"
+class="uri">https://evds2.tcmb.gov.tr/index.php</a>) Registration is
+free.</li>
+<li>Open Rstudio, and install the following R packages
+<ul>
+<li>CBRT, data.table, ggplot2, ggthemes, pwt10, rmarkdown, quatro, WDI,
+DT, forecast, foreign, GGally, haven, leaflet, leaflet.extras, mice,
+networkD3, plm, plotly, r2d3, rgdal, rvest, sf, shiny, shinyWidgets,
+stargazer, tesseract, tidyverse, microbenchmark, ggmap, gganimate,
+tmaptools, stringi, stringr, tm, rgdal, fixest, fst, collapse</li>
+</ul></li>
+</ul>
+<p><strong>In case of trouble</strong></p>
+<p>If you get any error message anytime while using R, please first
+search for the error in Google (just copy the error message to the
+Google search bar), and try to find an answer (among the search results,
+first check Stackoverflow sites).</p>
+<p>If you cannot solve the problem in a reasonable time, submit a
+question at the Forum page of ODTUClass. When you submit your question,
+please add the error message and provide sufficient info to reproduce
+the error.</p>
+<p>Note that you will make errors frequently when you start using R,
+especially when you write your own code. Most of these errors will be
+due to missing parentheses and commas. Check the code first.</p>
+<p>Do not get frustrated when you get error messages. It is an essential
+part of the learning process. Therefore, try to fix these errors by
+yourself.</p>
+</div>
+<div id="presentations" class="section level2">
+<h2>Presentations</h2>
+<p><strong>Part 1. Basics</strong></p>
+<ul>
+<li>Week 1: <a href="econ413/01.html" target="_blank">Introduction to
+Data Science</a></li>
+<li>Week 2: <a href="econ413/02.html" target="_blank">Data types and
+data objects</a></li>
+<li>Week 3: <a href="econ413/03.html" target="_blank">Algorithms, loops,
+functions </a></li>
+<li>Week 4: <a href="econ413/04.html" target="_blank">Basic functions
+</a></li>
+<li>Week 5: <a href="econ413/05.html" target="_blank">Data manipulation
+with data.table </a></li>
+<li>Week 6: <a href="econ413/06.html" target="_blank">Data visualization
+and ggplot2</a></li>
+<li>Week 7: <a href="econ413/07.html" target="_blank">Factors, lists,
+functionals</a></li>
+</ul>
+<p><strong>Part 2. Applications</strong></p>
+<ul>
+<li>Week 8: <a href="econ413/08.html" target="_blank">Reproducible and
+interactive research</a></li>
+<li>Week 9: <a href="econ413/09.html" target="_blank">Web scrapping and
+text analysis</a></li>
+<li>Week 10: <a href="econ413/10.html" target="_blank">Regression
+analysis</a></li>
+<li>Week 11: <a href="econ413/11.html" target="_blank">Maps</a></li>
+<li>Week 12: <a href="econ413/12.html" target="_blank">Animations and
+simulation</a></li>
+<li>Week 13: <a href="econ413/13.html" target="_blank">R best
+practice</a></li>
+<li>Week 14: Review</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

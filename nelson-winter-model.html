@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+<meta name="date" content="2011-03-17" />
+
+<title>Nelson Winter Model of Industrial Dynamics</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Nelson Winter Model of Industrial
+Dynamics</h1>
+
+	
+						<date>Erol Taymaz
+							  • 17 March 2011
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>Contents</h3>
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#base-model" id="toc-base-model">Base model</a></li>
+<li><a href="#entry-exit-model" id="toc-entry-exit-model">Entry-exit
+model</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Nelson and Winter have developed the most influential simulation
+models to analyze the processes of industrial dynamics and economic
+growth. Their models are perfect examples of the KISS principle in
+simulation. The models and the evolutionary theory on which the models
+are based are explained in detail in their path-breaking book, Nelson,
+R.R., and Winter, S.G. (1982), <em>An Evolutionary Theory of Economic
+Change</em>, Belknap Press, Cambridge, Mass. and London.</p>
+<p>This site provides a simple implementation of the basic industry
+dynamics model in spreadsheets and R so that anybody without a
+programming knowledge can “play” with the model, run different
+experiments, and get the feeling of micro-simulation modeling. All the
+models presented on this web page are freely available for non-profit
+research and education. Please feel free to copy and redistribute them
+in modified or unmodified form.</p>
+<p>Java and LSD implementations of similar models are available on
+<a href="www.yildizoglu.fr/">Murat Yıldızoğlulu</a>’s and
+<a href="http://personprofil.aau.dk/108269?lang=en">Esben Sloth
+Andersen</a>’s web pages, respectively.</p>
+<p>For comments and questions, please contact
+<a href="mailto:etaymaz@metu.edu.tr">Erol Taymaz</a>.</p>
+<p><br/></p>
+</div>
+<div id="base-model" class="section level2">
+<h2>Base model</h2>
+<p><strong>Nelson Winter Base Model</strong> is based on the model
+presented in Nelson and Winter’s book (<em>An Evolutionary Theory of
+Economic Change</em>) in Chapter 12. Firms spend a constant amount of
+money on innovative and imitative R&amp;D activities. More productive
+firms (thanks to innovation and imitation) become more profitable, make
+more investment, grow faster, and, consequently, increase their market
+shares. However, because of the fact that innovation and imitation are
+random processes in which the probability of innovation and imitation
+depends on R&amp;D expenditures, there could be shake-ups in market
+shares. There is no entry and exit in the base model.</p>
+<p><strong>Spreadsheet Version of the Base Model</strong> is available
+in <a href="files/NW_BaseModel.ods">Open Office (320 KB)</a> and <a
+href="files/NW_BaseModel.xls">Excel/XP (610 KB)</a> formats.</p>
+<p>The Nelson-Winter Base Model (Spreadsheet Version) is written in
+various self-explanatory sheets. The first sheet,
+<strong>Parameters</strong>, includes the parameters of the model. Users
+can easily change parameter values to run different experiments. Once a
+parameter value is entered, all sheets are automatically calculated, and
+a simulation result is obtained. If the user presses “F9”
+(re-calculate), all sheets will be re-calculated, that is, a new
+experiment with the same parameter values will be run. Therefore, the
+users can keep pressing the F9 key to see the effects of stochastic
+factors (innovation and imitation) in the model.</p>
+<p>The second sheet, <strong>K</strong>, contains the capital variable.
+At the beginning of simulation, all firms have the same size (capital
+stock). Capital stock each year is updated by investment and
+depreciation.</p>
+<p>The third sheet, <strong>A</strong>, keeps the level of productivity,
+which is the same for all firms at the beginning. Productivity increases
+to a level randomly determined from a uniform distribution between the
+existing level and the frontier level if the firm innovates or between
+the existing level and the level of the most productive firm if it
+imitates.</p>
+<p>The fourth sheet, <strong>Q</strong>, is output and calculated as
+K*A.</p>
+<p>The <strong>Profit</strong> is calculated as profit per capital. The
+profit of the firm is equal to total revenue minus “cost of capital”
+minus innovation expenditures minus imitation expenditures. In the
+current model, the last three are taken as user-defined parameters, and
+are same for all firms.</p>
+<p><strong>InnDraw</strong> and <strong>ImmDraw</strong> are innovation
+and imitation draws, respectively, and show if the firm innovates or
+imitates. Innovation and imitation are determined randomly, and their
+probabilities depend on innovation/imitation expenditures (and exogenous
+parameters that can be changed by the user).</p>
+<p>The next sheet, <strong>s</strong>, keeps the data on market shares.
+It is used to draw the chart for market shares.</p>
+<p>The last variable is investment, <strong>_Invest</strong>. Investment
+level depends on the firm’s profits and borrowing from the bank.</p>
+<p>Finally, there are some charts to visualize experiment results. They
+depict productivity levels (<strong>_ProdLevel</strong>), concentration
+level in the market (Herfindahl index, <strong>_Concent</strong>),
+market shares (<strong>_MShare</strong>), total quantity supplied
+(<strong>_Q</strong>), and the product price
+(<strong>_Price</strong>).</p>
+<p><br/></p>
+<div id="r-version" class="section level3">
+<h3>R version</h3>
+<p>R Version of the base model__ is available as an <a
+href="files/NW_BaseModel.R">R script file (only 7.1 KB)</a>.</p>
+<p><strong>R</strong> is a great free software environment for matrix
+operations, statistical computing and graphics. It compiles and runs on
+a wide variety of platforms (Linux, Windows and MacOS). You can get the
+latest version freely from the
+<a href="http://www.r-project.org/">R-Project web page</a>. Although it
+is not essential, it makes to run programs much easier if you use an
+integrated development environment (IDE) for R. There are many
+alternatives, and I could recommend
+<a href="http://rstudio.org">RStudio</a>. RStudio is also a great free
+software and is available for all major platforms including Linux,
+Windows, and MacOS.</p>
+<p>The Nelson-Winter Base Model (R Version) is composed of various
+functions. In order to run the program, first open the R program, then
+read the script file (NW_BaseModel.R) by the “source” function. When the
+script file is read, all functions will be ready. Alternatively, if you
+use an IDE (like RStudio), open the script file, and run all lines.</p>
+<p>The following functions are available in the NW_BaseModel.R
+script.</p>
+<p><strong>run()</strong> is the main function that runs the model. It
+may have three arguments: nIter (number of iterations), nFirm (number of
+firms) and setSeed (setting the initial seed). The default values are
+nIter=100, nFirm=8, setSeed=FALSE. In other words, if you simply
+type,</p>
+<p><em>run()</em></p>
+<p>the model will be run for 100 periods for 8 firms, and the initial
+seed for pseduo-random number generator will use the value it has when
+the function is run. If you would like to run the model longer (let us
+say, 500 periods) with more firms, you may type <em>run(500, 10,
+TRUE)</em></p>
+<p>If you set setSeed value to “TRUE”, then the initial seed value for
+the pseude-random number generator will be equal to 123 (you can change
+that value to any other one by modifying the “setPara” function).
+Setting the seed number will guarantee that you can replicate the same
+simulation anytime you like.</p>
+<p>The <strong>run()</strong> function calls all other functions
+required to run the program. <strong>iterate()</strong> is the function
+that runs the model for one period.</p>
+<p>The <strong>setPara()</strong> function sets parameter values. You
+can change all parameter values by modifying this function.</p>
+<p>The <strong>setFirms()</strong> and <strong>setMarket()</strong>
+functions initialize firms and markets, respectively.</p>
+<p>The <strong>invest()</strong> function calculates the investment
+level for each firm. <strong>innDraw()</strong> and
+<strong>immDraw()</strong> are innovation and imitation draw functions,
+respectively.</p>
+<p><strong>pMarket()</strong> plots four charts about the market
+outcomes: product price, concentration level, maximum technology
+(technological frontier) and average technology level. When you run the
+model, pMarket() function is called by the run() function at the end of
+simulation, and all these charts are plotted in one page. If you would
+like to get charts on firm-specific variables, you may use
+<strong>pMS()</strong> function that plots markets shares of all firms,
+and <strong>pTech()</strong> function that plots technological levels of
+all firms. <strong>pAccum()</strong> function plots four charts that
+help to understand the dynamics of capital accumulation: growth rate of
+aggregate output, growth rate of aggregate capital stock, average profit
+rate, and average investment intensity (aggregate investment/capital
+stock ratio). To summarize, you can simply type</p>
+<p><em>run(xx, yy, TRUE)</em></p>
+<p>to simulate the model for <em>xx</em> periods for <em>yy</em> number
+of firms. In order to test the effects of random factors, run the same
+simulation by changing the initial seed as follows:</p>
+<p><em>run(xx, yy, FALSE)</em></p>
+</div>
+</div>
+<div id="entry-exit-model" class="section level2">
+<h2>Entry-exit model</h2>
+<p><strong>The Nelson Winter Entry-Exit Model</strong> is same as the
+Base Model, but now we allow for entry and exit of firms. The number of
+entrants increases by the profitability of the market, and those firms
+that cannot achieve “satisficing” level of profits will exit. Because of
+the (endogenous) changes in the number of firms, spreadsheets are not
+suitable tools for these model. Thus, we use R to model the Nelson
+Wintor Entry Model.</p>
+<p>The Nelson Winter Entry Model includes all functions available in the
+base model. It has two additional functions:
+<strong>enterFirms()</strong> and <strong>exitFirms()</strong>. As their
+names imply, the first function cretaes new firms, and the second
+function deletes unsuccessful firms. The number of new firms depends on
+some exogenous parameters and the average profitability in the market.
+Exit depends on the number of periods with negative profit rate. The
+user can change parameter values so as to make entry faster and/or
+strongly correlated with market profitability, and to make exit
+faster.</p>
+<p><strong>R Version of the Nelson Winter Entry Model</strong> can be
+downloaded from <a href="files/NW_EntryModel.R">here (9.2KB)</a>.</p>
+<div class="float">
+<img src="img/nwem.jpg" alt="NW Model Market Shares" />
+<div class="figcaption">NW Model Market Shares</div>
+</div>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='432.00pt' viewBox='0 0 720.00 432.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='-0.00000000000011' width='720.00' height='432.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzYuNTF8NzE0LjUyfDUuNDh8MzYyLjQ5'>
+    <rect x='36.51' y='5.48' width='678.01' height='357.02' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzYuNTF8NzE0LjUyfDUuNDh8MzYyLjQ5)'>
+<polyline points='36.51,353.12 714.52,353.12 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='36.51,284.55 714.52,284.55 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='36.51,215.99 714.52,215.99 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='36.51,147.42 714.52,147.42 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='36.51,78.85 714.52,78.85 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='36.51,10.28 714.52,10.28 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<line x1='36.51' y1='284.55' x2='714.52' y2='284.55' style='stroke-width: 1.07; stroke: #00008B; stroke-linecap: butt;' />
+<polyline points='67.33,334.84 155.39,236.56 243.44,142.85 331.49,21.71 419.54,62.85 507.60,87.99 595.65,199.99 683.70,346.27 ' style='stroke-width: 3.20; stroke: #103399; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='31.58' y='357.12' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='10.00px' lengthAdjust='spacingAndGlyphs'>-1</text>
+<text x='31.58' y='288.55' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='31.58' y='219.98' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='31.58' y='151.41' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='31.58' y='82.84' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>3</text>
+<text x='31.58' y='14.28' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>4</text>
+<polyline points='36.51,362.49 714.52,362.49 ' style='stroke-width: 0.53; stroke: #BEBEBE; stroke-linecap: butt;' />
+<text x='155.39' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='331.49' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='507.60' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='683.70' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='375.52' y='393.77' text-anchor='middle' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='42.84px' lengthAdjust='spacingAndGlyphs'>Period</text>
+<text transform='translate(15.48,183.99) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='332.91px' lengthAdjust='spacingAndGlyphs'>Change in unemployment rate (percentage points)</text>
+<rect x='347.55' y='408.10' width='55.93' height='18.43' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='347.55' y='408.10' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none;' />
+<line x1='349.40' y1='417.31' x2='364.14' y2='417.31' style='stroke-width: 3.20; stroke: #103399; stroke-linecap: butt;' />
+<text x='371.46' y='422.31' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>2019</text>
+</g>
+</svg>

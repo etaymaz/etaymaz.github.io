@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz and Yılmaz Kılıçaslan" />
+
+<meta name="date" content="2011-03-17" />
+
+<title>Labor Market Regulations Index</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Labor Market Regulations Index</h1>
+
+	
+						<date>Erol Taymaz and Yılmaz Kılıçaslan
+							  • 17 March 2011
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>Contents</h3>
+<ul>
+<li><a href="#labor-market-regulations"
+id="toc-labor-market-regulations">Labor market regulations</a></li>
+<li><a href="#dataset" id="toc-dataset">Dataset</a></li>
+<li><a href="#paper" id="toc-paper">Paper</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="labor-market-regulations" class="section level2">
+<h2>Labor market regulations</h2>
+<p>The effects of labor market institutions on economic performance,
+most importantly on unemployment, have been at the core of the economic
+policy debates at least since the early 1970s. Although the labor market
+constitutes the single largest market in any market economy, and the
+functioning of labor market institutions has a significant impact on
+economic growth and performance, there are not many empirical studies on
+the effects of labor market institutions on economic growth and
+productivity. For example, in his review article, Sala-I-Martin
+(Sala-I-Martin, X.X. (1996), <i>I Just Ran Four Million Regressions</i>,
+NBER Working Paper No. 6252, Cambridge, MA: NBER.1996) identified 62
+variables that had been used in the empirical literature explaining
+long-run growth across countries, but none of these variables referred
+to labor market institutions.</p>
+<p>Empirical studies on the effects of labor market institutions at the
+macro-level suffer from the lack of data. There have been some attempts
+by both researchers and international institutions to construct proxy
+variables that reflect various aspects of labor markets institutions or
+labor market flexibility. The World Bank’s Rigidity of Employment Index,
+the OECD’s Employment Protection Legislation index, and the Labour
+Market Institutions Database by Nickell and Nunziata are some of the
+existing databases on labor market institutions. The main shortcoming of
+these databases is the fact that they cover either a small group of
+countries or short time periods so that they do not allow a panel data
+analysis of developed and developing countries together. Rama and
+Artecona prepared a panel database for a large number of countries.
+Their database is based on the ratification of International Labour
+Organisation (ILO) conventions on various subjects along with some other
+measures like minimum wages, the number of trade union membership,
+etc.</p>
+<p>That is why we attempted to construct a new index as a proxy for the
+degree of labor market regulation. The proposed index, derived from
+<a href="http://www.ilo.org/dyn/natlex/natlex_browse.home">ILO Natlex
+Database</a>, is not a direct index but an approximation and based on
+the number of laws and regulations on 100 different subjects adopted by
+governments. It includes the annual data for 44 countries from 1960 to
+2000.</p>
+<p>In constructing the database, we first collected the number of laws
+and regulations on different subjects related to labor markets from 1960
+to 2000 for each country in the database. We included the laws
+issued/adopted before 1960 in the year 1960. We summed the number of
+laws on each subject over 5 year periods for 13 main subject categories
+defined by the ILO. We, then, assumed that each law is effective for 15
+years, and cumulated the (log) number of regulations for three periods
+with the exception of the second period (1965-1969) that is composed of
+the first two periods (1960-1964 and 1965-1969).</p>
+<p>Since some of the subject categories were correlated with each other,
+we carried out a factor analysis for two sub-periods, the pre- and
+post-1980 periods, to reduce the dimensionality of the labor market
+regulation subjects. On the basis of factor analysis, we grouped 13
+subjects into four main categories defined as follows:</p>
+<ul>
+<li>LMR 1: Employment conditions and wages</li>
+<li>LMR 2: Work organization and social policy</li>
+<li>LMR 3: Social and economic rights</li>
+<li>LMR 4: Special provisions</li>
+</ul>
+<p>The first index, labeled as “Employment conditions and wages”,
+includes regulations governing contracts of employment, wages and wage
+payment system (minimum wage and protection of wages), personnel
+management, termination of employment and dismissals, labor
+administration and inspection, tripartite consultation, labor statistics
+and training. This index is closely related to the issues discussed in
+the literature on the effects of labor market institutions on economic
+growth/productivity. This is our preferred index that is used in
+empirical analysis.</p>
+<p>The second index, “Work organization and social policy”, includes
+regulations concerning work organization (working time, night work, rest
+and leave, quality of working life) as well as issues on economic and
+social policy including cooperatives, unemployment, employment services,
+etc.</p>
+<p>The third index, “Social and economic rights”, includes mostly
+regulations on broad social and economic rights, including freedom of
+association, non-discrimination, equal remuneration, industrial
+relations (collective bargaining and agreements, workers participation,
+labor disputes), occupational safety and health, social security
+including unemployment benefit, and special provisions by category of
+persons (children and young persons, women, indigenous and tribal
+peoples, etc.). These provisions are likely to have non-discriminating
+effect on all firms and sectors.</p>
+<p>The final index basically covers laws and regulations specific to
+certain activities/sectors. Most of the provisions in the database under
+this category are about public servants.</p>
+<p>Limitations, deficiencies, and measurement errors are inherited in
+any database. Our index on labor market regulation also comes with its
+own problems:</p>
+<p>First, it is a very strong assumption that the number of labor market
+regulations reflects the degree of regulation in the labor market,
+because some laws and regulations may indeed deregulate the market. In
+other words, the content of regulations could be more important than
+their quantity. However, it is not practical to quantify the degree and
+type of all regulations cited in the Natlex database. Second, we assumed
+that a regulation remains in force for about 15 years. There is
+certainly a great diversity concerning the time span of laws and
+regulations. Moreover, some of the regulations may amend or replace
+existing regulations so that a simple count of regulations adopted is
+likely to generate an overestimation of the number of regulations in
+force. Third, although we count all regulations equal, there are
+substantial differences in the scope of laws and regulations. For
+example, a single labor code in a country may regulate various aspects
+of labor markets and industrial relations whereas in another country,
+there could be many specific laws and regulations for the same issues.
+Finally, the adoption of the law does not necessarily mean that it is
+enforced.</p>
+<p><br/></p>
+</div>
+<div id="dataset" class="section level2">
+<h2>Dataset</h2>
+<p>You can download the dataset in comma-separated values (csv) format
+for non-profit research.</p>
+<p><a href="files/lmri.csv">Labor Market Regulations Index
+Dataset</a></p>
+<p>Please cite the database as follows:<br /> Kilicaslian, Y. and
+Taymaz, E. (2008), <i>Labor Market Regulations Index</i>,
+www.metu.edu.tr/~etaymaz/lmri</p>
+<p>The variables in the dataset are as follows:</p>
+<p><strong>countryname</strong> : Name of the country<br/>
+<strong>countrycode</strong> : UN Country code<br />
+<strong>incomegroup</strong> : Income group, 1 low income, 2 high income
+country<br /> <strong>lmri1</strong> : LMR Index 1, Employment
+conditions and wages<br /> <strong>lmri2</strong> : LMR Index 2, Work
+organization and social policy<br /> <strong>lmri3</strong> : LMR Index
+3, Social and economic rights<br /> <strong>lmri4</strong> : LMR Index
+4, Special provisions<br /> <strong>period</strong> : Time period, from
+1960-64 to 1995-99<br /></p>
+<p>Natlex subject categories covered in labor market regulation indices
+are as follows:</p>
+<p><strong>Labor Market Regulation Index 1: Conditions of employment and
+wages</strong></p>
+<ul>
+<li>Conditions of employment
+<ul>
+<li>Contracts of employment</li>
+<li>Wages / wage payment system
+<ul>
+<li>Minimum wage</li>
+<li>Protection of wages</li>
+</ul></li>
+<li>Personnel management</li>
+<li>Termination of employment. Dismissals</li>
+</ul></li>
+<li>Labor administration
+<ul>
+<li>Labor inspection</li>
+<li>Tripartite consultation</li>
+<li>Labor statistics</li>
+</ul></li>
+<li>Training</li>
+</ul>
+<p><strong>Labor Market Regulation Index 2: Work organization and social
+policy</strong></p>
+<ul>
+<li>Work organization
+<ul>
+<li>Working time
+<ul>
+<li>Hours of work</li>
+<li>Arrangement of working time</li>
+</ul></li>
+<li>Night work</li>
+<li>Rest and leave
+<ul>
+<li>Weekly rest</li>
+<li>Paid leave *Quality of working life</li>
+</ul></li>
+</ul></li>
+<li>Economic and social development
+<ul>
+<li>Economic and social policy</li>
+<li>Income and wealth</li>
+<li>Business economics</li>
+<li>Cooperatives</li>
+</ul></li>
+<li>Employment
+<ul>
+<li>Labor market</li>
+<li>Employment policy</li>
+<li>Unemployment</li>
+<li>Employment services. Job placement</li>
+</ul></li>
+</ul>
+<p><strong>Labor Market Regulation Index 3: Social and economic
+rights</strong></p>
+<ul>
+<li>Human rights
+<ul>
+<li>Freedom of association</li>
+<li>Forced labor</li>
+<li>Equity of opportunity and treatment
+<ul>
+<li>Non-discrimination (employment and occupation)</li>
+<li>Equal remuneration</li>
+</ul></li>
+</ul></li>
+<li>Industrial relations
+<ul>
+<li>Collective bargaining and agreements</li>
+<li>Workers participation</li>
+<li>Labor disputes</li>
+</ul></li>
+<li>Occupational safety and health
+<ul>
+<li>Occupational safety</li>
+<li>Occupational health services</li>
+<li>Industries and occupations
+<ul>
+<li>Construction (Occupational safety and health)</li>
+<li>Commerce and offices (Occupational safety and health)</li>
+<li>Dock work (Occupational safety and health)</li>
+</ul></li>
+<li>Occupational safety hazards
+<ul>
+<li>Toxic substances and agents</li>
+<li>Physical hazards, noise and vibration</li>
+</ul></li>
+</ul></li>
+<li>Social security
+<ul>
+<li>Medical care and sickness benefit</li>
+<li>Maternity benefit</li>
+<li>Old-age, invalidity and survivors benefit</li>
+<li>Employment accident benefit</li>
+<li>Unemployment benefit</li>
+<li>Family benefit</li>
+<li>Social security administration and financing</li>
+</ul></li>
+<li>Special provisions by category of persons
+<ul>
+<li>Children and young persons
+<ul>
+<li>Minimum age</li>
+<li>Medical examination (Children and young persons)</li>
+<li>Night work (Children and young persons)</li>
+<li>Underground work (Children and young persons)</li>
+</ul></li>
+<li>Women
+<ul>
+<li>Maternity protection</li>
+<li>Night work (women)</li>
+<li>Underground work (women)</li>
+</ul></li>
+<li>Indigenous and tribal peoples</li>
+<li>Disabled persons</li>
+<li>Migrant workers</li>
+<li>Older workers</li>
+<li>Workers in non-metropolitan territories</li>
+</ul></li>
+</ul>
+<p><strong>Labor Market Regulation Index 4: Special
+provisions</strong></p>
+<ul>
+<li>Special provisions by sector of economic activity
+<ul>
+<li>Agriculture, forestry and fishing</li>
+<li>Mining and quarrying</li>
+<li>Manufacturing</li>
+<li>Electricity, gas and water</li>
+<li>Construction</li>
+<li>Wholesale and retail trade. Restaurants and hotels</li>
+<li>Transport and communication</li>
+<li>Financing, insurances and business services</li>
+<li>Community, social and personal services</li>
+</ul></li>
+</ul>
+<p><strong>General provisions</strong></p>
+<p>Constitutional law, general labor and employment acts, civil,
+commercial and family law, etc.</p>
+<p><br/></p>
+</div>
+<div id="paper" class="section level2">
+<h2>Paper</h2>
+<p>For more information, see:</p>
+<p>Kilicaslan, Y. and Taymaz, E. (2008), “Labor Market Institutions and
+Industrial Performance: An Evolutionary Study”,
+<a href="http://link.springer.de/link/service/journals/00191/">
+<i>Journal of Evolutionary Economics</i></A> (18): 477-492.</p>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

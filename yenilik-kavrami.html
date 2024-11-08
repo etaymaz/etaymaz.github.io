@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+
+<title>Yenilik Kavramı ve Yenilik Politikaları</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Yenilik Kavramı ve Yenilik
+Politikaları</h1>
+
+	
+						<date>Erol Taymaz
+							  • 17 Ağustos 2016
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>İçindekiler</h3>
+<ul>
+<li><a href="#giriş" id="toc-giriş">Giriş</a></li>
+<li><a href="#yeniliğin-kavramsallaştırılması"
+id="toc-yeniliğin-kavramsallaştırılması">Yeniliğin
+kavramsallaştırılması</a></li>
+<li><a href="#yenilik-sistemleri" id="toc-yenilik-sistemleri">Yenilik
+sistemleri</a></li>
+<li><a href="#yenilik-metrikleri" id="toc-yenilik-metrikleri">Yenilik
+metrikleri</a></li>
+<li><a href="#yeniliklerin-etkileri"
+id="toc-yeniliklerin-etkileri">Yeniliklerin etkileri</a></li>
+<li><a href="#yenilik-politikaları"
+id="toc-yenilik-politikaları">Yenilik politikaları</a></li>
+<li><a href="#türkiye-ve-yenilikçilik"
+id="toc-türkiye-ve-yenilikçilik">Türkiye ve yenilikçilik</a></li>
+<li><a href="#kaynaklar" id="toc-kaynaklar">Kaynaklar</a></li>
+<li><a href="#notlar" id="toc-notlar">Notlar</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+<blockquote>
+Innovations … at first are ill-shapen … [They] are like strangers … what
+is settled by custom … is fit … whereas new things piece not so well …
+They trouble by their inconformity. [Yet,] he that will not apply new
+remedies, must expect new evils … A forward retention of custom, is as
+turbulent a thing as an innovation.(Francis Bacon, <i>Of Innovation</i>,
+1625).
+</blockquote>
+</div>
+<div id="giriş" class="section level2">
+<h2>Giriş</h2>
+<p>Yenilik (inovasyon / innovation) kavramı son yıllarda iş dünyası ve
+akademide en hızlı yaygınlaşan kavramlardan biridir. İktisat ve işletme
+gibi ekonomi politikaları ve stratejileri ile ilişkili alanların yanı
+sıra, modadan sanata kadar çok farklı alanlarda da “inovasyon” artık
+anahtar kavram haline gelmiştir. Bu yaygın kullanım sonucu hem kavramın
+kapsamı çok genişlemekte, hem de adeta tüm sorunları çözebilecek gizemli
+bir araç haline getirilmektedir.</p>
+<p>Bu çalışmada yenilik kavramının tarihsel gelişimi özetlenmekte,
+yenilik tipleri ve metrikleri tanımlandıktan sonra, yeniliklerin
+etkileri tartışılmaktadır.</p>
+<p>Yenilik, ekonomi ve toplumsal gelişme açısından belirleyici önemde
+görüldüğü için pek çok ülkede yenilikleri teşvik edici kamu politikaları
+uygulanmaktadır. Bu nedenle yenilik politikalarının kuramsal arkaplanı
+ve yenilik politikalarına yaklaşımlar da değerlendirildikten sonra
+politika araçları özetlenmiştir. Son olarak, Türkiye’nin yenilik
+açısından uluslararası konumunu değerlendirmek üzere ülke düzeyindeki
+bazı önemli yenilik verileri incelenmiştir.</p>
+<p>“Innovation” kavramı için Türkçe iki terim kullanılmaktadır:
+yenileşim ve yenilik. Türk Dil Kurumu’nun <i>Güncel Türkçe
+Sözlük</i>’ünde yenileşim “değişen koşullara uyabilmek için toplumsal,
+kültürel ve yönetimsel ortamlarda yeni yöntemlerin kullanılmaya
+başlanması, yenilik, inovasyon” ve yenilik “yeni olma durumu; yeni olan
+bir şeyin özelliği; eskimiş, zararlı veya yetersiz sayılan şeyleri yeni,
+yararlı ve yeterli olanlarıyla değiştirme, teceddüt; yenileşim” olarak
+eş anlamlı tanımlanmıştır.</p>
+<p>“Innovation” kavramının kökenini de özetleyen Akalın (2007), bu
+kavram için “hem yenileşmeyi, hem de iyileşmeyi” içerdiği için
+“yenileşim” kavramının kullanılmasını önermektedir. Bu çalışmada
+“innovation” kavramı için “yenilik” terimini kullanacağız, çünkü
+Fransızcadan uyarlanan “inovasyon” terimi kavrama adeta “mistik” bir
+hava vermektedir. “Yenileşim” terimi ise pasif bir süreç vurgusu
+içermekte, sürecin öznesini (“innovator”) tanımlamaya olanak
+tanımamaktadır (“yenileşimci”?). “Yenilik” ve “yenilikçi” terimleri ise
+süreci, ürünü ve özneyi daha açık ve anlaşılır bir şekilde tanımladığı
+için bu terim tercih
+edilmiştir.<a class="sdfootnoteanc" href="#sdfootnote1sym" name="sdfootnote1anc"><sup>1</sup></a></p>
+<p><br/></p>
+</div>
+<div id="yeniliğin-kavramsallaştırılması"
+class="section level2 useMedImage">
+<h2 class="useMedImage">Yeniliğin kavramsallaştırılması</h2>
+<div id="yenilik-kavramının-evrimi" class="section level3">
+<h3>Yenilik kavramının evrimi</h3>
+<p>“Novation” kavramı Avrupa’da ilk kez 13. yüzyılda hukuk alanında
+kullanılmaya başlandı. “Novation” borç sözleşmesinin yenilenmesi
+anlamında kullanılıyordu. Kavram teknoloji ve sosyal bilimlerde 20.
+yüzyıla kadar yaygın olarak kullanılmadı. Bu dönemde kavram “yeni”den
+ziyade “değişim”i vurguluyordu ve kilise ve devlet yönetiminde değişim
+olumsuzlandığı için “innovation” kavramı da olumsuz bir içeriğe sahipti
+(kavramın kullanımı hakkında detaylı bir çalışma için bkz. Godin, 2008
+ve 2015).</p>
+<p>18. yüzyıl ortalarında İngiltere’de başlayan ve daha sonra Kıta
+Avrupası ve Kuzey Amerika’ya yayılan Sanayi Devrimi ile birlikte,
+yenilik ve değişim anlamı içeren kavramlar olumlu karşılanmaya başladı.
+Bu dönemde, “invention” (buluş), özellikle de “technological invention”
+kavramı yaygınlaşmaya başladı. Yeniliklerin yayılması anlamında
+“imitation” kavramı da giderek olumlu bir içerik kazandı.</p>
+<p>Smith, Ricardo ve Marx gibi 19. yüzyılın klasik iktisatçılarının
+teknolojik gelişme (“teknolojik ilerleme”) ve yenilik kavramlarını ön
+plana çıkarmalarına karşın, “innovation” kavramının olumlu bir içerikle
+benimsenmesinde en önemli rolü şüphesiz Schumpeter oynamıştır.
+Schumpeter 1911’de Almanca ve 1934’de İngilizce yayımlanan <i>Theory of
+Economic Development </i>kitabında, yeniliklerin ekonomik gelişmenin
+motoru olduğunu vurgulamıştır. Schumpeter, yenilik kavramı için
+“innovation” terimi yerine “new combinations” (yeni birleşimler)
+terimini kullanmış ve 5 yeni birleşimin önemli olduğunu belirtmiştir
+(Schumpeter, 1983/1934):</p>
+<ul>
+<li>yeni ürünlerin üretilmesi</li>
+<li>yeni üretim yöntemlerinin uygulanması</li>
+<li>yeni organizasyon biçimleri (tekelci firmaların oluşumu veya
+çöküşü)</li>
+<li>yeni piyasaların açılması</li>
+<li>yeni hammadde kaynaklarının temini</li>
+</ul>
+<p>Schumpeter’in bu önemli çalışması, 1942’de yayımladığı <i>Capitalism,
+Socialism and Democracy</i> kitabının gölgesinde kalmıştır. “Yaşlı”
+Schumpeter bu kitabında da yeniliklerin önemi vurgulamakta, fakat yenlik
+sürecinin giderek büyük, oligopolistik firmalar tarafından yürütülen
+rutin bir faaliyete dönüştüğünü belirterek, kapitalizmin kendi başarısı
+sonucu sosyalizme dönüşeceğini söylemektedir. Bu önerme (büyük,
+oligopolistik firmaların daha yenilikçi olduğu/daha fazla teknoloji
+geliştirdiği tezi) daha sonra “Schumpeter hipotezi” olarak bilinecek,
+1970’lerden başlayarak binlerce ampirik/ ekonometrik çalışmanın konusu
+olacaktır.</p>
+<p>“Innovation” kavramı ancak 2. Dünya Savaşı sonrası dönemde
+yaygınlaşmıştır. 1950 ve 1960’larda yapılan çalışmalarda teknolojik
+gelişme süreci lineer bir süreç olarak değerlendirilmiş, bilimsel
+faaliyetler sonucu buluşların (“invention”) yapılacağı, bilimsel bilgi
+ve buluşların firmalar tarafından yeni ürün ve süreçlere dönüştürüleceği
+(“innovation”), daha sonra bu yeniliklerin diğer firmalar tarafından
+benimseneceği, böylelikle yeniliklerin tüm ekonomiye yayılacağı
+(“imitation”) kurgulanmıştır. Bu yaklaşıma göre teknolojik gelişme
+süreci (bilimsel) buluş, (teknolojik) yenilik ve (ekonomik) yayılma
+aşamalarından oluşmaktadır. Buluşlar temel araştırma faaliyetleri sonucu
+gerçekleşirken, yenilikler uygulamalı araştırma ve geliştirme
+faaliyetleri sonucu olmaktadır. Niteliği gereği, temel araştırma kamusal
+kuruluşlar (üniversiteler ve kamu araştırma merkezleri) tarafından,
+yenilikler de özel sektör tarafından gerçekleştirecektir.</p>
+<p>Bu lineer bakış açısı, dönemin ekonomi politikalarını da
+belirlemiştir. 1950’ler ve 1960’larda özellikle ABD’de bilim
+politikaları ön plana çıkmış, devletin temel bilimlere yönelik aktif bir
+bilim politikası uygulaması gerektiği önerilmiştir (bu dönemde uygulanan
+bilim politikası Vannevar Bush’un hazırladığı ve 1945’de ABD Başkanı’na
+sunulan <i>Science: The Endless Frontier</i> raporunda tanımlanmıştır,
+bkz Bush, 1960/1945).</p>
+<p>1973’de başlayan ve önceleri petrol fiyatlarındaki artıştan
+kaynaklanan kısa dönemli bir kriz olarak algılanan ekonomik krizin uzun
+dönemli olması ve tüm dünyayı etkilemesi, krizin etkileri ve uzun
+dönemli ekonomi büyümenin kaynakları üzerine yeni çalışmaların
+yapılmasını tetikledi. 1970’lerin sonlarından itibaren özellikle
+ekonomik büyüme ve teknolojik gelişme arasındaki ilişkiler ve kamu
+politikaları üzerine iktisat yazınında köklü bir dönüşüm yaşandı.
+1982’de yayımlanan Nelson ve Winter’in <i>An Evolutionary Theory of
+Economic Change</i> kitabı bu dönüşümün öncüllerinden biridir. Nelson ve
+Winter’in çalışmaları ile “Genç” Schumpeter’in <i>Theory of Economic
+Development</i> kitabındaki görüşleri tekrar gündeme geldi ve ekonomik
+gelişmenin motoru olarak (teknolojik) yenilikler üzerinde durulmaya
+başlandı. Bu dönemdeki çalışmaların iki önemli katkısı oldu.</p>
+<p>İlk olarak, teknolojik gelişme sürecinin</p>
+<p><strong>buluş → yenilik → yayılma (invention → innovation →
+imitation)</strong></p>
+<p>şeklinde lineer bir süreç olmadığı, teknolojik gelişme sürecinin
+farklı aşamaları arasında geri beslemeler olduğu, yeniliklerin buluşları
+tetiklediği/kolaylaştırdığı, yayılma sürecinin basit/pasif bir kopyalama
+süreci olmadığı, yayılma sürecinde de ürün ve süreçlerde yeniliklerin
+yapıldığı, talebin ve kullanıcı bilgisinin yenilikler açısından önemli
+olduğu anlaşıldı ve teknolojik gelişme süreci karşılıklı etkileşimlerden
+oluşan bir süreç olarak kavramsallaştırıldı.</p>
+<p>Ünlü teknoloji tarihçisi Rosenberg’in vurguladığı gibi lineer model
+akademik yazında 1980’lerde tamamen terkedildi (Rosenberg, 1994) ve
+yerini evrimci/Schumpeterci yaklaşımın geliştirdiği zincirleme-bağlantı
+modeli ve sistem yaklaşımına bıraktı (bu konuda öncü çalışmalardan için
+bkz. Kline ve Rosenberg, 1986; Freeman, 1987). Yeni yaklaşımda temel
+kavram “innovation” oldu. Teknolojik gelişme sürecinin farklı aşamaları
+arasındaki etkileşimlerin yoğunluğu ve iç-içe geçişler,
+buluş/yenilik/yayılma aşamaları arasındaki sınırları bulanıklaştırdığı
+için “innovation” kavramı giderek tüm teknolojik gelişme sürecini
+kapsayacak şekilde kullanılmaya başlandı.</p>
+<p>Teknolojik gelişme kuramındaki gelişmelere paralel olarak, kamu
+politikalarında da önemli dönüşümler yaşandı. “Bilim politikaları”
+vurgusu yerine “teknoloji politikaları” ön plana çıktı. Teknolojik
+gelişme sürecinin bir sistem içerisinde ele alınmasına bağlı olarak da,
+özellikle 2000’li yılların başlarından itibaren “yenilik politikası”
+kavramı daha çok rağbet görmeye başladı.</p>
+<p>Burada kısaca özetlediğimiz süreçler, temel kavramların kullanım
+sıklığına da yansımaktadır. Şekil 1’de “innovation”, “invention” ve
+“imitation” sözcüklerinin 1700-2008 döneminde İngilizce kitaplarda
+kullanım sıklığı
+görülmektedir.<a class="sdfootnoteanc" href="#sdfootnote2sym" name="sdfootnote2anc"><sup>2</sup></a>
+1750’den sonra, Sanayi Devrimi ile birlikte, “invention” ve “imitation”
+sözcüklerinin kullanım sıklığı hızla artmıştır. Bu iki sözcüğün
+kullanımı 1780’lerden sonra günümüze kadar tedrici olarak azalırken,
+“innovation” sözcüğünün kullanımı 1970’lerden sonra hızlı bir şekilde
+yükselmiştir.</p>
+<p><strong>Şekil 1.</strong> Google Books’da “innovation”, “invention”
+ve “imitation” sözcüklerinin kullanım oranları</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%201.png" alt="yenilik-sekil-1" /><br />
+<i>Not:</i> Düşey eksen “innovative+innovation”, “inventive+invention”
+ve “imitative+imitation” sözcüklerinin Google Books veritabanında
+yıllara göre kullanım oranlarıdır (x10<sup>6</sup>)</p>
+<p><strong>Şekil 2.</strong> Google Books’da “science policy”,
+“technology policy” ve “innovation policy” sözcüklerinin kullanım
+oranları</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%202.png" alt="yenilik-sekil-2" /><br />
+<i>Not:</i> Düşey eksen ilgili sözcüklerinin <i>Google Books</i>
+veritabanında yıllara göre kullanım oranlarıdır (x10<sup>8</sup>)</p>
+<p>Şekil 2’de 2. Dünya Savaşı sonrası dönemde “science policy”,
+“technology policy” ve “innovation policy” kavramlarının kullanımındaki
+değişim çok net görülmektedir. “Science policy” 1960’larda hızla popüler
+olmuş, 1974’de zirveye ulaştıktan sonra aynı hızla önemini kaybetmiştir.
+“Technology policy” kavramı 1970’lerden 1990’ların ortasında kadar daha
+fazla kullanılan bir kavram olmuştur. “Innovation policy” kavramı ise
+özellikle 1990’ların sonlarından itibaren yaygınlaşmıştır.</p>
+</div>
+<div id="yenilik-tipleri" class="section level3">
+<h3>Yenilik tipleri</h3>
+<p>Yenilik çalışmalarındaki en önemli sorunlardan biri yeniliğin tanımı
+olmuştur. Bu konuda kuram ve uygulama düzeyinde pek çok çalışma
+yapılmıştır. Bu doğrultuda en kapsamlı çalışmalar OECD bünyesinde
+yapılmış ve çalışmanın sonuçları <i>Oslo Kılavuzu</i> olarak bilinen
+elkitabında derlenmiştir. İlk baskısı 1992’de yapılan <i>Oslo
+Kılavuzu</i>’nda imalat sanayiine yönelik olarak ürün ve süreç
+yenilikleri tanımlanmış, 1997’deki 2. baskıda hizmet sektörleri kapsama
+alınmıştır. 2005’de yayınlanan 3. baskıda ise özellikle hizmet
+sektörleri için önemli olan teknoloji-dışı yenilikler de tanımlanmıştır.
+<i>Oslo Kılavuzu</i>’nun 3. baskısı TÜBİTAK tarafından Türkçe olarak
+yayımlanmıştır (OECD ve Eurostat, 2006).</p>
+<p><i>Oslo Kılavuzu</i>’nda yer alın tanım ve yöntemlere uygun olarak AB
+ülkelerinde (2 yılda bir) <i>Topluluk Yenilik Anketi </i>(Community
+Innovation Survey) yapılmaktadır. Türkiye ve bazı OECD ülkelerinden de
+aynı yöntem ile yenilik anketleri
+uygulanmaktadır.<a class="sdfootnoteanc" href="#sdfootnote3sym" name="sdfootnote3anc"><sup>3</sup></a></p>
+<p><i>Oslo Kılavuzu</i>, yeniliği firma/girişim düzeyine
+tanımlamaktadır. Bir başka deyişle, firma kendisi için yeni bir
+uygulamayı gerçekleştirdiğinde (o uygulama aynı veya başka sektörlerdeki
+firmalar tarafından halihazırda uygulanmakta olsa da), bu yenilik olarak
+kabul edilmektedir:</p>
+<p>Bir <i>yenilik</i>, işletme içi uygulamalarda, işyeri
+organizasyonunda veya dışı ilişkilerde yeni veya önemli derecede
+iyileştirilmiş bir ürün (mal veya hizmet), veya süreç, yeni bir
+pazarlama yöntemi ya da yeni bir organizasyonel yöntemin
+gerçekleştirilmesidir (OECD ve Eurostat, 2006: 50).</p>
+<p>Bu tanım, tüm firmaların tam bilgiye sahip olduğunu varsayan
+neo-klasik yaklaşımın aksine, firmaların yerel (local) bilgiye sahip
+olduğunu varsayan evrimci/Schumpeterci yaklaşıma yakındır. Bu yaklaşıma
+göre, bir firmanın kendisi için yeni bir uygulamaya geçmesi, yeni bilgi
+edinmesini gerektirmektedir. Bir uygulama başka firmalar tarafından
+bilinmekte ve uygulanmakta olsa bile, söz konusu firma açısından bir
+çabayı gerektirmekte ve firmanın bilgi setinin genişlemesini
+sağlamaktadır. Bu nedenle firma için yeni olan <i>yenilik </i>olarak
+kabul edilmiştir.</p>
+<p>Yenilik tanımı ile uygun şekilde yenilik faaliyetleri de aşağıdaki
+şekilde tanımlanmıştır:</p>
+<p><i>Yenilik faaliyetleri</i>, yeniliklerin uygulanmasına yol açan veya
+yol açması öngörülen tüm bilimsel, teknolojik, organizasyonel, finansal
+ve ticari adımlardır. Bazı yenilik faaliyetleri kendi başlarına
+yenilikçi iken, diğerleri yeni faaliyetler olmamakla birlikte
+yeniliklerin gerçekleştirilmesi için gereklidir. Yenilik faaliyetleri
+aynı zamanda, özel bir yeniliğin geliştirilmesi ile doğrudan ilişkili
+olmayan Ar-Ge’yi de içermektedir (OECD ve Eurostat, 2006: 51).</p>
+<p><i>Oslo Kılavuzu</i>’nda (bir ölçüde Schumpeter’in sınıflamasına
+benzer şekilde) yenilikler dört gruba ayrılmıştır:</p>
+<p>Bir <i>ürün yeniliği</i>, mevcut özellikleri veya öngörülen
+kullanımlarına göre yeni ya da önemli derecede iyileştirilmiş bir mal
+veya hizmetin ortaya konulmasıdır. Bu; teknik özelliklerde, bileşenler
+ve malzemelerde, birleştirilmiş yazılımda, kullanıcıya kolaylığında ve
+diğer işlevsel özelliklerinde önemli derecede iyileştirmeleri
+içermektedir.</p>
+<p>Bir <i>süreç yeniliği</i> yeni veya önemli derecede iyileştirilmiş
+bir üretim veya teslimat yönteminin gerçekleştirilmesidir. Bu yenilik,
+teknikler, teçhizat ve/veya yazılımlarda önemli değişiklikleri
+içermektedir.</p>
+<p>Bir <i>pazarlama yeniliği</i>, ürün tasarımı veya ambalajlaması, ürün
+konumlandırması, ürün tanıtımı (promosyonu) veya fiyatlandırmasında
+önemli değişiklikleri kapsayan yeni bir pazarlama yöntemidir.</p>
+<p>Bir <i>organizasyonel yenilik</i>, firmanın ticari uygulamalarında,
+işyeri organizasyonunda veya dış ilişkilerinde yeni bir organizasyonel
+yöntem uygulanmasıdır (OECD ve Eurostat, 2006: 52-55).</p>
+<p>Genellikle ürün ve süreç yenilikleri <i>teknolojik yenilik</i>,
+pazarlama ve organizayonel yenilikler de <i>organizayonel yenilik
+</i>olarak da tanımlanmaktadır.</p>
+<p>Yenilikler, büyüklüğüne/etkisine göre de sınıflanmaktadır. Örneğin
+Freeman ve Perez (1988) yenilikleri dört gruba ayırmaktadır:</p>
+<p><i>Artımsal yenilikler</i> (incremental innovations) üretim sürecinde
+oldukça sık gerçekleştirilen yeniliklerdir. Bir artımsal yeniliğin
+etkisi azdır, ürün veya süreç niteliğinde kısmi bir iyileşme
+gerçekleştirir. Fakat bu yenilikler sık sık gerçekleştiği için toplam
+etkileri önemli olabilmektedir. Bu nedenle bu yenilikler “küçük yenilik”
+olarak değil, “artımsal yenilik” olarak tanımlanmıştır. Artımsal
+yenilikler genelde planlı Ar-Ge faaliyetleri sonucu değil, günlük
+mühendislik ve üretim faaliyetleri sonucu (yaparak öğrenme/learning by
+doing) veya kullanıcıların/müşterilerin geri beslemesi ile (kullanarak
+öğrenme/learning by using) sonucu gerçekleşmektedir.</p>
+<p><i>Radikal yenilikler </i>(radical innovations) genellikle
+firmaların, üniversitelerin ve araştırma merkezlerinin planlı Ar-Ge
+faaliyetleri sonucu gerçekleşen, ürün veya süreçlerdeki köklü
+değişiklikler ile yeni ürün veya süreçlerin uygulamaya konulmasıdır.
+Örneğin naylonun çekme dayanımında iyileşmeye yol açan bir yenilik
+artımsal yenilik olarak tanımlanabilir, fakat naylonun geliştirilmesi ve
+üretimi radikal yeniliktir. Benze şekilde, termik santralların
+verimliliğini artıran artımsal yenilikler olabilir, fakat bu yenilikler
+sonucu nükleer santrale geçiş olmaz. Nükleer enerji bir radikal
+yeniliktir.</p>
+<p>Radikal yenilikler zaman içerisinde eşitsiz dağılmıştır, çünkü
+gerçekleştirilmeleri ekonomik konjonktüre bağlıdır. Ayrıca radikal
+yeniliklerin başarısı bir grup ürün, süreç ve organizasyon yeniliğinin
+eş-anlı gerçekleşmesine bağlıdır. Örneğin naylon üretimi, sadece bir
+ürün yeniliği değildir, naylon üretimi çeşitli süreç ve organizasyon
+yenilikleri olmadan gerçekleşemez. Radikal yenilikler genelde mevcut
+sektörlerde köklü yapısal dönüşümlere yol açarlar.</p>
+<p>“<i>Teknolojik sistem”deki değişiklikler</i>, ekonomideki birden
+fazla sektörü etkileyen veya yeni sektörlerin ortaya çıkmasına yol açan
+değişimlerdir. Teknolojik sistemdeki değişiklik, birden fazla firmanın
+gerçekleştirdiği bir grup radikal ve artımsal yenilik sonucu oluşur.
+Örneğin 19. yüzyılın sonunda yaşanan elektrifikasyon, elektrik enerjisi
+üretimi, iletimi, dönüştürülmesi ve elektrik kullanan makine ve cihazlar
+dahil pek çok ürün, süreç ve organizasyon yeniliği kümesi sayesinde
+gerçekleşmiştir.</p>
+<p>“<i>Tekno-ekonomik paradigma”daki değişim</i> ise tüm toplumun
+teknolojik-ekonomik yapısını dönüştüren bir devrimdir. Tekno-ekonomik
+paradigmadaki değişim sadece bazı ürünlerin veya sektörlerin ortaya
+çıkmasını sağlamaz, tüm sektörlerde dönüşüme yol açar, hatta yönetici ve
+mühendislerin algıladığı “temel sorunları” da
+değiştirir.<a class="sdfootnoteanc" href="#sdfootnote4sym" name="sdfootnote4anc"><sup>4</sup></a></p>
+<p>Tekno-ekonomik paradigmadaki değişimler (teknolojik devrimler) Sanayi
+Devrimi’nden itibaren yaklaşık 50 yıllık dönemlerde gözlenmiştir.
+Teknolojik devrim, yeni bir tekno-ekonomik paradigmanın baskın olmasını
+sağlar ve teknolojik-ekonomik gelişme bu paradigmanın tanımladığı
+sınırlar içinde ve yörünge doğrultusunda gerçekleşir. Devrimden sonraki
+20-30 yıllık dönemde, yeni paradigmanın potansiyelini gerçekleştirmek
+üzere radikal ve artımsal yenilikler temelinde hızlı bir üretkenlik
+artışı ve ekonomik büyüme süreci yaşanır. Paradigmanın teknolojik
+sınırlarına yaklaşıldığında üretkenlik artış hızları düşer, uzun dönemli
+ekonomik kriz dönemine girilir. Bu krizden çıkış ancak yeni bir
+teknolojik devrim ile mümkündür.</p>
+<p>Freeman ve Perez’e göre Sanayi Devrimi’nden sonra 5 teknolojik devrim
+ve büyük dalga (Kondratieff cycle) yaşanmıştır:</p>
+<p><i>Erken mekanizasyon </i>(Sanayi Devrimi) olarak tanımlanan 1. dalga
+1770-1780’lerden 1830-1840’lara kadar olan dönemdir. Bu dönemin temel
+girdisi pamuk ve pik demirdir.</p>
+<p><i>Buhar enerjisi ve demiryolu </i>olarak tanımlanan 2. dalga
+1830-1840’lardan 1880-1890’lara olan dönemi kapsar ve temel girdisi
+kömür ve ulaşımdır.</p>
+<p><i>Elektrik ve ağır sanayii dalgası </i>(3. dalga) 1880-1890’larda
+başlamış ve 1930-1940’larda sona ermiştir. Bu dönemdeki temel girdi
+çeliktir.</p>
+<p><i>Fordist kitlesel üretim dalgası</i> (4. dalga) 1930-1940’larda
+başlamış, 2. Dünya Savaşı sonrası altın çağını yaşamış, teknolojik
+potansiyeline 1970’lerde ulamış ve 1980-1990’larda uzun dönemli krize
+girmiştir. Bu dönemin temel girdisi enerji (özellikle petrol)
+olmuştur.</p>
+<p>1980-1990’larda başlayan ve <i>Bilişim ve İletişim</i> (BİT) olarak
+tanımlanan 5. dalga elektronik, bilgisayarlar, yazılım, robotik,
+iletişim, seramik, esnek üretim sistemleri, veri bankaları gibi
+sektörlerdeki yenilikler sonucu gerçekleşmiştir. Bu dalganın temel
+girdisi “çip”lerdir.</p>
+<p>Artımsal yenilik ve radikal yenilik kavramları yenilik yazınında
+genel kabul görmüştür. Teknolojik yenilikler ve uzun dönemli büyüme
+arasında ilişki olduğu da pek çok araştırmacı tarafından kabul görmekle
+birlikte, uzun dönemli dalgalar (Kondratieff dalgaları), bu dalgaların
+nedenleri ve dönemselleştirilmesine ilişkin bir görüş birliği yoktur.
+Buna karşın teknolojik devrimler ve uzun dönemli büyüme konusundaki
+çalışmalar politika yapıcıları da önemli ölçüde etkilemiştir.</p>
+<p>Yeniliklerin sınıflamasına yönelik önemli bir çalışma da Henderson ve
+Clark (1990) tarafından yapılmıştır. Bu araştırmacılar bir sistemdeki
+(ürün, süreç veya organizayon) değişimin bileşen/temel kavramlar
+(components/core concepts) veya sistem/ilişkiler (system/linkages)
+düzeyinde yapılabileceğini vurguladıktan sonra bu iki düzeydeki değişime
+göre dört tip yenilik olabileceğini saptamışlardır (bkz. Şekil 3).</p>
+<p><strong>Şekil 3.</strong> Yenilik tipleri</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%203.png" alt="yenilik-sekil-3" width="50% " height="auto"  /><br />
+<i>Kaynak:</i> Henderson ve Clark (1990)</p>
+<p>Bir bileşenin değiştiği, niteliğinin iyileştiği ama sistemde veya
+bileşenler arasındaki ilişkide bir değişiklik olmadığı yenilik
+<i>artımsal yenilik </i>olarak tanımlanmıştır. Örneğin bir bulaşık
+makinesinin daha güçlü motor kullanması ve kurutma hızının artması
+artımsal yeniliğe örnek gösterilebilir.</p>
+<p><i>Radikal yenilikler</i> ise hem yeni bileşenlerin geliştirilmesi,
+hem de sistem mimarisinde bir değişiklik sonucu oluşur. Örneğin jet
+motorlu uçak bir radikal yeniliktir; hem uçağın motorunda, hem de
+yapısında bir değişim gerçekleşmiştir.</p>
+<p><i>Modüler yeniliklerde </i>sistemde bir değişiklik yoktur, fakat
+belirli bir işlevi gerçekleştiren bir bileşen değiştirilmiştir. Örneğin
+elektrikli radyolarda enerji kaynağı olarak genellikle pil kullanılır.
+Pil yerine kurulabilen saat mekanizmasını kullanan radyolar (clockwork
+radio) modüler yeniliğe örnek olarak gösterilebilir.</p>
+<p><i>Mimari yenilikte </i>ise bileşenler aynı kalmakla birlikte farklı
+bir düzenleme ile sistemin mimari yapısı değiştirilir. Mimari yapıdaki
+değişiklik bileşenlerde de bazı değişimlere yol açabilir, fakat
+bileşenlerdeki değişim küçük ve biçimseldir. Mimari yeniliğe bir örnek,
+bir zamanlar çok yenilikçi bir ürün olarak gösterilen Sony Walkman’dir.
+Sony Walkman’deki bileşenler uzun bir süredir kasetçalarlarda
+kullanılmasına karşın, Sony Walkman bu bileşenleri farklı bir şekilde
+birleştirerek (hoparlörlerin çıkarılması, kulaklık kullanılması, vb)
+yenilikçi bir ürün yaratmıştır.</p>
+<p>Henderson ve Clark’ın sınıflaması, özellikle firma düzeyinde yenilik
+politikası ve stratejisi geliştirilmesinde kullanılabilecek bir çerçeve
+sunmaktadır.</p>
+<p><br/></p>
+</div>
+</div>
+<div id="yenilik-sistemleri" class="section level2 useMedImage">
+<h2 class="useMedImage">Yenilik sistemleri</h2>
+<p>1980’lerden itibaren yenilik sürecini etkileyen üç önemli dönüşüm
+gözlenmektedir.</p>
+<p>1. 1980’lerde, özellikle elektroniğe dayalı <i>genel amaçlı
+teknolojilerin</i> gelişimi ve <i>teknolojik yakınsama </i>süreçlerinin
+bir sonucu olarak, bir yanda teknolojilerin kullanım alanları
+yaygınlaşırken, diğer yanda ürünlerin teknolojik karmaşıklık düzeyi
+artmış, bir üründe çok sayıda ve farklı teknoloji kullanılmaya
+başlanmıştır (Şekil 4). 1980’lere kadar olan dönemde bir ürünü üretmek
+için az sayıda teknolojiye sahip olmak yeterken, günümüzde üretilen
+ürünlerin pek çoğunda çok çeşitli teknolojilerin kullanılması zorunlu
+hale gelmiştir. Örneğin çamaşır makinesi üretimi için metal işleme
+teknolojilerinde yetkin olmak yeterliyken, günümüzde elektronik ve
+yazılım yetenekleri de zorunlu hale gelmiştir.</p>
+<p><strong>Şekil 4.</strong> Teknoloji-ürün ilişkileri</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%204.png" alt="yenilik-sekil-4" /></p>
+<p>Ürünlerin teknolojik karmaşıklık düzeyi artarken, teknolojilerin
+kullanım alanları da hıza çeşitlenmiştir. Örneğin elektronik
+teknolojileri artık hemen her üründe kullanılır olmuştur.</p>
+<p>2. Teknolojik değişim sonucu yenilik faaliyetlerinde sabit ve batık
+maliyetler (fixed and sunk costs) giderek artmaktadır. Artık en “basit”
+teknolojiler ve ürünler bile uzun süren ve büyük yatırımlar gerektiren
+Ar-Ge faaliyetleri sonucu geliştirilmektedir.</p>
+<p>3. Yenilik faaliyetlerinde belirsizlik ve riskler giderek
+artmaktadır. Bu belirsizlik ve riskler teknolojik olabildiği gibi,
+tüketici tercihlerinden veya rakip firmaların daha iyi
+ürünler/teknolojiler geliştirme olasılığından da kaynaklanmaktadır.</p>
+<p>Bu üç dönüşüm nedeniyle dünyanın en büyük firmasının bile, bir ürün
+veya teknoloji ile ilişkili tüm ürünleri/teknolojileri kendi başına
+üretebilmesi/geliştirebilmesi mümkün değildir. Bir başka deyişle,
+yenilik süreci artan oranda bir firmanın sınırları dışına taşmakta,
+yenilikler ancak firmalar arasındaki etkileşim ve işbirlikleri ile
+gerçekleştirilebilmektedir. Bu durum yenilik sürecinin anlaşılması için
+sistem yaklaşımını zorunlu kılmakta, birden fazla firma ve/veya
+teknolojilerin bir bütün olarak ele alınması gerekmektedir.</p>
+<p>Yenilik sürecine ilişkin olarak, üç farklı fakat birbirini tamamlayan
+sistem yaklaşımından bahsetmek mümkündür.</p>
+<p>Carlsson ve Stankiewicz (1991) tarafından geliştirilen yaklaşımına
+göre, teknoloji gelişme ve ekonomik kalkınma süreçlerinin anlaşılması
+için gerekli analiz birimi t<i>eknolojik sistemler</i>dir. Bir
+teknolojik sistem, belirli bir ekonomik/sınai alanda, belirli bir
+kurumsal altyapı üzerinde faaliyet gösteren, teknolojinin
+geliştirilmesi, yayılması ve kullanılması süreçlerine katılan birimlerin
+etkileşiminden oluşan bir dinamik ağıdır (network). Teknolojik sistemler
+firmalar arasındaki mal ve hizmet akımları ile değil, bilgi/yetenek
+(competence) akımları bazında tanımlanır. Ağ belirli bir kritik
+büyüklüğe ve bir girişimciye sahipse, yeni fırsatlar yaratan bir firma
+ve teknoloji kümesine dönüşür. Teknolojik sistemler yaklaşımı, ekonomik
+büyümenin motorunun, birbiriyle sinerjik etkileşim içindeki firma ve
+teknoloji kümelerinin olduğunu vurgular. Fakat firma ve teknoloji
+kümelenmesi, ilgili teknolojinin potansiyelinin değerlendirilmesi için
+yeterli değildir. Genç Schumpeter’i izleyen teknolojik sistemler
+yaklaşımı, bu kümelenmenin etkili olabilmesi için girişimcinin rolünün
+önemli olduğunu vurgular.</p>
+<p>Yenilik sürecine ilişkin en önemli kavramlardan biri şüphesiz
+<i>ulusal yenilik sitemi</i> kavramıdır. Bu kavram evrimci iktisadın
+önde gelen araştırmacılarından Freeman (1987 ve 1988), Lundvall (1988,
+1992) ve Nelson (1993) tarafından önerilmiş, kısa sürede OECD (1997)
+gibi uluslararası kuruluşlar tarafından da teknoloji ve yenilik
+politikalarının tasarımında yaygın olarak kullanılmaya başlanmıştır.</p>
+<p>Yenilik süreci sadece firmalar-arası etkileşim sonucu gerçekleşmez;
+nitelikli işgücünün eğitiminden yasal ve düzenleyici altyapının
+oluşturulmasına, standartlardan akreditasyona, Ar-Ge desteklerinden
+fikri mülkiyet haklarına kadar çok çeşitli alanlarda yoğun bir özel
+kesim-kamu etkileşimi yeniliklerin gerçekleşmesi için zorunludur. Ulusal
+yenilik sistemi, bir ülkede yenilik ve teknolojik yayılmanın hızını ve
+yönünü etkileyen piyasa ve piyasa-dışı tüm kurum ve kuruluşlardan
+oluşur.</p>
+<p>Ulusal yenilik sistemini oluşturan kurum ve kuruluşlar altı grupta
+toplanabilir (Taymaz, 2001, Arıkan, vd., 2003):</p>
+<ul>
+<li>
+<i>Teknolojik yenilik faaliyetinde bulunan firmalar</i> ve bu firmaların
+oluşturduğu ağlar
+</li>
+<li>
+Kâr amacı olmayan kamu ve yarı-özel bağımsız <i>araştırma
+kuruluşları</i>
+</li>
+<li>
+Bilimsel bilginin üretimi, buluşların üretilmesi ve araştırmacıların
+eğitimi gibi işlevler üstlenen <i>bilim ve eğitim sistemi</i>
+</li>
+<li>
+Yeni teknolojilerin yaygınlaştırılması, eğitim ve laboratuvar destek
+hizmetleri, standartların belirlenmesi vb faaliyetler gerçekleştiren
+<i>destek ve köprü kuruluşlar</i>
+</li>
+<li>
+<i>Finansman kuruluşları </i>(Ar-Ge ve yenilik faaliyetlerine yönelik
+destek kuruluşları dahil)
+</li>
+<li>
+<i>Politika geliştiren, uygulayan ve değerlendiren kuruluşlar</i>
+</li>
+</ul>
+<p>Bir ülkenin yenilik performansı, ulusal yenilik sisteminin tüm
+unsurlarının etkin bir şekilde faaliyet göstermesine ve bu unsurlar
+arasında gerekli etkileşimin sağlanmasına bağlıdır. Bir unsurdaki veya
+etkileşimdeki aksama tüm sistemin aksamasına yok açar (<i>sistemik
+aksama</i>). Bu nedenle ulusal yenilik sistemi yaklaşımına göre yenilik
+politikasının hedefi, tüm kurum ve kuruluşlarıyla iyi işleyen bir
+yenilik sisteminin kurulmasıdır.</p>
+<p>Marshall’dan itibaren iktisat yazınında firmaların bölgesel
+yoğunlaşmasının nedenleri ve etkileri üzerine çok sayıda çalışma
+yapılmıştır. Yenilik sürecinde firmalar ve firmalar-müşteriler
+arasındaki etkileşimlerin önemini vurgulayan çalışmalar, bilişim ve
+iletişim teknolojilerindeki tüm gelişmelere karşın güven ilişkilerin ve
+zımni bilginin (tacit knowledge) öneminden dolayı coğrafi, kültürel ve
+teknolojik yakınlığın yenilik için gerekli olduğunu, bu nedenle
+yenilikçi firmaların belirli bölgelerde yoğunlaşma eğiliminde olduğunu
+göstermişlerdir (tipik örnek, ABD’de Silikon Vadisi). Bu çalışmalar,
+ulusal düzeydeki düzenlemelerin önemini kabul etmekle birlikte, bölgesel
+düzeydeki yapılanma ve sistemlerin yenilik süreci için önemini
+vurgulamak üzere <i>bölgesel yenilik sistemi</i> kavramını
+geliştirmişlerdir (örneğin, bkz. Cook, Uranga ve Etxebarria, 1998; Cook
+ve Memedovic, 2003). Bu kavram OECD, UNIDO ve AB gibi kuruluşlar
+tarafından da benimsenmiş ve yaygın olarak kullanılmıştır.</p>
+<p><br/></p>
+</div>
+<div id="yenilik-metrikleri" class="section level2 useMedImage">
+<h2 class="useMedImage">Yenilik metrikleri</h2>
+<p>Yenilik araştırmalarının önemli bir kısmı, yenilik metriklerinin
+tanımlanması ve ölçülmesine ayrılmıştır. Yenilik tanımı belirli bir
+muğlaklık içerdiği için (“yeni ya da önemli derecede iyileştirilmiş”)
+yeniliklerin ölçülmesi önemli zorluklar içermektedir.</p>
+<p>Yenilik faaliyetlerin ölçülmesinde kullanılan ilk metrik <i>Ar-Ge
+yatırımlarıdır</i>. Yenilik faaliyetlerinin önemli bir <i>girdisi</i>
+Ar-Ge faaliyetleridir. Bu faaliyetler sonucu yeniliklerin geliştirildiği
+varsayımıyla Ar-Ge faaliyetlerine yapılan harcamalar ve bilim
+adamı/araştırmacı sayıları yenilik faaliyetlerinin ölçülmesinde
+kullanılmaktadır.</p>
+<p>Ar-Ge istatistiklerinin yenilik metriği olarak kullanılmasının en
+önemli avantajı, bu verilerin pek çok ülke ve uzun bir dönem için mevcut
+olması ve Ar-Ge istatistiklerinin ülkeler-arasında benzer tanım ve
+yöntemler ile derlenmesidir. OECD tarafından ilk kez 1963’de yayınlanan
+<i>Frascati Kılavuzu</i>’nda (OECD, 2002) Ar-Ge faaliyetleri ve ölçüm
+yöntemleri kapsamlı olarak tanımlanmış ve Ar-Ge istatistiklerinin
+derlenme yöntemleri uyumlaştırılmıştır. Devlet yardımlarına ilişkin
+uluslararası anlaşmalarda Ar-Ge faaliyetlerine istisnalar getirilmesi de
+Ar-Ge tanımlarının uyumlaştırılmasına katkıda bulunmuştur. Ar-Ge
+istatistiklerinin yenilik faaliyetlerinin ölçülmesi açısından en önemli
+sorunları, girdi değişkenleri olması ve (yukarıda belirtildiği gibi)
+yeniliklerin Ar-Ge dışı faaliyetler sonucu da geliştirilebilmesidir.</p>
+<p>Yeniliklerin ölçülmesine ilişkin ikinci önemli kaynak, <i>patent
+istatistikleri</i>dir. Patentler, <i>teknolojik </i>yeniliklerin
+korunması amacıyla alındığı için bir <i>çıktı</i> göstergesi olarak
+değerlendirilmektedir. Ayrıca dünyadaki ülkelerin çoğunda benzer patent
+uygulamaları olduğu için, ülkeler arası ve uzun dönemli
+karşılaştırılabilir istatistik elde etmek mümkündür. Patentlerin
+yeniliklerin ölçümünde kullanılmasındaki en büyük sorunları, tüm
+yenilikler için patent alınmaması veya alınamaması (özellikle süreç
+yeniliklerinde gizliliğin tercih edilmesi ve bazı yeniliklerin patent
+konusu olmaması), fikri mülkiyet haklarının uygulamasındaki
+farklılıklardan dolayı ülkeler-arası ve dönemler-arası patentleme
+eğiliminin değişmesi, patentlerin nitelikleri arasında önemli
+farklılıklar olması ve önemli sayıda patentin hiçbir zaman
+kullanılmamasıdır (detaylı bilgi için bkz. Archibugi, 1992).</p>
+<p><i>Yenilik anketleri </i>son yıllarda ülke ve sektör düzeyinde
+yeniliklerin ölçülmesinde ve analizinde kullanılan önemli bir kaynaktır.
+Ar-Ge ve patent istatistiklerindeki sorunlardan dolayı yenilik
+faaliyetlerinin doğrudan ölçülmesine yönelik çalışmalar sonucu
+1980’lerde yenilik anketleri geliştirilmeye ve uygulanmaya başlandı
+(örneğin ABD’de Ticaret Bakanlığı, Kanada’da İstatistik Ofisi,
+İngiltere’de Sussex Üniversitesi’ne bağlı SPRU araştırma merkezi).
+Yenilik anketlerinin uyumlaştırılması kapsamında OECD bünyesinde
+hazırlanan <i>Oslo Kılavuzu</i> 1992’de yayımlandı ve AB ülkelerinde ilk
+ortak yenilik anketi 1993’de uygulandı (OECD ve Eurostat, 2006). Yenilik
+anketlerinin en önemli avantajı, yenilik faaliyetinde bulunan firmaların
+özelliklerine ilişkin özel sorular içermesidir. Bu şekilde yenilik
+faaliyetlerini belirleyen etkenler ile yeniliklerin etkileri firma
+düzeyinde analiz edilebilmektedir.</p>
+<p>Yenilik anketleri ile yeniliklerin ölçümündeki en önemli sorun, bu
+anketlerde sadece “son üç yıl içerisinde bir yenilik
+yapılıp/yapılmadığının” sorulması ve derlenen bilginin sadece ankete
+cevap veren kişinin düşüncesini yansıtmasıdır. Örneğin TÜİK Tarafından
+2014’de yapılan yenilik anketinde, ürün, süreç, organizasyon ve
+pazarlama yenilikleri için aşağıdaki sorular sorulmuştur:</p>
+<p><strong>Ürün Yeniliği</strong></p>
+<p>2012-2014 yıllarını kapsayan üç yıllık dönemde girişiminiz piyasaya
+;</p>
+<ul>
+<li>
+Yeni ya da önemli ölçüde geliştirilmiş / iyileştirilmiş mal sundu mu?
+(Küçük çaplı değişiklikler/iyileştirmeler ya da estetik değişiklikler
+ile diğer girişimlerden satın alınan mal veya hizmetlerin yeniden
+satılmasını içermez.)
+</li>
+<li>
+Yeni ya da önemli ölçüde geliştirilmiş / iyileştirilmiş hizmet sundu mu?
+</li>
+</ul>
+<p><strong>Süreç Yeniliği</strong></p>
+<p>Girişiminiz 2012-2014 yıllarını kapsayan üç yıllık dönemde aşağıdaki
+süreç yeniliklerini uygulamış mıdır?</p>
+<ul>
+<li>
+Mal veya hizmet üretiminde yeni ya da önemli ölçüde geliştirilmiş imalat
+yöntemleri
+</li>
+<li>
+Girdileriniz ile ürettiğiniz mal veya hizmetler için yeni veya önemli
+ölçüde geliştirilmiş lojistik, teslimat ve dağıtım yöntemleri
+</li>
+<li>
+Süreçleriniz için yeni veya önemli ölçüde geliştirilmiş destekleme
+faaliyetleri (Bakım sistemleri, satın alma, bilgi işlem, muhasebe vb.)
+</li>
+</ul>
+<p><strong>Organizasyonel yenilik</strong></p>
+<p>Girişiminiz 2012-2014 yıllarını kapsayan üç yıllık dönemde aşağıdaki
+organizasyon yeniliklerinden hangilerini uyguladı?</p>
+<ul>
+<li>
+Organizasyon süreci için yeni iş yöntemleri ortaya koymak (Tedarik
+zinciri yönetimi, bağımsız çalışan iş danışmanlığı, bilgi yönetimi,
+yalın üretim, kalite yönetimi vb.)
+</li>
+<li>
+İş sorumlulukları ve karar alma organizasyonunda yeni yöntemlerin
+kullanılması (Çalışanın sorumlulukları, takım çalışması, sorumluluğun
+dağıtılması, yeni birim
+</li>
+<li>
+oluşturulması, eğitim/staj vb. konusunda yeni bir sistemin ilk defa
+kullanılması)
+</li>
+<li>
+Diğer girişimler veya kamu kuruluşları ile ilişkilerde işbirliği,
+ortaklık, taşeronluk vb. yollarla yeni yöntemler kullanılması (İlk kez
+üniversiteler ve diğer araştırma kurum/kuruluşlarıyla işbirliği yapmak,
+vb.)
+</li>
+</ul>
+<p><strong>Pazarlama yeniliği</strong></p>
+<p>Girişiminiz 2012-2014 yıllarını kapsayan üç yıllık dönemde aşağıdaki
+pazarlama yeniliklerinden hangilerini uyguladı?</p>
+<ul>
+<li>
+Ürünün tasarım ve ambalajının estetiğinde önemli değişiklik yapılması
+(Ürünün fonksiyonunun veya kullanıcı özelliklerinin değiştirilmesi dahil
+değildir. Bu, ürün yeniliği
+</li>
+<li>
+kapsamındadır.)
+</li>
+<li>
+Ürün tanıtımı için yeni ortam veya reklam tekniklerinin kullanılması
+(Yeni bir medya reklamı, yeni bir marka imajı, müşteri mağaza kartı gibi
+uygulamaların ilk kez kullanılması)
+</li>
+<li>
+Yeni bir ürün konumlandırma veya satış kanalı yönteminin uygulanması
+(Başka girişimlere satış yetkisi (franchising) veya dağıtım izni
+verilmesi, doğrudan satış, ürün sunumuna ilişkin yeni kavramların
+kullanımı)
+</li>
+<li>
+Ürün ve hizmetlerin fiyatlandırmasında yeni metodların uygulanması
+(Talebe göre fiyatlandırma ya da indirim sisteminin ilk kez
+kullanılması)
+</li>
+</ul>
+<p>Firmalar bu sorulara sadece “Evet/Hayır” cevabı verdiği için
+yeniliklerin büyüklüğü/önemi veya sayısına ilişkin doğrudan bir bilgi
+elde edilmemektedir. Ürün ve süreç yeniliğine ilişkin olarak, yeniliğin
+piyasa için de yeni olup olmadığı ve ürün yeniliklerine ilişkin olarak
+son yılki ciro içinde girişimin “kendi pazarı için yeni olan mal veya
+hizmet yenilikleri sonucu üretilen ürünlerin payı” ve “sadece bu girişim
+için yeni olan mal veya hizmet yenilikleri sonucu üretilen ürünlerin
+payı” gibi sorularla yeniliklerin önemi ve kapsamına ilişkin ek bilgi
+derlenmektedir.</p>
+<p>Yenilik anketiyle derlenen yenilik verilerinin firma düzeyinde ikili
+(binary) değişken düzeyinde kalmasına karşın (“son üç yıl içinde yenilik
+yaptı/yapmadı”), bu anketler yenilik süreçlerinin analizi ve anlaşılması
+açısından önemli bir katkıda bulunmuştur (Hong, Oxley ve McCann,
+2012).</p>
+<p><br/></p>
+</div>
+<div id="yeniliklerin-etkileri" class="section level2 useMedImage">
+<h2 class="useMedImage">Yeniliklerin etkileri</h2>
+<p>Sanayi Devrimi’nden günümüze yeniliklerin toplumsal ve ekonomik
+etkileri önemli bir tartışma konusu olmuştur.</p>
+<p><i>Yenilik-üretkenlik-büyüme ilişkisi </i>iktisat yazınında kapsamlı
+olarak incelenmiştir (bu konuda yakın zamanda yayınlamış bir derleme
+için bkz. Mohnen ve Hall, 2013). Ekonometrik çalışmalarda elde edilen
+sonuçlara göre tüm yenilik biçimleri (ürün, süreç, organizasyonel ve
+pazarlama yenilikleri) firmaların üretkenliği üzerinde olumlu etkiye
+sahiptir. Farklı yenilik tipleri genelde birlikte gözlendiği ve
+yenilikler arasında tamamlayıcı ilişki olduğu için bir yenilik tipinin
+etkisini ayırt etmek zordur, fakat bir bütün olarak yeniliklerin
+üretkenlik üzerinde pozitif etkisi vardır.</p>
+<p>Solow’dan itibaren pek çok çalışmada gösterildiği gibi üretkenlik
+artışları uzun dönemli büyümenin en önemli unsurudur. Bu nedenle
+yenilik-üretkenlik-büyüme ilişkisi akademisyenler ve politika yapıcıları
+tarafından bir genel doğru olarak kabul edilmekte, pek çok ülkede
+yenilik politikaları ekonomik büyüme açısından temel alınmaktadır.</p>
+<p><i>Yeniliklerin istihdam ve işgücüne etkileri </i>her zaman tartışma
+konusu olmuştur. 18. yüzyıl sonlarında işgücü talebini azalttığı için
+makinalaşmaya karşı başlayan Luddite hareketinde simgeleştiği gibi bazı
+durumlarda yeniliklere karşı ciddi toplumsal tepkiler de olmuştur.</p>
+<p>Yeniliklerin istihdam etkisine ilişkin çalışmalar, yeniliklerin
+tiplerine göre farklı etkilerde olabileceğini göstermektedir (Vivarelli,
+1995 ve 2014). Örneğin süreç yeniliklerinin ilk etkisi emek
+üretkenliğini (çıktı/işgücü oranını) artırarak (belirli bir üretim
+düzeyinde) işgücü talebini, dolayısıyla istihdamı azaltmaktır. Sanayi
+Devrimi’nden günümüze, ülke ve sektör düzeyinde emek üretkenliğinin
+sürekli artma eğiliminde olduğu gözlenmektedir (emek üretkenliğinde
+ancak kriz dönemlerinde, kısa dönemli düşmeler
+yaşanmaktadır).<a class="sdfootnoteanc" href="#sdfootnote5sym" name="sdfootnote5anc"><sup>5</sup></a>
+Süreç yenilikleri emekten tasarruf eden nitelikte olduğu için firma
+düzeyinde ilk etki işgücü talebini azaltmak olmakla birlikte, bazı
+“telafi edici mekanizmalar” (compensating mechanism) sonucu orta ve uzun
+dönemde bu etki zayıflamakta, bazı durumlarda tersine dönebilmektedir.
+Örneğin süreç yeniliği sonucu maliyetlerin ve ürün fiyatının düşmesi,
+üretim miktarının ve dolayısıyla işgücü talebinin artmasını
+sağlamaktadır. Bu etkinin, işgücü talebinde azaltmayı telafi edip
+etmemesi, ürün talebinin fiyat esnekliği ve üretimde işgücü kullanım
+düzeyine bağlıdır. Söz konusu ürün yurtdışı piyasalarda satılabiliyorsa,
+bu etki daha fazla olacak, fakat bu süreç sonucu ülke içinde işgücü
+talebi artarken, yabancı firmaların rekabet gücünü kaybetmesi sonucu
+diğer ülkelerde işgücü talebi düşecektir.</p>
+<p>Benzer şekilde, süreç teknolojisi yeni üretim araçlarına gereksinim
+duyuyorsa, bu üretim araçlarını üreten sektörlerde istihdam artışı
+gözlenebilecektir. Telafi edici mekanizmaların süreç yeniliklerinin
+işgücü talebi üzerindeki olumsuz etkilerini azaltmakla birlikte tam
+olarak telafi edemeyeceği, bu nedenle uzun dönemde süreç yeniliklerinin
+işgücü talebini azaltıcı bir etkide bulunacağı beklenmektedir.</p>
+<p>İşgücü talebindeki düşüşün uzun dönemde istihdam etkisi
+(haftalık/yıllık) çalışma süresindeki değişime bağlıdır. Uzun dönemde
+işsizlik oranlarında sürekli bir artış (veya, bu durumun tersi, istihdam
+oranlarında sürekli bir düşüş) gözlenmemektedir. Bunun nedeni, uzun
+dönemde (haftalık/yıllık) çalışma sürelerinin azalmasıdır. Örneğin,
+Grübler ve Ausubel’in (1995) çalışmasına göre İngiltere’de erkeklerin
+(kadınların) ömür boyunca çalıştıkları süre 1856’da ortalama olarak
+149,700 (62,800) saatten 1981’de 88,000 (39,800) saate
+düşmüştür.<a class="sdfootnoteanc" href="#sdfootnote6sym" name="sdfootnote6anc"><sup>6</sup></a>
+Yaşam beklentisinin artmasına karşın çalışma süresindeki bu düşüş büyük
+ölçüde haftalık çalışma süresinin azalmasından ve kısmen de yıllık izin
+ve tatil sürelerinin artmasından kaynaklamıştır. Bu verilerin gösterdiği
+gibi, süreç yeniliklerinin istihdam üzerindeki etkisi, işgücü talebinin
+azalmasından dolayı olumsuz gibi görünse de, süreç yenilikleri, uygun
+kurumsal yapılanmalar olması durumunda, aslında çalışma sürelerini
+azaltma potansiyeline sahiptir.</p>
+<p>Ürün yeniliklerinin istihdam etkisin genelde olumlu kabul
+edilmektedir. Yeni ürünler ile yeni piyasalar yaratılmakta, bu
+piyasaların gereksinim duyduğu işgücüne talep artmaktadır. “Önemli
+ölçüde geliştirilmiş/iyileştirilmiş” ürün yeniliklerinde ise ürünün
+niteliği/kalitesi artığı için bu ürünlere olan talep de artmakta, artan
+talebi karşılamak için istihdamda da bir artış gözlenmektedir. Ürün
+yeniliğini gerçekleştiren firma daha çok yerel firmalarla rekabet
+halindeyse, ürün yeniliğinin talebi artırıcı etkisi, yenilik yapmayan
+firmaların talebini düşüreceği için yenilikçi olmayan firmalarda
+istihdam kaybı yaşanacaktır. Bir başka deyişle, yenilikçi firmalar,
+yenilikçi olmayan firmalar pahasına büyüyecektir. Bu olumsuz etkiye
+karşın net etkinin pozitif olması beklenmektedir. Net etki, rakip
+firmaların yurt dışı firmalar olması durumunda (örneğin yenilikçi
+firmanın daha çok ihracat yapması durumunda) daha yüksek olacaktır.</p>
+<p>Yeniliklerin işgücünün niteliğine etkisi oldukça tartışmalı bir
+konudur. Braverman’ın (1974) çalışması bu alanda yapılan araştırmaları
+önemli ölçüde etkilemiştir. ABD’deki emek süreçlerini kapsamlı bir
+şekilde izleyen Braverman, artan mekanizasyon ve otomasyonun işgücünde
+bir kutuplaşmaya yol açtığını, daha nitelikli işler ve üretim sürecinin
+kontrolü giderek küçülen bir mühendis/yönetici grubunun elinde
+toplanırken, işgücünün büyük bir kesiminin niteliksiz işgücüne
+dönüştüğünü etkili bir şekilde göstermiştir. Braverman’dan sonra yapılan
+(özellikle sosyolojik) çalışmalarda, süreç ve hatta ürün yenilikleri
+sonucu işgücünün bilgi ve becerisinin artan oranda makinalara (ve
+günümüzde yazılıma) aktarıldığı, bu nedenle işgücünün önemli bir
+kesiminin nitelik gerektirmeyen görevler üstlendiği saptanmıştır.</p>
+<p>Belirli ürün ve sektörler bazında yapılan çalışmalarda işgücünün
+kutuplaşması ve işgücü niteliğinin makinalara aktarımının gözlenmesine
+karşın, uzun dönemde bakıldığında işgücünün niteliğinde bir azalma
+değil, aksine (eğitim düzeyi gibi genel değişkenler ile ölçüldüğünde)
+işgücünüm ortalama niteliğinde bir artış gözlenmektedir. Bu çelişkili
+gibi görünen durum ürün yaşam çevrimi (product life cycle) yaklaşımı ile
+açıklanabilir.</p>
+<p>Utterback ve Abernathy’nin (1978) geliştirdiği ürün yaşam çevrimi
+yaklaşımına göre bir ürünün yaşam çevrimi dört aşamadan oluşur (Şekil
+5).</p>
+<p><strong>Şekil 5.</strong> Yenilikler ve ürün yaşam çevrimi</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%205.png" alt="yenilik-sekil-5"  /><br />
+<i>Kaynak:</i> Utterback’dan (1996) uyarlanmıştır.</p>
+<p><i>İlk aşama</i>, ürünün geliştirilmeye başlandığı fakat ürün
+niteliklerinin ve standartlarının henüz netleşmediği <i>oluşum
+</i>aşamasıdır. Bu aşama piyasada talep henüz oluşmaktadır. Piyasaya
+giren çok sayıda firma kendi tasarımlarının baskın olmasını için çaba
+gösterir. İlk aşamada çok sayıda (radikal) ürün yeniliği
+gerçekleştirilir, bu ürün yeniliklerinin önemli bir kısmı uygulanma ve
+yayılma fırsatı bulamaz.</p>
+<p><i>İkinci aşama</i>, “baskın tasarımın” (dominant design) oluştuğu,
+bu baskın tasarımı geliştirebilen ve üretebilen firmaların piyasa
+paylarını artırdığı, diğer firmaların birleşme veya iflas yoluyla
+piyasadan çekildiği <i>büyüme </i>aşamasıdır. Bu aşamada ürün
+yenilikleri önemini kaybederken, süreç yenilikleri ve ölçek ekonomileri
+ile üretim maliyetleri düşürülür, düşen maliyetler piyasanın hızla
+büyümesini sağlar, üretim miktarı ve istihdam artar.</p>
+<p><i>Üçüncü aşama</i>, piyasanın <i>olgunluğa ulaştığı</i> aşamadır,
+artırımsal süreç yenilikleri ile maliyetler düşmeye devam eder, fakat
+piyasa doygunluğa ulaştığı için üretim artışları yavaşlar, istihdamda ve
+firma sayısında düşüş gözlenir.</p>
+<p><i>Dördüncü aşama</i>, <i>gerileme </i>aşamasıdır. Bu aşamada ürün ve
+süreçlerin teknolojik potansiyeli tüketilmiş, tüketici talebi tamamen
+doymuştur. Bu ürünü ikame edebilecek başka yenilikler olması durumunda,
+piyasanın tamamen yok olması da söz konusu olabilir.</p>
+<p>Ürün yaşam çevrimi kapsamında bakıldığında, çevrimin ilk iki
+aşamasında (oluşum ve büyüme) ürün ve süreç yeniliklerini
+gerçekleştirebilecek ve yeni teknolojileri kullanabilecek, aynı anda bir
+kaç görevi yerine getirebilecek (multi-tasking) nitelikli işgücü talebi
+fazla olacak, fakat ürün ve süreç nitelikleri olgunluğa ulaştıktan sonra
+işgücünün bilgi ve becerisi makina ve yazılıma transfer edildiği için
+nitelikli işgücü talebi düşecektir.</p>
+<p>Belirli bir ürünün gelişim sürecine bakıldığında, zamanla nitelikli
+işgücü talebinin azalacağı ve niteliksiz işgücü talebinin artacağı
+söylenebilir, fakat yeni ürünler nitelikli işgücü talebini artıracağı ve
+farklı ürün yaşam çevrimleri iç içe geçeceği için uzun dönemde nitelikli
+işgücü talebi, bu iki etkenden hangisinin baskın olacağına bağlı olarak
+değişecektir. Bir başka deyişle, yeniliklerin işgücü niteliğine
+etkisinin olumlu veya olumsuz olacağını öngörmek mümkün değildir.</p>
+<p>Yeniliklerin ekonomik ve toplumsal etkilerini en iyi özetleyebilecek
+kavram, Schumpeter’in <i>yaratıcı yıkım</i> (creative destruction)
+kavramıdır. Bu kavram, yenilik sürecinde yeni ürün ve süreçlerin
+gelişeceğini (sürecin <i>yaratıcı</i> kısmı), fakat yeni olanların
+kaçınılmaz olarak eskinin yerine geçeceğini (sürecin <i>yıkım</i> kısmı)
+vurgular. Yenilikler sonucu eski ürünler piyasadan çekilecek, eski
+ürünleri üreten firmalar iflas edecek, eski ürünlere özgü becerilere
+sahip işçiler işsiz kalacak, bazı durumlarda tüm bir sektör ortadan
+kalkacak, hatta bu sürece uyum gösteremeyen ülkelerin büyüme tempoları
+giderek yavaşlayacaktır. Yaratıcı yıkım (yani yenilik) sürecinin yıkıcı
+etkilerinin insani açıdan olumsuz sonuçlara yol açmaması için, bu
+süreçten etkilen insanların aktif işgücü piyasası politikaları gibi
+uygulamalar sonucu yeniliklere (yeni teknolojilere) adaptasyonunun
+sağlanması gereklidir. Bu doğrultuda kurumsal tedbirler alınmadığı
+durumda hem yenilik süreci toplumsal sorunlara yol açacak, hem de oluşan
+tepkilerden dolayı yenilik süreci yavaşlayacaktır.</p>
+<p>Yeniliklerin etkileri üzerine yapılan çalışmalarda büyük ölçüde
+yeniliklerin hızı üzerinde durulmuştur (Yenilik süreci hızlı/yavaş
+olursa ne olur? ). Fakat yeniliklerin hızı kadar yönü de önemlidir.
+Örneğin enerji alanında fosil yakıt teknolojilerinin gelişmesi yerine
+yenilenebilir enerji kaynaklarına dayalı teknolojileri geliştirilmesi,
+enerji üretimi açısından aynı sonuca yol açabilir, fakat ekonomik ve
+toplumsal etkileri açısından teknolojinin hangi yönde geliştiği, en az
+hızı kadar önemlidir.</p>
+<p>Teknolojik gelişme ve yenilikler üzerine yapılan çalışmalarda çoğu
+kez mevcut durumda kullanılan (ve çoğu kez baskın konumda olan)
+teknolojiler incelenmekte, var olan teknolojilerin seçenekler arasında
+<i>en iyisi </i>olduğu varsayılmaktadır (“survival of the fittest”).
+Fakat evrimci yaklaşım, her zaman en iyinin hayatta kalmayabileceğini,
+seçenekler arasında daha “kötü” olan bir teknolojinin şans gibi pek çok
+etkiden dolayı baskın olabileceğini ve diğer seçenekleri ortadan
+kaldırabileceğini göstermiştir.</p>
+<p>Pinch ve Bijker’ın (1987) çalışmasından sonra özellikle Teknolojinin
+Toplumsal Kurulumu (Social Construction of Technology) yaklaşımı
+tarafından, teknolojik gelişme sürecinde toplumsal süreçlerin ve güç
+ilişkilerinin etkileri kapsamlı olarak incelenmiştir. Bu araştırmacılar,
+teknoloji ve yeniliklerin ancak belirli bir toplumsal bağlam içinde
+anlaşılabileceğini göstermiş, yeniliklerinin yönünün toplumsal ilişkiler
+tarafından nasıl belirlendiği konusunda pek çok örnek ortaya
+koymuşlardır. Bu çalışmalar sonucu yeniliklerin sadece bilim
+<i>adamları</i> ve mühendislerin “teknik” tercihlerine bırakılamayacağı,
+toplumsal aktörlerin de bu süreçlerde aktif olarak yer alması gerektiği
+vurgulanmıştır.</p>
+<p><br/></p>
+</div>
+<div id="yenilik-politikaları" class="section level2 useMedImage">
+<h2 class="useMedImage">Yenilik politikaları</h2>
+<div id="kuramlar" class="section level3">
+<h3>Kuramlar</h3>
+<p>Yenilik politikalarının gerekçelendirilmesi ve tasarlanmasında iki
+kuram
+etkilidir.<a class="sdfootnoteanc" href="#sdfootnote7sym" name="sdfootnote7anc"><sup>7</sup></a></p>
+<p><i>Neo-klasik kuram</i>, tüm ekonomik birimlerin (firmalar ve
+hanehalkları) rasyonel ve tam bilgiye sahip olduğunu, tek amaçlarının da
+fayda maksimizasyonu olduğunu varsaymaktadır. Teknolojinin yapısına
+ilişkin belirli varsayımlar altında, bireylerin ve toplumun refahı, tam
+rekabetçi piyasalar altında maksimize edilmektedir. Piyasalar tam
+rekabetçi konumdan uzaklaştığı ölçüde toplumsal refah azalmaktadır.</p>
+<p>Bu varsayımlar altında yenilik politikası dahil herhangi bir kamu
+politikasına gereksinim yoktur. Aksine, tüm piyasaların rekabetçi olduğu
+durumda, herhangi bir kamu politikası toplumsal refahın azalmasına yol
+açacaktır, çünkü teknolojik yenilik faaliyetler için gerekli olan
+kaynaklar tam rekabetçi piyasalar tarafından en etkin bir şekilde tahsis
+edilecektir.</p>
+<p>Özellikle Nelson (1959) ve Arrow’un (1962) çalışmalarından sonra, pek
+çok neo-klasik iktisatçı, yeniliklerin ve teknolojik bilginin
+üretilmesinde <i>piyasaların aksayabileceğini</i> (market failure), yani
+piyasaların bu faaliyetlere toplumsal olarak etkin düzeyde kaynak tahsis
+edemeyeceğini, bu nedenle kamunun yenilik politikaları yoluyla kaynak
+tahsis süreçlerini etkilemesi gerektiğini vurgulamıştır.</p>
+<p>Neo-klasik yaklaşıma göre yenilik faaliyetlerinde piyasanın
+aksamasının dört önemli nedeni vardır:</p>
+<p>1. Yeniliklerin fiziksel mallardan önemli bir farklılığı, <i>kamusal
+mal niteliğinin</i> önemli olması, yani dışlanabilirlik (excludability)
+ve rekabetçilik (rivalry) özelliğinin (güçlü) olmamasıdır. Yeniliklerin
+bir firmada kullanılması, diğer firmalarda kullanılmasını dışlamadığı
+gibi yenilik ve yenilikte içerilen bilgi bir defa kullanıldıktan sonra
+tükenmez, yok olmaz. Hatta, pek çok örnekte olduğu gibi, yeniliklerin ve
+bilginin yaygınlaşması, kullanılması, en azından yeni bilgilerin
+üretilmesini kolaylaştırarak kendi değerini artırır.</p>
+<p>2. Yenilik faaliyetlerinde piyasanın aksamasının ikinci nedeni, bu
+<i>faaliyetlere içkin olan belirsizliklerdir</i>. Yenilik
+faaliyetlerinin teknolojik açıdan başarılı olup/olamayacağına ilişkin
+<i>teknolojik belirsizlik</i>, teknolojik olarak başarılı olan
+yeniliklerin kullanıcılar tarafından benimsenip/benimsenmeyeceğine
+ilişkin <i>piyasa belirsizliği </i>ve diğer üreticilerin daha iyi/farklı
+yenilikler gerçekleştirerek piyasada tutunup/tutunamayacağına ilişkin
+<i>ticari belirsizlik </i>yenilik faaliyetlerinin finansmanında sorunlar
+oluşturmaktadır.</p>
+<p>3. Yenilik faaliyetlerinde piyasanın aksamasının üçüncü nedeni,
+<i>Arrow ikilemi </i>olarak bilinen durumdur. Piyasa mekanizmasının
+işleyebilmesi için, ekonomik aktörlerin davranışları sonucu fiyatların
+oluşması ve fiyat hareketlerinin sağladığı bilgiye bağlı olarak
+kaynakların tahsis edilmesi gereklidir. Bu mekanizmanın çalışabilmesinin
+ön koşulu olan şeffaflık, yani piyasaya sürülen ürünler hakkında tam
+bilgi, yenilikler için sağlanmamaktadır, çünkü yenilik ve bilgi
+piyasalarında şeffaflık olması durumunda, yani herkesin aynı bilgiye
+sahip olması durumunda bir bilgi alış/verişi gerçekleşemez. Şeffaflık
+olmaması durumunda, potansiyel müşteriler, yeniliklerin ve bilginin
+kendileri için yararını değerlendiremeyecekler ve belirli bir talep
+oluşturamayacaklardır. Bir başka deyişle, bilginin, bilindiği zaman
+alınmasına gerek kalmaz, bilinmediğinde ise değeri ölçülemez. Bu
+durumda, yenilikler için piyasalar sığ olacak, piyasa mekanizması etkin
+olarak çalışamayacaktır.</p>
+<p>4. Son olarak, yenilik faaliyetlerinde <i>dışsallıklar </i>önem
+kazanabilmektedir. Bir firmanın yenilik faaliyeti (yenilik içeren
+ürünlerin kullanımı, yeniliğin taklit edilmesi, bu faaliyetlerde
+yetkinleşen personelin başka firmalar tarafından istihdam edilmesi gibi
+nedenlerle) diğer firmalara olumlu katkıda bulunabilmektedir. Yeniliği
+yapan firma, yenilik faaliyetinin tüm faydasını elde edememekte,
+tüketicilere, diğer firmalara ve hatta rakiplerine de yardımcı
+olmaktadır. Bu durumda, yenilik faaliyetinin özel getirisi, toplumsal
+getirisinden az olmakta, piyasa mekanizması yenilik faaliyetlerine
+toplumsal olarak en iyi düzeyde kaynak tahsis edememektedir.</p>
+<p>Neo-klasik yaklaşımda, yenilik faaliyetlerinde piyasanın aksamasının
+iki önemli sonucu vardır. Yeniliklerin ve bilginin kamusal mal özelliği
+kazanmasından ve ekonomik dışsallıklardan dolayı, bu faaliyetlere
+yeterli düzeyde kaynak ayrılmayacaktır (eksik yatırım). Ayrıca bu
+faaliyetlerdeki belirsizliğin fazla olmasından dolayı, finansman
+maliyeti, toplumsal olarak en iyi duruma göre, daha yüksek olacaktır. Bu
+sorun, özellikle sermaye piyasasının gelişmediği ülkelerde ve sermaye
+piyasalarına ulaşması zor olan (küçük ve orta boy) firmalar için önemli
+bir sorun olacaktır. Bu durumda devletin müdahalesi, yenilik
+faaliyetlerinde özel getiri oranını toplumsal getiri oranına eşitleyecek
+şekilde finansal destek sağlanması şeklinde olmalıdır.</p>
+<p>Neo-klasik yaklaşımın teknoloji ve yenilik politikalarına ilişkin
+önerilerinin önemli bir özelliği, genel, “tarafsız” politikaların ön
+plana çıkarılmasıdır. Neo-klasik iktisatçılar genellikle belirli
+sektörlere/firmalara/teknolojilere yönelik programları, piyasa
+mekanizmasının işleyişini çarpıtacağı ve istismar edileceği gerekçesiyle
+karşı çıkmaktadır.</p>
+<p>1980’lerden itibaren etkinliği artan Schumpeterci/evrimci
+iktisatçılar, neo-klasik yaklaşımın yenilik sürecinin anlaşılması
+açısından yetersiz olduğunu öne sürmüşlerdir (neo-klasik yaklaşımın
+kapsamlı bir eleştirisi için bkz. Lundvall, 1999). Neo-klasik yaklaşıma
+yönelik eleştirileri üç ana başlıkta özetlemek mümkündür.</p>
+<p>1. Genel olarak neo-klasik kuramın incelediği temel iktisadi sorun,
+verili koşullarda kaynak tahsis sürecidir. Bu doğrultuda, teknoloji ve
+yenilik politikalarına ilişkin neo-klasik öneri, firmaların kaynaklarını
+ve teknolojik yeteneğini veri olarak alıp, çeşitli teşvik mekanizmaları
+ile yenilik yapan firmaların Ar-Ge maliyetini düşürerek veya yeniliğin
+faydalarından daha fazla yararlanmasını sağlayarak bu faaliyetlerin
+getirisini artırmaktır. Bu anlamda, neo-klasik yaklaşım verili
+koşulların dönüştürülmesini (örneğin firmaların teknolojik yeteneğinin
+yükseltilmesini) ihmal etmektedir.</p>
+<p>2. Neo-klasik kuramda tam rekabetçi piyasalar, kaynak tahsis
+sürecinin analizinde mihenk taşı rolünü oynamaktadır. Fakat bu ölçüt
+yenilik sürecinin incelenmesinde ve değerlendirilmesinde yetersiz
+kalmaktadır, çünkü firmaların amacı yenilikler sonucu, en azından geçici
+bir süre, tekelci konumda kalarak tekelci kâr elde etmektir. Fikri
+mülkiyet hakları, bu tekelci konumu ve tekelci kârları güvence altına
+almak için çıkarılmıştır.</p>
+<p>3. Neo-klasik yaklaşım, teknolojik gelişme sürecini lineer bir süreç
+olarak, firmaları da birbiriyle etkileşim içinde olmayan aktörler olarak
+ele almaktadır. Yenilik sürecinde, sadece fiyatlardaki değişim ile
+gerekli bilginin aktarılamadığı bilinmektedir. Yenilik süreci, firmalar
+ve diğer ekonomik ve toplumsal aktörler (Ar-Ge kurumları, üniversiteler,
+finans kuruluşları, vb) arasında piyasa ve piyasa-dışı mekanizmalar
+aracılığıyla kurulan yoğun bir etkileşim içerisinde gerçekleşmektedir.
+Yenilik sürecinin anlaşılması sistem yaklaşımını gerektirdiği için,
+yenilik politikaları da teknoloji sisteminin bütününü göz önüne alarak
+tasarlanmalıdır. Sistemik özelliklerin daha önem kazandığı bilgiye
+dayalı çağdaş toplumlarda “piyasanın aksaması” yaklaşımı teknoloji ve
+yenilik politikası için geçerli değildir.</p>
+<p>Evrimci yaklaşımın, neo-klasik yaklaşımdan en önemli farklılığı,
+ekonomik gelişim sürecinde yenilik ve öğrenme süreçlerini ön plana
+çıkarmasıdır. Neo-klasik yaklaşım mevcut durumda (firmaların kaynakları
+ve teknolojik yetenekleri veri iken) kaynak tahsis sürecini incelerken,
+evrimci yaklaşım firmaların yeni teknolojileri nasıl geliştirdiği ve
+yeniliklere nasıl uyum sağladığını incelemektedir. Yenilik sürecinde
+belirsizlik ve tesadüfi etkenler önemli olduğu için, evrimci yaklaşımda
+analiz birimi, neo-klasik yaklaşımın temsili firmasının aksine, farklı
+teknolojileri, farklı yetenekleri, farklı örgütlenme yapıları, farklı
+davranış kuralları olan firmalar ile diğer ekonomik aktörlerin
+oluşturduğu bir sistemdir. Yenilikler (mutation) çeşitliliği artırırken,
+rekabetçi baskılar (selection) çeşitliliği azaltıcı bir etkide
+bulunmaktadır. Bu nedenle <i>çeşitlilik teknolojik gelişme sürecinin hem
+nedeni, hem de sonucudur</i>.</p>
+<p>Evrimci kuram sistem yaklaşımı benimsendiği için, yenilik
+politikasının amacı iyi işleyen bir ulusal yenilik sisteminin
+kurulmasıdır. Bu kurama göre yenilik politikasını zorunlu kılan neden,
+piyasanın aksaması değiş, sistemin aksamasıdır.</p>
+</div>
+<div id="yaklaşımlar" class="section level3">
+<h3>Yaklaşımlar</h3>
+<p>Neo-klasik ve evrimci yaklaşımlar farklı nedenlerle de olsa kamu
+tarafından (belirli koşullar altında) yenilik politikası uygulanmasının
+gerekli olduğunu vurgulamaktadır. Kısaca tanımlamak gerekirse,
+<i>yenilik politikası, yenilik sürecinin hızını ve yönünü etkilemeye
+yönelik politikalardır</i>.</p>
+<p>Yenilik politikalarının <i>tasarımında </i>farklı yaklaşımlar
+kullanılabilmektedir. Bu yaklaşımları, <i>sorun-odaklı</i> ve
+<i>gelecek-odaklı</i> olarak iki gruba ayırmak mümkündür.</p>
+<p><i>Sorun-odaklı politika tasarımı</i> yaklaşımında, (ulusal düzeyde)
+yenilik sürecinin etkili şekilde işlemesini engelleyen sorunlar tespit
+edilerek, bu sorunları çözmeye yönelik politikalar tasarlanır.
+Sorun-odaklı yaklaşımı da spesifik ve sistematik olarak ilk alt-gruba
+ayırabiliriz.<a class="sdfootnoteanc" href="#sdfootnote8sym" name="sdfootnote8anc"><sup>8</sup></a></p>
+<p><i>Spesifik sorun-odaklı yaklaşım</i>, karar ağacı (decision tree)
+yöntemi izleyerek sorunun kök nedenlerini tespit etmeye çalışır (bkz.
+Hausmann, Rodrik and Velasco, 2007). Örneğin KOBİ’lerin yeteri kadar
+yenilikçi olmadığı düşünülüyorsa, Tablo 1’deki hipotetik örnekte olduğu
+gibi, “KOBİ’ler yeteri kadar yenilikçi değil” hipotezi “neden?” soruları
+ile açılarak sorunun kök nedenine ulaşılır.</p>
+<p><strong>Tablo 1.</strong> Spesifik sorun-odaklı yaklaşım: Bir
+örnek</p>
+<hr />
+<p>KOBİ’ler yenilikçi değil</p>
+<ul>
+<li>
+KOBİ’ler yenilik gerçekleştirmiyorlar
+<ul>
+<li>
+KOBİ’lerin yenilik gerçekleştirme ihtiyacı yok
+<ul>
+<li>
+Yenilik faaliyetleri kârlı değil
+</li>
+<li>
+Diğer faaliyetler daha kârlı
+</li>
+</ul>
+</li>
+<li>
+KOBİ’ler yenilik faaliyetlerinin kazancını öngeremiyor
+<ul>
+<li>
+KOBİ’ler teknolojik gelişmeler konusunda yeterli bilgiye sahip değil
+</li>
+<li>
+KOBİ’ler piyasa koşulları konusunda yeterli bilgiye sahip değil
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+KOBİ’ler yenilik gerçekleştiremiyorlar
+<ul>
+<li>
+KOBİ’lerin yenilikler için gerekli finansman kaynakları yok
+</li>
+<li>
+KOBİ’lerin yenilikler için gerekli insan kaynağı yok
+</li>
+</ul>
+</li>
+<li>
+KOBİ’ler yenilik gerçekleştiriyorlar fakat uygulayamıyorlar
+<ul>
+<li>
+KOBİ’ler yenilikleri yaygın olarak kullanacakları yatırımı yapamıyorlar
+</li>
+<li>
+KOBİ’ler büyük firmaların piyasa gücü nedeni ile yeni ürünlerini
+dağıtamıyorlar
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><br /></p>
+<p><i>Sistemik sorun-odaklı yaklaşımın </i>temel kavramı <i>sistemik
+sorunlar</i>dır (Edquist, 2011; Lee, 2013). Bu yaklaşım, tanılayıcı
+analiz (diagnostic analysis) ile sistemik sorunları ve bu sorunların
+nedenlerini tespit etmeye çalışır. Sistemik sorun-odaklı yaklaşım,
+spesifik sorun-odaklı yaklaşım gibi <i>mevcut</i> sorunları tespit
+etmeye yöneliktir, fakat bu yaklaşımda tekil sorunlar değil, sistemin
+işleyişindeki sorunlara ağırlık verilir. Örneğin bu yaklaşımda
+“piyasanın aksaması” kavramı kullanılmaz, çünkü bu kavram mevcut yenilik
+sistemi ile (tam rekabetçi piyasalar altındaki) optimum yenilik
+sisteminin karşılaştırılmasına dayanır fakat optimum yenilik sistemini
+tanımlamak mümkün olmadığı için “piyasanın aksaması” kavramı yenilik
+politikası tasarımı için geçerli değildir.</p>
+<p>Sistemik sorun-odaklı yaklaşım bir politika sorunu ile başlar
+(örneğin “yenilik sisteminin performansının yetersiz olması”). Sonra bu
+sorunu ölçecek göstergeler tespit edilir (yenilik yoğunluğu) ve bu
+göstergeler operasyonel hale getirilir (artımsal yenilikler, radikal
+yenilikler, sektörler, vb). Bu göstergeler temelinde yenilik sisteminin
+hangi tip yeniliklerde ve hangi sektörlerde/bölgelerde/teknolojik
+sistemlerde performansının yetersiz olduğu anlaşılır. Sorunların
+nedenlerini tespit etmek için yenilik sistemindeki faaliyetler ile
+sorunlar arasındaki ilişkiler analiz edilir. Bu analizler, optimum
+yenilik sistemi olmadığı için, mevcut yenilik sisteminin tarihsel
+gelişimi içerisinde kendisiyle ve mevcut yenilik sistemini başka yenilik
+sistemleri ile karşılaştırarak yapılır, bu analizlerden sonra politika
+önerileri geliştirilir.</p>
+<p><i>Gelecek-odaklı</i> politika tasarımı yaklaşımında başlangıç
+noktası mevcut tekil veya sistemik sorunlar değildir. Gelecek-odaklı
+yaklaşımda, gelecekte ulaşılmak istenilen konuma yönelik olarak politika
+tasarlanır. Bu anlamda gelecek-odaklı politika tasarımı pro-aktif bir
+politikadır.</p>
+<p>Gelecek-odaklı politika tasarımı da iki alt gruba ayrılabilir.</p>
+<p><i>İstikşafi gelecek-odaklı </i>(exploratory future-oriented)
+politika tasarımında politik, ekonomik, toplumsal ve teknolojik
+eğilimler analiz edilir, bu eğilimler sonucu farklı gelecek senaryoları
+oluşturulur, “en iyi” senaryonun gerçekleşme olasılığını artıracak veya
+“en kötü” senaryonun gerçekleşme olasılığını azaltacak politikalar
+tasarlanır (örneğin, bkz. Rand Europe, 1998). Bu yaklaşımda özellikle
+teknolojilerin gelecekte nasıl gelişeceğine yönelik olarak tarihsel
+veriler kullanılarak teknoloji tahminleri (technological forecasting)
+yapılır.</p>
+<p><i>Normatif gelecek-odaklı </i>(normative future-oriented) yaklaşım,
+istikşafi yaklaşıma benzemekle birlikte, burada mevcut eğilimler
+temelinde gelecek senaryoları oluşturulmaz. Bu yaklaşımda da mevcut
+trendler analiz edilir, fakat bu analizler olası geleceklerin tespit
+edilmesi için değil, istenilen geleceğe nasıl ulaşılacağını belirlemek
+için kullanılır. Bir başka deyişle, istikşafi gelecek-odaklı yaklaşımda
+bugünden başlanıp geleceğin nasıl olabileceği tahmin edilir, normatif
+gelecek-odaklı yaklaşımda ise önce gelecekte nasıl bir noktaya ulaşılmak
+istendiği belirlenir, sonra bu geleceğe ulaşmak için eğilimlerin nasıl
+dönüştürülmesi gerektiği değerlendirilir. Bir anlamda istikşafi yaklaşım
+mevcut eğilimlere uyum sağlamaya yönelikken, normatif yaklaşım geleceği
+şekillendirmeye yöneliktir. Bu nedenle istikşafi yaklaşımda tahmin
+(forecasting) yönetimi kullanılırken, normatif yaklaşımda öngörü
+(foresight) yöntemleri kullanılır (öngörü çalışmaları konusunda bir
+değerlendirme için bkz. Havas, Schartinger ve Weber, 2010). Normatif
+gelecek-odaklı yaklaşım konusunda 2000’li yılların başlarında TÜBİTAK
+tarafından gerçekleştirilen <i>Vizyon 2023</i> çalışması örnek olarak
+gösterilebilir (Saritas, Taymaz and Tumer, 2007).</p>
+<p>Normatif yaklaşımların en önemli özelliği, politika tercihlerinin
+şeffaf bir şekilde ortaya konulması ve toplumun tüm kesimlerinin kendi
+tercihlerini ve taleplerini politika tasarımı sürecine
+yansıtabilmesidir.</p>
+</div>
+<div id="araçlar" class="section level3">
+<h3>Araçlar</h3>
+<p>Yukarıda belirtildiği gibi pek çok yenilikte kamusal mal niteliğinin
+önemli olması, dışsallıklar, belirsizl ve riskler ve bilgi asimetrisi
+gibi sorunlar nedeniyle yenilikçi firmalar gerçekleştirdikleri
+yeniliklerin tüm getirisini alamamaktadır. Yeniliklerin özel getirisinin
+toplumsal getirisinden daha düşük olduğu, bu nedenle yenilik
+faaliyetlerine eksik-yatırım (under investment) yapılacağı pek çok
+kuramsal ve ampirik çalışmada
+gösterilmiştir.<a class="sdfootnoteanc" href="#sdfootnote9sym" name="sdfootnote9anc"><sup>9</sup></a></p>
+<p>Genel kabul gören bu yaklaşıma göre, piyasanın aksamasına yol açan bu
+sorunlardan dolayı devlet yeniliklerin özel getirisini artıracak
+politikalar izlemelidir.</p>
+<p>Yeniliklerin özel getirisini artırmaya yönelik ilk politika <i>fikri
+mülkiyet hakları</i> politikalarıdır. Patent korumasında olduğu gibi
+yenilik yapanlara, yeniliklerin sonuçlarını kullanmak üzere yasal olarak
+(belirli bir süre) <i>tekel hakkı </i>tanınmaktadır. Piyasalarda
+tekellerin oluşmasının ekonomik performansı olumsuz etkileyeceği de
+söylenmekle birlikte, yenilikler üzerindeki geçici tekel hakkının
+yeniliklerin yapılmasını teşvik ederek uzun dönemde ekonomik performans
+üzerinde olumlu etkiye sahip olacağı düşünülmektedir.</p>
+<p>Yeniliklerin özel getirisini artırmaya yönelik en yaygın olarak
+kullanılan politika aracı, <i>Ar-Ge faaliyetlerine teşvikler
+</i>verilmesidir. Bu politika aracı hemen hemen tüm devletler tarafından
+yaygın olarak kullanılmaktadır ve devlet yardımlarını kısıtlayan
+uluslaraarası anlaşmalarda bir istisna olarak kabul edilmektedir. Ar-Ge
+faaliyetlerine uygulanan teşvikler sonucu yeniliklerin özel maliyeti
+düşürülmekte, böylece özel getirinin artması ve toplumsal getiriye
+yaklaşması sağlanmaktadır (optimum teşvik düzeyi, özel getiriyi
+toplumsal getiriye eşitleyecek destek miktarıdır).</p>
+<p>Ar-Ge faaliyetlerine destekler yatay ve düşey olabilir. Herhangi bir
+kısıt konulmaksızın tüm Ar-Ge yapanlara teşvik verilmesi yatay destek
+olarak tanımlanırken, seçilen sektörlerde veya teknoloji alanlarında
+teşviklerin verilmesi düşey teşvik olarak adlandırılmaktadır.</p>
+<p>Ar-Ge teşvikleri vergisel (Ar-Ge harcamalarının vergiden düşülmesi,
+kurumlar vergisi ve gelir vergisi istisnaları, Ar-Ge personeli için
+sosyal güvenlik primlerinde indirimler, vb) veya doğrudan mali destek
+biçiminde olabilir. Mali destekler koşulsuz bağış, koşullu bağış
+(yenilikten gelir elde edilmesi durumunda desteğin geri ödenmesi) ve
+kredi biçimlerinde olabilir. OECD ülkelerinin genelinde vergisel ve
+koşulsuz bağış şeklinde Ar-Ge destekleri yaygın olarak kullanılmakta,
+kamu desteği Ar-Ge harcamalarının % 50’sine ulaşabilmektedir. Bir başka
+deyişle Ar-Ge faaliyetlerine 100 TL ayıran bir firma, bunun yaklaşık
+yarısını devletten Ar-Ge teşviki olarak geri alabilmektedir.</p>
+<p>Firmalara yönelik Ar-Ge teşviklerine ek olarak, özellikle sistem
+yaklaşımını benimseyen araştırmacılar ve politika yapıcıları tarafından,
+ulusal yenilik sistemi kurumlarının oluşturulması ve bu kurumlar
+arasında etkileşimin sağlanmasına yönelik politika araçları da
+önerilmektedir. Örneğin kamu araştırma merkezleri ve üniversitelerde
+Ar-Ge faaliyetleri yapılarak üretilen bilgi ve yeniliklerin kamuya
+sunulması, nitelikli bilim insanı ve araştırmacı yetiştirilmesi,
+teknoparklar ve kuluçkalıklar gibi araçlarla kümelenmenin desteklenmesi,
+standartların belirlenmesi, özel firmalara kalibrasyon ve test
+hizmetlerinin sunulması, teknoloji transferinin desteklenmesi, özellikle
+KOBİ’lere yönelik teknolojik destek programları, kamu satın alma
+politikalarıyla yeniliklerin özendirilmesi gibi çok çeşitli araçlar
+kullanılmaktadır (bu konuda örnekler için bkz. World Bank, 2010; UNCTAD,
+2015).</p>
+</div>
+<div id="sorunlar" class="section level3">
+<h3>Sorunlar</h3>
+<p>1970’lerden günümüze yeniliklerin teşvik edilmesine yönelik
+politikalar büyük ölçüde arz yönlü olmuş, bir başka deyişle doğrudan
+yenilik arzını desteklemiştir. Yenilik politikalarının arz yönlü
+olmasının önemli bir nedeni teknolojik yenilik sürecine ilişkin lineer
+bakış açısının hala politika yapıcıları tarafından (en azından örtük
+olarak) benimsenmesidir. Ayrıca, neo-klasik kuramın piyasaların aksaması
+tezi de önemli ölçüde etkili olmuş, yeniliklerin özel getirisinin
+yükseltilmesi için yenilik arzını teşvik eden politikalar
+benimsenmiştir. Evrimci/Schumpeterci iktisatçıların yenilik sistemi
+yaklaşımları, bu politikaları zenginleştirmesine karşın, pratikte
+önerilen politikalar yenilikçi firmalar için “iş ortamının
+kolaylaştırılması” düzeyinde kalmış ve yine arz yönlü olmuştur. Son
+olarak, yenilik politikaları uzun bir dönem yeniliklerin ve teknolojik
+gelişme hızının artırılmasına öncelik vermiş, <i>yeniliklerin yönü</i>
+(hangi yeniliklerin gerçekleştirildiği) ikincil planda kalmıştır (benzer
+bir değerlendirme için bkz Edquist, 2015).</p>
+<p>Son 10 yıllık dönemde, talep yönlü politikaların da artan ölçüde
+gündeme geldiği gözlenmektedir. Talep yönlü politikaların, yani yenilik
+talebi oluşturarak yeniliklerin hızı ve yönünün etkilenmesine yönelik
+politikaların son yıllarda daha fazla gündeme gelmesinin iki nedeni
+vardır.<a class="sdfootnoteanc" href="#sdfootnote10sym" name="sdfootnote10anc"><sup>10</sup></a></p>
+<p>İlk olarak, teşviklerinin çeşitliliği ve kapsamına karşın özellikle
+AB ülkelerinde arz yönlü politikaların etkinliği kısıtlı olmuştur.
+İkinci olarak arz yönlü politikalar yenilik sürecinin önemli toplumsal
+ve çevresel sorunların çözümüne yönelik olmasını sağlayamamıştır
+(Edquist, 2015; Guerzonia ve Raiteria, 2015).</p>
+<p>Arz yönlü politikaların yenilik sürecini toplumsal açıdan önemli
+(toplumsal getirisi yüksek) alanlara doğru yönlendirememesinin nedeni bu
+politikaların tasarımından kaynaklanmaktadır. Çünkü arz yönlü
+politikalar, teşvik miktarı ne olursa olsun her zaman özel getirisi
+yüksek olan alanlarda yenilik faaliyetlerinin yürütülmesini destekler.
+Bu durum, Şekil 6’daki basit örnek ile gösterilebilir. Mevcut teknolojik
+ve bilimsel bilgi birikimi çerçevesinde firmaların gerçekleştirebileceği
+9 proje olduğunu ve bu projelerden H ve I’nin tüm toplumu doğrudan
+etkileyen ve bu nedenle toplumsal getirisi çok yüksek olan çevre
+projeleri olduğunu varsayalım. Şekilde projeler özel getirilerine göre
+sıralanmıştır.</p>
+<p><strong>Şekil 6.</strong> Yenilik projelerinin seçimi</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%206.png" alt="yenilik-sekil-6" /></p>
+<p>Tüm yenilik projelerinin özel maliyeti 10 birim iken, firmalar sadece
+net özel getirisi (özel getiri – özel maliyet) pozitif olan A ve B
+projelerini gerçekleştirecektir. Arz yönlü politikalar ile (örneğin
+Ar-Ge destekleri ile) özel maliyetin 7 birime düşürüldüğünü varsayalım.
+Bu durumda firmalar yine net getirisi en yüksek olan A, B, C ve D
+projelerini gerçekleştirecektir. H ve I projeleri en yüksek toplumsal
+getiriye sahip olmasına karşın, bu projelerin sadece arz yönlü
+politikalar ile gerçekleştirilmesi hemen hemen olanaksızdır. Bu
+teknolojilerin geliştirilmesi (örneğin çevre-dostu yeniliklerin
+gerçekleştirilmesi) ancak ya kamu kuruluşları tarafından araştırma
+faaliyetlerinin yürütülmesi, ya da kamunun (satın alma politikası gibi)
+talep yönlü politikalar uygulaması ile mümkün olacaktır.</p>
+<p>İnsanlık günümüzde iklim değişikliği, yoksulluk, nüfusun yaşlanması,
+genç işsizlik, kıtlık ve aşırı şişmanlık, tedavisi olmayan salgın
+hastalıklar gibi gerçek ve potansiyel sorunlarla karşı karşıyadır. Büyük
+ölçüde son 200 yıllık dönemde geliştirilen teknolojilerin yarattığı bu
+sorunlar, tüm insanlığı tehdit edecek boyuttadır.</p>
+<p><a name="__DdeLink__2319_14059336681"></a> Bu sorunların pek çoğunun
+çözümünde yenilikler önemli bir rol oynayacaktır. Fakat yenilikler
+yoluyla bu sorunların aşılabilmesi için yenilik politikalarının,
+normatif gelecek-odaklı bir yaklaşımla ve yeniliklerin yönünü
+değiştirecek şekilde uygulanması gereklidir. Sürdürülebilir büyüme
+(sustainable growth), yeşil büyüme (green growth) ve kapsayıcı büyüme
+(inclusive growth) gibi kavramlar toplum tarafından nasıl bir geleceğin
+istendiğini göstermektedir. Büyük ölçekli kamu yatırımları ve satın alma
+politikalarına dayalı yenilik politikaları bu istenilen geleceklere
+ulaşılmasına katkıda bulunabilir (yenilik politikalarının üstlenmesi
+gereken rol konusunda bkz. Mazzucato, 2013; Mazzucato ve Perez,
+2014).</p>
+<p><br/></p>
+</div>
+</div>
+<div id="türkiye-ve-yenilikçilik" class="section level2 useMedImage">
+<h2 class="useMedImage">Türkiye ve yenilikçilik</h2>
+<p>Uzun dönemli ekonomik büyüme ve rekabet gücünün kazanılması açısından
+yenilik faaliyetleri son derece önemlidir. Yenilik faaliyetleri
+açısından bakıldığında Türkiye’nin konumu nedir ve nasıl
+değişmektedir?<a class="sdfootnoteanc" href="#sdfootnote11sym" name="sdfootnote11anc"><sup>11</sup></a></p>
+<p>Yenilik çok boyutlu bir kavram olduğu ve farklı metriklerin farklı
+üstünlükleri/zayıflıkları olduğu için bu bölümde yeniliklere ilişkin iki
+temel gösterge kullanılmıştır: Ar-Ge ve patent istatistikleri.</p>
+<p>Şekil 7’da Türkiye, Kore, Çin, ABD, AB (28 ülke) ve OECD ülkelerinde
+2000-214 yıllarında GSYİH içinde Ar-Ge harcamalarının oranı (Ar-Ge
+yoğunluğu) görülmektedir. Türkiye’nin Ar-Ge yoğunluğu tedrici bir
+şekilde artarak yaklaşık % 0.5’den % 1.0’e ulaşmıştır. Bu artış, diğer
+ülkeler ile karşılaştırıldığında hala çok düşük düzeydedir. AB, ABD ve
+OECD ülkelerinde bu oran % 2-2.8 arasındadır. Karşılaştırma amacıyla
+Türkiye için Kore ve Çin’in daha anlamlı olacağı düşünülebilir.
+1960’ların sonlarından itibaren çok hızlı bir büyüme temposu yakalayan
+Kore’nin Ar-Ge yoğunluğu da hızla artmış ve 2012’de % 4’ü geçmiştir. Son
+50 yıllık dönemde dünyada en hızlı büyüyen ülkelerden biri olan Kore’nin
+bu başarısında, orta ve yüksek-teknolojili sektörlere doğru hızlı bir
+yapısal dönüşüm gerçekleştirmesi ve buna paralel olarak Ar-Ge
+yoğunluğunu artırması önemli bir rol oynamıştır.</p>
+<p><strong>Şekil 7.</strong> GSYİH içinde Ar-Ge harcamalarının payı</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%207.png" alt="yenilik-sekil-7" /><br />
+<i>Kaynak:</i> OECD, Main Science and Technology Indicators</p>
+<p>2005’de satın alma gücü paritesine göre kişi başına milli geliri
+Türkiye’nin yarısından az olan Çin’de Ar-Ge yoğunluğu Türkiye’nin
+yaklaşık iki katıydı. Buna karşın Çin’in Ar-Ge yoğunluğu bu dönemde
+hızla artarak 2014’de % 2’yi aşmıştır.</p>
+<p>Ar-Ge yoğunluğu kadar, Ar-Ge harcamalarının ne kadarının özel sektör
+tarafından gerçekleştirildiği önemlidir. Çünkü üniversitelerin Ar-Ge
+faaliyeti gerçekleştirdiği varsayıldığından, tanım gereği üniversite
+bütçelerinin önemli bir kısmı Ar-Ge harcaması olarak kabul
+edilmektedir.</p>
+<p><strong>Şekil 8.</strong> Ar-Ge harcamaları içerisinde özel sektörün
+payı</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%208.png" alt="yenilik-sekil-8"  /><br />
+<i>Kaynak:</i> OECD, Main Science and Technology Indicators</p>
+<p>Şekil 8’de özel sektörün Ar-Ge faaliyetlerinin ne kadarını
+gerçekleştirdiği görülmektedir. Türkiye’de bu oran 2001 krizinden sonra
+düşmüş, 2003’den sonra hızla artarak 2014’de % 50’yi geçmiştir. AB, ABD,
+Kore, Çin ve OECD ülkelerinde ise özel sektörün payı tüm dönem boyunca %
+60’ın üzerinde olmuştur.</p>
+<p>Ar-Ge faaliyetleri yenilik sürecinin önemli bir girdisini
+oluşturmakla birlikte, tüm Ar-Ge faaliyetlerinin amacı yenilik
+gerçekleştirmek değildir. Bu nedenle ülkelerin yenilikçi performansları
+açısından patent verileri daha iyi bir karşılaştırma yapma olanağı
+sunmaktadır.</p>
+<p>OECD tarafından ülkeler arası karşılaştırma yapılması amacıyla üçlü
+(triadic) patent verileri derlenmektedir. Firmalar genellikle patent
+başvurularını önce faaliyet gösterdikleri ülkede yapmakta, rüçhan
+hakkını kullanarak bir yıl içerisinde patent hakkını almak istedikleri
+bölgelere/ülkelere başvurmaktadır. Bu sayede patentin koruma süresi
+fiilen 21 yıla çıkarılmaktadır. “Üçlü patent”, AB ve Japonya’da patent
+başvurusu yapılan ve ABD’de patent hakkı alınan yenilikleri
+tanımlamaktadır. Bu üç bölge dünyanın en büyük ekonomilerini oluşturduğu
+için, “önemli” yenilik sahiplerinin bu üç bölgede de patent başvurusunda
+bulunacağı varsayılmaktadır. Bu nedenle “üçlü patent” hem koruma altına
+alınan yeniliğin “önemli” olduğunu göstermekte, hem de “ülke yanlılığı”
+(home bias) denilen yenilik yapan firmaların önce kendi ülkelerinde
+patent başvurusunda bulunmasından kaynaklanan yanlılığı
+azaltmaktadır.</p>
+<p><strong>Şekil 9.</strong> Üçlü (triadic) patentleri içinde ülke
+payları</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%209.png" alt="yenilik-sekil-9"  /><br />
+<i>Kaynak:</i> OECD, Main Science and Technology Indicators</p>
+<p><strong>Şekil 10.</strong> Üçlü (triadic) patent sayıları</p>
+<p><img src="img/yenilik/Yenilik%20Sekil%2010.png" alt="yenilik-sekil-10"  /><br />
+<i>Kaynak:</i> OECD, Main Science and Technology Indicators</p>
+<p>Şekil 9’de dünyadaki tüm üçlü patentler içinde Türkiye, Çin ve Kore
+kaynaklı patentlerin payı görülmektedir (ABD ve AB’nin payları 2000’de
+yaklaşık % 30’lardan 2014’de % 25’lere düşmüştür). Kore ve Çin’in üçlü
+patenler içindeki payı hızlı bir şekilde artarak 2014’de, sırasıyla,
+yaklaşık % 5.5 ve % 3.5’a ulaşmıştır. Türkiye’nin payı kısmen artmakla
+birlikte hala ihmal edilebilir bir orandadır.</p>
+<p>Türkiye’nin üçlü patentler içindeki payı çok düşük olduğu için, bu üç
+ülkenin üçlü patent sayıları Şekil 10’da sunulmuştur. Patent sayıları
+logaritmik ölçekte verildiği için, patent sayısı eğrilerinin eğilimi
+büyüme hızını vermektedir. Türkiye’nin üçlü patent sayısı 2000’de 100’ün
+altındayken, 2014’e kadar hızlı bir artış göstermiştir. Fakat bu
+gelişmeye karşın 2014’de Türkiye kaynaklı üçlü patent sayısı hala
+1000’in altındadır. Çin ve Kore’de üçlü patent sayıları hızla artmış ve
+her iki ülkede de 2010 yılında 10000’i aşmıştır.</p>
+<p>Patent sayısına ilişkin veriler, Türkiye’nin yenilikçi performansında
+bir gelişme olduğunu, fakat mevcut durumda hala çok yetersiz bir düzeyde
+kaldığını göstermektedir. Türkiye’nin yenilikçi performansının gelişmesi
+için yapısal dönüşümü hedefleyen sanayi politikaları ile yenilik
+politikalarının tutarlı bir şekilde tasarlanması ve sürekli bir şekilde
+uygulanması gereklidir. Bu doğrultuda uygulanacak yenilik
+politikalarında, talep yönlü politika araçlarının da etkin bir şekilde
+kullanılması gerekmektedir.</p>
+<p><br/></p>
+</div>
+<div id="kaynaklar" class="section level2">
+<h2>Kaynaklar</h2>
+<p>Akalın, Şükrü Halûk (2007), “Innovation, İnovasyon: Yenileşim”,
+<i>Türk Dili Dil ve Edebiyat Dergisi</i> (93/666): 483-486.</p>
+<p>Archibugi, D (1992), “Patenting as an Indicator of Technological
+Innovation: A Review”, <i>Science and Public Policy </i>(19):
+357-368.</p>
+<p>Arıkan, C., Akyos, M., Durgut, M. ve Göker, A. (2003), <i>Ulusal
+İnovasyon Sistemi</i>, İstanbul: TÜSİAD.</p>
+<p>Arnold, E., Farla, K., Kolarz, P. ve Porau, X. (2014), <i>The Case
+for Public Support of Innovation</i>, Londra: Department for Business
+Innovation and Skills and Technopolis.</p>
+<p>Arrow, K. (1962), “Economic Welfare and the Allocation of Resources
+for Invention”, R.R. Nelson (der.), <i>The Rate and Direction of
+Inventive Activity</i> içinde, Princeton, NJ: Princeton University
+Press.</p>
+<p>Braverman, H. (1974), <i>Labor and Monopoly Capital: The Degradation
+of Work in the Twentieth Century</i>, New York: Monthly Review
+Press.</p>
+<p>Bush, Vannevar (1960) [1945], <i>Science: The Endless Frontier. A
+Report to the President on a Program for Postwar Scientific
+Research</i>, Washington, DC: NSF.</p>
+<p>Carlsson, B. ve Stankiewicz, R. (1991), “On the Nature, Function and
+Composition of Technological Systems”, <i>Journal of Evolutionary
+Economics</i> (1): 93-118.</p>
+<p>Cook, P., Uranga, M.G. ve Etxebarria, G. (1998), “Regional Systems of
+Innovation: An Evolutionary Perspective”, <i>Environment and Planning
+A</i> (30): 1563-1584.</p>
+<p>Cook, P. ve Memedovic, O. (2003), <i>Strategies for Regional
+Innovation Systems: Learning Transfer and Applications</i>, Viyana:
+UNIDO.</p>
+<p>Edquist, C. (2011), “Design of Innovation Policy through Diagnostic
+Analysis: Identification of Systemic Problems (or Failures)”,
+<i>Industrial and Corporate Change </i>(20): 1725–1753.</p>
+<p>Edquist, C. (2015), “Innovation-related Public Procurement as a
+Demand-oriented Innovation Policy Instrument”, Papers in Innovation
+Studies No 2015/28, Lund: CIRCLE – Center for Innovation, Research and
+Competences in the Learning Economy, Lund University.</p>
+<p>European Commission (2015), <i>Supply and Demand Side Innovation
+Policies</i>, Brussels: EU.</p>
+<p>Freeman, C. (1987), <i>Technology Policy and Economic Performance –
+Lessons from Japan,</i> Londra ve New York: Pinter Publishers.</p>
+<p>Freeman, C. (1988), “Japan: A new National Innovation Systems?”, G.
+Dosi, C. Freeman, R.R. Nelson, G. Silverberg ve L. Soete (der.),
+<i>Technology and Economic Theory</i> içinde, Londra: Pinter
+Publishers.</p>
+<p>Freeman, C. ve Perez, C. (1988), “Structural Crises of Adjustment”,
+G.Dosi vd. (der.), <i>Technical Change and Economic Theory</i> içinde,
+Londra: Pinter, ss. 38-66.</p>
+<p>Godin, Benoît (2008), <i>Innovation: A Category</i>, Project on the
+Intellectual History of Innovation Working Paper No. 1, Montreal.</p>
+<p>Godin, Benoît (2015), <i>Innovation: A Conceptual History of an
+Anonymous Concept</i>, Project on the Intellectual History of Innovation
+Working Paper No. 21, Montreal.</p>
+<p>Guerzonia, M. ve Raiteria, E. (2015), “Demand-side vs. Supply-side
+Technology Policies: Hidden Treatment and New Empirical Evidence on the
+Policy Mix”, <i>Research Policy</i> (44): 726-747.</p>
+<p>Grübler, A. ve Ausubel, J.H. (1995), “Working Less and Living Longer:
+Long-term Trends in Working Time and Time Budgets”, <i>Technological
+Forecasting and Social Change </i>(50): 113-131.</p>
+<p>Hausmann, R., Rodrik, D. and Velasco, A. (2007), ‘‘Growth
+Diagnostics,’’ D. Rodrik (der.), <i>One Economics, Many Recipes:
+Globalization, Institutions, and Economic Growth</i> içinde, Princeton,
+NJ: Princeton University Press.</p>
+<p>Havas, A., Schartinger, D. ve Weber, M. (2010), “The Impact of
+Foresight on Innovation Policy-making: Recent Experiences and Future
+Perspectives”, <i>Research Evaluation</i> (19): 91-104.</p>
+<p>Hong, S., Oxley, L. ve McCann, P. (2012), “A Survey of the Innovation
+Surveys”, <i>Journal of Economic Surveys</i> (26): 420-444.</p>
+<p>Henderson, R.M. ve Clark, K.B. (1990), “Architectural Innovation: The
+Reconfiguration of Existing Product Technologies and the Failure of
+Established Firms”, <i>Administrative Science Quarterly</i> (35):
+9-30.</p>
+<p>Kline, S.J. ve N. Rosenberg (1986), “An Overview of Innovation”, R.
+Landau ve N. Rosenberg (der.), <i>The Positive Sum Strategy: Harnessing
+Technology for Economic Growth</i> içinde, Washington DC: National
+Academies Press, ss. 275–305.</p>
+<p>Kuhn, Thomas S. (1962), <i>The Structure of Scientific
+Revolutions</i>, Chicago: University of Chicago Press.</p>
+<p>Lee, K. (2013), <i>Schumpeterian Analysis of Economic Catch-up
+Knowledge, Path-Creation, and the Middle-Income Trap</i>, Cambridge
+University Press.</p>
+<p>Lundvall, B-Å. (1988), “Innovation as an Interactive Process: From
+User-producer Interaction to the National Innovation Systems”, G. Dosi,
+C. Freeman, R.R. Nelson, G. Silverberg ve L. Soete (der.), <i>Technology
+and Economic Theory</i> içinde, Londra: Pinter Publishers.</p>
+<p>Lundvall, B-Å. (der.) (1992), <i>National Innovation Systems: Towards
+a Theory of Innovation and Interactive Learning</i>, Londra: Pinter.</p>
+<p>Lundvall, B-Å. (1999), “Technology Policy in the Learning Economy”,
+D. Archibugi, J. Howells ve J. Michie (der.), <i>Innovation Policy in a
+Global Economy</i> içinde, Cambridge: Cambridge University Press, ss.
+19-34.</p>
+<p>Mansfield, M., Rapoport, J., Romeo, A., Wagner, S. ve Beardsley, G.
+(1977), “Social and Private Rates of Return from Industrial
+Innovations”, <i>Quarterly Journal of Economics</i> (91): 221-240.</p>
+<p>Mazzucato, M. (2013),<em>The Entrepreneurial State: Debunking Public
+vs. Private Sector Myths</em><em>, Londra: </em>Anthem Press.</p>
+<p>Mazzucato, M. and Perez, C. (2014), <i>Innovation as Growth Policy:
+The Challenge for Europe</i>, SPRU Working Papers 2014-13, Sussex: SPRU,
+University of Sussex.</p>
+<p>Mohnen, P. ve Hall, B. (2013), “Innovation and Productivity: An
+Update”, <i>Eurasian Business Review</i> (3): 47-65.</p>
+<p>Nelson, R.R. (1959), “Simple Economics of Basic Scientific Research”,
+<i>Journal of Political Economy</i> (67): 297-306.</p>
+<p>Nelson, R.R. (der.) (1993), <i>National Systems of Innovation: A
+comparative Study</i>, Oxford: Oxford University Press.</p>
+<p>Nelson, R.R., ve Winter, S.G. (1982), <i>An Evolutionary Theory of
+Economic Change</i>, Belknap Press, Cambridge, Mass. ve Londra.</p>
+<p>OECD (1997), <i>National Innovation Systems</i>, Paris: OECD.</p>
+<p>OECD (2002) [1963/1994], <i>Frascati Kılavuzu: Araştırma ve Deneysel
+Geliştirme Taramaları için Önerilen Standart Uygulama</i>, Ankara:
+TÜBİTAK.</p>
+<p>OECD ve Eurostat (2006) [1992/2005], <i>Oslo Kılavuzu: Yenilik
+Verilerinin Toplanması ve Yorumlanması için İlkeler</i> (3. baskı),
+Ankara: TUBİTAK.</p>
+<p>Pinch, T. ve Bijker, W. (1987), “The Social Construction of Facts and
+Artifacts: Or How the Sociology of Science and the Sociology of
+Technology might Benefit Each Other”, W. Bijker, T.Hughes ve T. Pinch
+(der.), <i>The Social Construction of Technological Systems: New
+Directions in the Sociology and History of Technology</i> içinde,
+Cambridge, MA: MIT Press, ss. 17-50.</p>
+<p>Rand Europe (1998), <i>Technology Radar: Main Report and Executive
+Summary</i>, The Hague: Ministry of Economic Affairs, The
+Netherlands.</p>
+<p>REF (2014), <i>Ulusal İnovasyon Girişimi 2006-2013 Dönemi
+Değerlendirme Raporu</i>, İstanbul: TÜSİAD-Sabancı Üniversitesi Rekabet
+Forumu (REF).</p>
+<p>Rosenberg, N. (1994), <i>Exploring the Black Box: Technology,
+Economics and History</i>. New York: Cambridge University Press.</p>
+<p>Saritas, O., Taymaz, E. ve Tumer, T. (2007), “Vision 2023: Turkey’s
+National Technology Foresight Program – A Contextualist Description and
+Analysis”, <i>Technological Forecasting and Social Change </i>(74):
+1374-1393.</p>
+<p>Schumpeter, Joseph A. (1983) [1934], T<i>he Theory of Economic
+Development: An Inquiry into Profits, Capital, Credit, Interest, and the
+Business Cycle,</i> New Brunswick, New Jersey: Transaction Books
+(translated from the 1911 original German, <i>Theorie der
+wirtschaftlichen Entwicklung</i>).</p>
+<p>Schumpeter, Joseph A. (2014) [1942], <i>Capitalism, Socialism and
+Democracy</i> (2. baskı.), Floyd, Virginia: Impact Books.</p>
+<p>Taymaz, E. (2001), <i>Ulusal Yenilik Sistemi: Türkiye İmalat
+Sanayiinde Teknolojik Değişim ve Yenilik Süreçleri</i>, Ankara:
+TÜBİTAK/TTGV/DİE.</p>
+<p>UNCTAD (2015), <i>Technology and Innovation Report 2015: Fostering
+Innovation Policies for Industrial Development</i>, Vienna: UNCTAD.</p>
+<p>Utterback, J. M. (1996), <i>Mastering the Dynamics of Innovation</i>,
+Boston MA: Harvard Business School Press.</p>
+<p>Utterback, J. M. ve Abernathy, W. J. (1978), “Dynamic Model of
+Process and Product Innovation”, <i>Omega – International Journal of
+Management Science</i> (3): 639-656.</p>
+<p>Vivarelli, M. (1995), <i>The Economics of Technology and
+Employment,</i> Aldershot: Edward Elgar Publishing.</p>
+<p>Vivarelli, M. (2014), “Innovation, Employment and Skills in Advanced
+and Developing Countries: A Survey of Economic Literature”, <i>Journal
+of Economic Issues</i> (48): 123-154.</p>
+<p>World Bank (2010), <i>Innovation Policy: A Guide for Developing
+Countries,</i> Washington DC: World Bank.</p>
+<p><br/></p>
+</div>
+<div id="notlar" class="section level2">
+<h2>Notlar</h2>
+<div id="sdfootnote1">
+<p><a class="sdfootnotesym" href="#sdfootnote1anc" name="sdfootnote1sym">1
+</a><i>Oslo Kılavuzu</i>’nun TÜBİTAK tarafından yayımlanan Türkçe
+tercümesinde de “innovation” kavramı için “yenilik” kullanılmıştır.</p>
+</div>
+<div id="sdfootnote2">
+<p><a class="sdfootnotesym" href="#sdfootnote2anc" name="sdfootnote2sym">2
+</a><i>Google Books </i>veri tabanı yaklaşık 5 milyon kitabı
+kapsamaktadır. Şekillerdeki sayılar, bu kitaplarda kullanılan tüm
+sözcükler içerisinde ilgili sözcüklerin kullanım sıklığını
+göstermektedir. Şekil 1 ve Şekil 2’de kullanılan veriler, rahat okunması
+için, 10<sup>6</sup> ve 10<sup>8</sup> ile çarpılmış ve 3-yıllık düzleme
+kullanılmıştır. Arama sonuçları büyük-küçük harfe duyarlı değildir.</p>
+</div>
+<div id="sdfootnote3">
+<p><a class="sdfootnotesym" href="#sdfootnote3anc" name="sdfootnote3sym">3
+</a>Türkiye’de 2004’den başlayarak 2-yılda bir TÜİK tarafından yenilik
+anketi yapılmıştır. Ankette son 3 yıl içerisindeki yenilik
+faaliyetlerine ilişkin bilgi derlenmektedir. Anket, sektör ve işyeri
+büyüklüğüne göre seçilen girişimlere uygulanmaktadır.</p>
+</div>
+<div id="sdfootnote4">
+<p><a class="sdfootnotesym" href="#sdfootnote4anc" name="sdfootnote4sym">4
+</a>“Teknolojik devrim” ve “tekno-ekonomik paradigma” kavramlarının
+Kuhn’un “bilimsel devrim” ve “bilimsel paradigma” kavramlarından
+türetildiği Freeman ve Perez tarafından da belirtilmiştir (bkz. Kuhn,
+1962).</p>
+</div>
+<div id="sdfootnote5">
+<p><a class="sdfootnotesym" href="#sdfootnote5anc" name="sdfootnote5sym">5
+</a>Sermaye üretkenliği (çıktı/sermaye stoğu oranı) ise uzun dönemlerde
+artış veya düşüşler gösterebilmektedir.</p>
+</div>
+<div id="sdfootnote6">
+<p><a class="sdfootnotesym" href="#sdfootnote6anc" name="sdfootnote6sym">6
+</a>Yaşam beklentisindeki artış sonucu 1856’dan 1931’e kadar erkeklerin
+işgücünde olma süresi artmış, fakat işe başlama yaşının tedrici olarak
+artmasıyla 1931’den 1981’e kadar düşmüştür. Kadınların işgücünde olma
+süresi ise, işgücüne katılım oranlarının artmasından dolayı her iki
+dönemde de artmıştır. Bu etkiye karşın haftalık çalışma süresindeki
+düşme, ömür boyunca çalışan sürenin azalmasını sağlamıştır.</p>
+</div>
+<div id="sdfootnote7">
+<p><a class="sdfootnotesym" href="#sdfootnote7anc" name="sdfootnote7sym">7
+</a>Bu bölüm büyük ölçüde Taymaz’dan (2001: 5-23) alınmıştır.</p>
+</div>
+<div id="sdfootnote8">
+<p><a class="sdfootnotesym" href="#sdfootnote8anc" name="sdfootnote8sym">8
+</a>Piyasa ve sistem aksamalarına ilişkin kapsamlı bir çalışma için bkz.
+Arnold, Farla, Kolarz ve Porau (2014).</p>
+</div>
+<div id="sdfootnote9">
+<p><a class="sdfootnotesym" href="#sdfootnote9anc" name="sdfootnote9sym">9
+</a>Bu konuda ilk ampirik çalışmalar Mansfield ve arkadaşları tarafından
+yapılmıştır (bkz. Mansfield, vd., 1977).</p>
+</div>
+<div id="sdfootnote10">
+<p><a class="sdfootnotesym" href="#sdfootnote10anc" name="sdfootnote10sym">10
+</a>Talep yönlü politikalar artık AB’nin de gündeminde yer almaktadır.
+Avrupa Komisyonu 2012 yılında talep yönlü politikalar ile yeniliklerin
+desteklenmesine yönelik Eylem Planı’nı kabul etmiştir (bkz. European
+Commission, 2015).</p>
+</div>
+<div id="sdfootnote11">
+<p><a class="sdfootnotesym" href="#sdfootnote11anc" name="sdfootnote11sym">11
+</a>Türkiye’de 2006-2013 dönemindeki gelişmelere ilişkin çok kapsamlı
+bir çalışma için bkz. REF (2014).</p>
+</div>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

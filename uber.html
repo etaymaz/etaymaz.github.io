@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+
+<title>Uber ve Taksilerle Yeni Yaşam Biçimlerine Yolculuk</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Uber ve Taksilerle Yeni Yaşam Biçimlerine
+Yolculuk</h1>
+
+	
+						<date>Erol Taymaz
+							  • 2 Nisan 2018
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>İçindekiler</h3>
+<ul>
+<li><a href="#giriş" id="toc-giriş">Giriş</a></li>
+<li><a href="#bir-ulaştırma-hizmeti-olarak-taksi-piyasası"
+id="toc-bir-ulaştırma-hizmeti-olarak-taksi-piyasası">Bir ulaştırma
+hizmeti olarak taksi piyasası</a></li>
+<li><a href="#yeni-teknolojiler-ve-taksi-piyasasında-dönüşüm"
+id="toc-yeni-teknolojiler-ve-taksi-piyasasında-dönüşüm">Yeni
+teknolojiler ve taksi piyasasında dönüşüm</a></li>
+<li><a href="#yeni-teknolojiler-yeni-düzenlemeler"
+id="toc-yeni-teknolojiler-yeni-düzenlemeler">Yeni teknolojiler, yeni
+düzenlemeler</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="giriş" class="section level2">
+<h2>Giriş</h2>
+<p>İstanbul’da taksi ve Uber şöförleri arasında kavgaya varan
+sürtüşmeler ve taksi şöförlerinin protestosu gündemde önemli bir yer
+tuttu. İstanbul Taksiciler Esnaf Odası, “haksız rekabet” nedeniyle
+“küresel hırsız Uber’e” karşı dava açtı.</p>
+<p>Bu olaylar Türkiye ekonomisindeki yapısal sorunların bir yansıması.
+Bu yapısal sorunların altında ise politika yapıcıların yeni teknolojiler
+karşısındaki ilgisiz ve pasif tutumu yatıyor. Yeni teknolojiler tüm
+sektörlerde köklü değişikliklere yol açarken Türkiye politikasızlık ve
+öngörüsüzlük sonucu en basit konularda bile aktif bir rol oynayamıyor.
+Taksi-Uber kavgası da bu durumun bir sonucu.</p>
+<p><br/></p>
+</div>
+<div id="bir-ulaştırma-hizmeti-olarak-taksi-piyasası"
+class="section level2">
+<h2>Bir ulaştırma hizmeti olarak taksi piyasası</h2>
+<p>Bir ulaştırma hizmeti olarak taksi piyasası çok sayıda küçük satıcı
+(hizmet sunucu/taksi) ve çok sayıda müşterinin (yolcu) bulunduğu bir
+piyasa. Bu özellikleri nedeniyle “tam rekabet” koşullarını sağlıyor
+görünse de, bu piyasa pek çok ülkede uzun bir zamandır katı
+düzenlemelere (regulation) tabi tutuluyor. Kapitalist ekonomilerde
+piyasaya devlet müdahalesi ancak “piyasanın aksadığı” koşullarda meşru
+görüldüğü için pek çok iktisatçı taksi piyasasında da piyasanın
+aksadığını, bu nedenle düzenlemelerin gerekli olduğunu savunmuştur.</p>
+<p>Bilgi asimetrisi ve yüksek işlem maliyeti taksi piyasasındaki
+aksaklıkların temel nedeni olarak kabul ediliyor. Yolda taksi çeviren
+yolcu, taksinin ne zaman geleceğini, bineceği taksinin ücretini ve
+hizmetin kalitesini bilmez. Bu durumda yolcu ya söylenen ücreti kabul
+edecek ya da sürücü ile pazarlık edecektir. Bu durum ücretlerin yüksek,
+hizmet kalitesinin düşük olmasına yol açacağı gibi, belirsizlik ve
+sürekli pazarlık nedeniyle işlem maliyetini de artıracaktır. Yüksek
+ücretler çok sayıda taksinin piyasaya girmesine yol açacaktır. Bu durum
+bir yandan trafik yoğunluğunun artmasına yol açacak, diğer yandan da
+artan rekabet baskısı sonucu taksi sahipleri maliyetleri güvenlik
+pahasına düşürmeye çalışacak, hizmet kalitesi daha da düşecek, yolda
+müşterisiz geçen süre artacaktır.</p>
+<p>Yolcunun sürekli aynı şöför ile seyahat ettiği (hep aynı taksi
+durağından taksi tutması gibi) durumlarda bu sorunlar azalacaktır. Fakat
+taksi durakları ancak yerel düzeyde olduğu ve geleneksel taksi
+hizmetleri çoğunlukla yolda geçen taksilerden sağlandığı için piyasa
+aksaklıklarının önemli olduğu vurgulanmaktadır.</p>
+<p>Bu sorunların çözümü için taksi piyasaları genelde üç farklı düzeyde
+düzenleniyor.</p>
+<ul>
+<li>Taksi sayısının kısıtlanması</li>
+<li>Taksi fiyatlarının belirlenmesi</li>
+<li>Sürücü ve araca ilişkin standartlar</li>
+</ul>
+<p>Taksi sayısının kısıtlanması aşırı arzı engellerken, kısıtlanan arz
+sonucu fiyatların çok fazla artmaması için fiyatlar da belirleniyor,
+sürücü ve yolcu güvenliği için de araç ve sürücü niteliğine ilişkin
+standartlar getiriliyor.</p>
+<p>Kuramsal olarak bu düzenlemeler ile piyasa aksamasının giderilmesi
+mümkün görünse de uygulamada farklı sonuçlar ortaya çıkmakta. Taksi
+sayısının kısıtlanması, hemen hemen tüm ülkelerde plaka sahipleri
+açısından önemli bir rant kaynağı oluşturdu, plaka sahipleri güçlü bir
+lobi oluşturarak taksi sayısının artmasını engelledi. Taksi sayısına
+ilişkin düzenlemeler genelde yerel düzeyde yapıldığı için, taksi
+duraklarının kiralanması yoluyla bu rantın bir kısmını paylaşan yerel
+yönetimler de taksi sayısının artmasına karşı çıkan lobi ile ortak
+hareket etme eğiliminde oluyor.</p>
+<p>Plaka fiyatlarının önemli bir rant kaynağı olması, taksi piyasasının
+düşey olarak parçalanmasına (fragmentation) yol açtı. Bunun sonucu
+olarak üç katman ortaya çıktı: rantın önemli bir bölümünü elde eden
+<strong>plaka sahipleri</strong>, plakaları kiralayan <strong>araç
+sahipleri</strong> ve <strong>sürücüler</strong>. Yatay parçalanma ile
+birlikte piyasadaki iş gücünün en büyük kısmını oluşturan sürücülerin
+“personel” olarak değil “kendi-hesabına çalışan” kişi olarak kabul
+edilmesi sürücülerin gelir, çalışma koşulları ve sosyal güvenlik
+açısından dezavantajlı durumda olmalarına yol açtı.</p>
+<p>Belirli duraklarda/bölgelerde faaliyet gösteren (kooperatif ve diğer
+yasal biçimlerdeki) küçük taksi işletmeleri şeklinde örgütlenen taksi
+piyasaları yatay olarak da parçalı bir yapıya sahiptir. Yüksek plaka
+fiyatları ve kiraları nedeniyle maliyetler üzerinde baskı olmakta,
+yeterli denetimlerin de olmaması sonucu sürücülerin niteliği ve
+araçların güvenliği ilgili sorunlar artıyor. Taksiler yolcuların az
+olduğu alanlarda hizmet vermekten kaçınırken, ücreti artırmak için yolu
+uzattıklarına ilişkin iddialar sürücü ve yolcular arasında sürtüşmelere
+yol açıyor.</p>
+<p>Benzer sorunlar İstanbul’da da gözlenmektedir. İstanbul’da yaklaşık
+18,000 taksi bulunuyor. Son 25 yılda olağanüstü nüfus artışına rağmen
+yeni plaka verilmedi. Bunun sonucu olarak toplumsal maliyeti hemen hemen
+sıfır lira olan taksi plaka fiyatı sürekli bir şekilde enflasyonun
+üzerinde artarak 2018 başlarında 1.6 milyon TL’ye ulaştı.<a href="#fn1"
+class="footnote-ref" id="fnref1"><sup>1</sup></a> Taksi plakasının bir
+“yatırım” aracı olarak görülmesi ve fiyatının bu kadar artmasının tek
+nedeni, plaka sayısındaki kısıtlamadır. Fakat bu kısıtlamanın etkisi,
+Uber gibi yeni teknolojileri kullanan firmalar nedeniyle kırılmaya
+başladı. Örneğin benzer düzenlemelerin olduğu New York’ta Uber’in piyasa
+girmesi sonucu son beş yılda plaka fiyatları hızla düştü (2013’de
+yaklaşık 1.6 milyon dolar, 2017 başında ise 250,000 dolardan az).<a
+href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Bir başka
+deyişle, günümüzde İstanbul’daki plaka fiyatları New York’taki
+fiyatlardan çok daha yüksektir.</p>
+<p>Bu sorunlardan dolayı yasal olarak telefonla ulaşım hizmeti veren
+firmalar ve kaçak taksiler de piyasaya giriyor. Fakat plaka sayısının az
+olmasından dolayı bu süreçler piyasa yapısında önemli bir dönüşüme yol
+açamıyor.</p>
+<p><br/></p>
+</div>
+<div id="yeni-teknolojiler-ve-taksi-piyasasında-dönüşüm"
+class="section level2">
+<h2>Yeni teknolojiler ve taksi piyasasında dönüşüm</h2>
+<p>Taksi piyasasını etkileyen en önemli gelişme cep telefonuna yüklenen
+bir uygulama ile taksi ve müşteriyi buluşturan firmaların yaygınlaşması.
+En bilinen örneği Uber olan bu firmalar mevcut teknolojileri (cep
+telefonu, GPS teknolojisi ve kredi kartı ile ödeme) birleştirerek taksi
+piyasasında köklü bir dönüşüme yol açtı. Bu uygulamada, müşteri cep
+telefonu üzerinden kolayca taksi çağırmakta, firma yolcuya en yakın
+konumdaki bir taksiye durumu bildirmekte, yolcu aracın nerede olduğunu
+ve ücreti önceden öğrenmekte ve ödemesini kredi kartı ile doğrudan
+firmaya yapmaktadır. Firma bu ücretten belirli bir pay (yaklaşık %20)
+alıp kalan kısmı sürücüye ödemektedir. Taksi ücreti, mesafe ve bekleme
+süresine bağlı olmaktadır. Bazı uygulamalarda talebin yoğun olduğu
+saatlerde sürücü sayısının artırılması (ve talebin azaltılması) için
+ücret de artırılabilmektedir.</p>
+<p>Uber sektörde düşey ve yatay bütünleşme sağlayarak önemli bir dönüşüm
+sağladı. Düşey bütünleşme, plaka sahibi, araç sahibi ve sürücü
+şeklindeki ayrışmayı ortadan kaldırıyor. Yeni modelde aracı firma (Uber)
+araç sahibi olan sürücü ile yolcuyu buluşturuyor. Çok sayıda sürücünün
+katılımı ile bütün bir kent düzeyinde aynı hizmetin sunulması sonucu
+yatay düzeyde de bütünleşme sağlanıyor.</p>
+<p>Yeni teknolojilere dayalı bu yeni iş modeli ile “işlem maliyeti”
+önemli ölçüde azalıyor ve firmanın çalıştığı araç sayısı fazla olduğu
+için yolcu daha çabuk araç buluyor, taksilerin yolculu sürüş oranı
+artıyor, yolcu yol güzergahını ve fiyatını önceden bildiği için
+sürücü-yolcu sürtüşmesi azalıyor. Sonuç olarak kaynaklar (araç) daha
+etkin kullanılıyor ve maliyetler düşüyor. Bu özellikleri sonucu Uber ve
+benzer hizmet sununa firmalar, yasal engel ile karşılaşmadığı tüm
+ülkelerde/bölgelerde hızla yaygınlaşıyor.</p>
+<p>Uber Türkiye’de (2018 Mart itibariyle) sadece İstanbul’da faaliyet
+gösteriyor. Uber Türkiye Genel Müdürü Neyran Bahadırlı’nın açıklamasına
+göre İstanbul’da (yarısı sarı taksi şöförü olmak üzere) 3,000’den fazla
+şöför Uber ile çalışıyor.<a href="#fn3" class="footnote-ref"
+id="fnref3"><sup>3</sup></a></p>
+<p>Geleneksel taksi firmaları ve plaka sahipleri, taksilerin tabi olduğu
+düzenlemelere uymadan faaliyet gösterdiğini için Uber gibi firmaların
+engellenmesi ve yasaklanmasını talep ediyor. Uber ve benzeri
+uygulamaların geleneksel taksi hizmeti ile aynı veya benzer bir hizmet
+sunup/sunmadığı, iktisat ve hukuk yazınında da bir tartışma konusu
+oldu.</p>
+<p>Bu iş modeli, modeli geliştirenler tarafından “araç paylaşımı” olarak
+tanımlanıyor ve “paylaşım ekonomisi”nin bir örneği olarak sunuluyor.
+Benzer uygulamalar farklı sektörlerde de yaygınlaştı (konaklama
+hizmetlerinde Airbnb gibi). “Araç paylaşımı”nın taksi piyasasından
+farklı olduğu, çünkü sürücünün aracını paylaştığı ve talebin cep
+telefonu ile yapıldığı da iddia edilmekte.</p>
+<p>“Araç paylaşımı” ve taksi piyasalarının aynı olup olmadığı, Uber gibi
+firmaların klasik taksi piyasası düzenlemesine tabi olup/olmayacağının
+belirlenmesi açısından önemli. Bu konuda farklı görüşler olmakla
+birlikte Avrupa Adalet Mahkemesi Uber’in taksi hizmeti verdiğine karar
+vererek bu konudaki hukuki tartışmalara Avrupa Birliği özelinde son
+verdi.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
+Bu karar öncesinde de pek çok Avrupa Birliği ülkesinde Uber, mevcut
+taksi düzenlemesine uymadığı gerekçesiyle yasaklanmıştı. ABD’de ise
+eyalet düzeyinde farklı düzenlemeler gözlenmekle birlikte, genel eğilim
+Uber ve benzeri firmaların piyasaya girişine izin verilmesi yönünde.</p>
+<p>Yeni teknolojilere dayalı uygulamaların daha hızlı ve etkin hizmet
+sunarak, işlem maliyetini azaltarak ve araç kullanım oranını artırarak
+taksi hizmeti sunumunda verimliliği artırdığı görülüyor. Bu nedenle
+yasal düzenlemeler ile engellese de yeni uygulamalar kaçak yollarla veya
+farklı yasal biçimlerde yaygınlaşma eğiliminde oluyor. Bu nedenle
+geleneksel taksilerin daha iyi hizmet sunmasını sağlayacak yeni
+uygulamaların yasaklanması yerine toplumun refahını artıracak şekilde
+kullanılmasını sağlayacak düzenlemelerin geliştirilmesi gerekli. Çünkü
+yeni uygulamaların verimliliği artırıcı etkileri yanı sıra, herhangi bir
+düzenlemeye tabi tutulmamaları durumunda, olumsuz etkileri de
+olabilecek.</p>
+<ul>
+<li>Uber gibi firmalar mevcut düzenlemelere tabi olmadığı ve/veya
+uymadığı durumda, sürücü ve yolcunun güvenliğini sağlamaya yönelik
+düzenleme maliyetinden kaçınma eğiliminde oluyor. Geleneksel taksiciler
+tarafından “haksız rekabet” olarak tanımlanan bu iddiaya karşı olarak,
+sürücü ve aracın niteliğine ilişkin belirli koşullar konulduğu, sürücü
+ve yolcu hakkında derlenen veriler ile (oto) kontrol sağlandığı, ayrıca
+geleneksel taksilerin de yetersiz denetimden dolayı mevcut düzenlemelere
+uymadığı söyleniyor. Bu tartışmalar aslında mevcut durumda her iki
+kesimde de düzenlemelerin uygulanması konusunda ciddi sorunların
+olduğunu gösteriyor.</li>
+<li>Uber ve benzeri firmalara yönelik bir başka eleştiri de vergi
+konusunda. Bu firmaların vergi ödemediği söylenirken, karşı iddia olarak
+mevcut vergi düzenlemesinden dolayı aslında geleneksel taksilerin vergi
+vermediği, Uber’e çalışan taksilerin vergi ödedikleri de belirtiliyor.<a
+href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> Bu
+iddialar kısmen doğru olmakla birlikte Uber gibi çok uluslu firmaların,
+ülkeler arasında kar transferi yapma olanaklarına sahip olduğu göz önüne
+alınmalı.</li>
+<li>Yeni teknolojiler, ağ dışsallıkları nedeniyle tekelleşmeye yol
+açabilecek potansiyele sahip. Bu durum uzun dönemde taksi hizmetleri
+ücretlerinin artmasına yol açabilir. Bu iddiaya karşı bazı
+araştırmacılar, telefonla taksi çağırma piyasasına girişin kolay
+olduğunu, bu nedenle tekelleşme eğiliminin gerçekleşmeyeceğini iddia
+ediyor.</li>
+<li>Yeni teknolojiler ile sürücü ve yolculara ait önemli kişisel
+bilgileri bir merkezde toplanıyor. Toplanan kişisel bilginin
+gizliliğinin nasıl sağlanacağı da önemli bir sorun.</li>
+<li>Son olarak, Uber ve benzeri firmaların sadece profesyonel şöför
+kullanmadığı, bu durumun yolcu güvenliğini de tehdit ettiği söyleniyor.
+Ayrıca Uber’in de belirttiği gibi, kendi araçları ile hizmet sunan
+şöförlerin önemli bir kısmı bu işi “ikinci iş” olarak yapıyor. Bu durum
+(toplamda) uzun çalışma saatlerine ve güvencesiz çalışmaya yol
+açabiliyor. Taksi şöförlüğünü kendi aracı ile ikinci iş olarak yapan
+şöförlerin daha düşük ücretlerde çalışmaya yatkın olması, tam zamanlı,
+profesyonel olarak çalışan şöförlerin ücretlerinin de bastırılmasına yol
+açıyor.</li>
+</ul>
+<p><br/></p>
+</div>
+<div id="yeni-teknolojiler-yeni-düzenlemeler" class="section level2">
+<h2>Yeni teknolojiler, yeni düzenlemeler</h2>
+<p>Yeni teknolojilerin, taksi hizmetlerinin daha kaliteli ve verimli
+olarak sunulması potansiyelini taşıdığı bir gerçek. Fakat piyasada
+gerekli düzenlemelerin yapılmaması durumunda, hem bu potansiyel
+gerçekleşmeyecek, hem de olumsuz etkiler artacak. Bu nedenle yeni
+teknolojilerin etkilerinin kapsamlı bir şekilde değerlendirilmesi ve
+toplumsal refahı artırmaya yönelik düzenlemelerin yapılması gerekiyor.
+Plaka rantını korumak için mevcut taksi sayısını değiştirmeden yeni
+uygulamaların yaygınlaşmasını engellemek, sonuçta geleneksel taksicileri
+de koruyamayacak.</p>
+<p>Taksi piyasasına ilişkin yeni düzenlemeler,</p>
+<ul>
+<li>Genel kentsel ulaşım planlaması kapsamında ele alınmalı,</li>
+<li>Toplumsal refahı, eşitliği ve etkinliği artırıcı yönde olmalı,</li>
+<li>Sürücü ve yolcu güvenliğini sağlamalı,</li>
+<li>Çevre (emisyon) ve trafik yoğunluğuna etkileri göz önüne
+almalı,</li>
+<li>Piyasaya giriş kolaylığı sağlamalı ve</li>
+<li>Kişisel verilerin gizliliğini güvence altına almalıdır.</li>
+</ul>
+<p>Yeni teknolojilerin olumlu potansiyelinin gerçekleştirilmesi, sadece
+hukuki düzenlemeler ile sağlanamayacaktır. Bu kapsamda yerel ve merkezi
+yönetimlerin taksi piyasası dışındaki politikaları, özellikle teknoloji
+ve istihdam politikaları da önem kazanmaktadır.</p>
+<p>Yeni teknolojiler her durumda taksi piyasasında köklü dönüşümlere yol
+açıyor. Bu nedenle özellikle sürücülerin bu süreçten olumsuz
+etkilenmemesi için geleneksel taksi piyasasının hızla dönüştürülmesi ve
+yeni teknolojilere adapte olması sağlanmalı. Bu dönüşüm için gerekli
+olan uygulamalar yerel ve/veya merkezi yönetimlerin desteği ile
+hazırlanabilir ve sürücülerin yeni teknolojiye adaptasyonu/eğitimi
+sağlanabilir. Bu uygulamalarda açık kaynak (open source) kod
+kullanılması, uygulama geliştirilmesinde de etkinlik sağlanması ve
+geliştirilen uygulamaların her yerde kullanılabilmesini sağlayacaktır.
+Teknoloji politikası hedefi olarak açık kaynak kullanımı sadece bu
+alanda değil, tüm kamu yazılımlarında ve faaliyetlerinde tercih
+edilmelidir.</p>
+<p>Türkiye’de taşeronlaşma tüm sektörlerde hızla yaygınlaştı. Bunun
+sonucu olarak ücretler baskılanmakta, iş güvencesi ve istikrarı
+azalmaktadır. Maliyetleri azaltmak için kamu kesiminde de yaygın olarak
+uygulanan taşeron işgücü istihdamı, insan sermayesine yatırımı
+engellemekte ve sonuçta verimliliği düşürerek maliyetlerin artmasına yol
+açmaktadır. Aynı durum geleneksel ve yeni taksi piyasasında da
+gözleniyor.Taksi piyasasına yönelik düzenlemeler düşük ücret-düşük
+nitelik sarmalını kıracak şekilde tasarlanmalı, bir başka deyişle
+ücretli çalışan ile “kendi adına” çalışanlar arasındaki çalışma
+koşulları ve işgücü maliyet farkı azaltılmalıdır. Bu doğrultuda yapılan
+düzenlemeler, ücretler ile birlikte verimliliği de artırarak
+maliyetlerin düşmesini ve kaynakların daha etkin kullanılmasını
+sağlayacaktır.</p>
+<p><br/></p>
+<div id="notlar" class="section level3">
+<h3>Notlar</h3>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p><a
+href="http://www.cumhuriyet.com.tr/haber/ekonomi/942151/Taksici_100_bin_TL_kazanip_6_bin_TL_vergi_oduyor.html"><em>Cumhuriyet
+gazetesi</em></a>, 13 Mart 2018.<a href="#fnref1"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a
+href="https://nypost.com/2017/04/05/taxi-medallions-reach-lowest-value-of-21st-century/"><em>New
+York Post</em></a>, 5 Nisan 2017.<a href="#fnref2"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Bkz. <a
+href="https://www.sozcu.com.tr/2017/ekonomi/uber-genel-mudurunden-ses-getirecek-aciklamalar-2054953/"><em>Sözcü
+gazetesi</em></a>, 19 Ekim 2017.<a href="#fnref3"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Bkz. Court of Justice of the European Union, <a
+href="https://curia.europa.eu/jcms/upload/docs/application/pdf/2017-12/cp170136en.pdf"><em>Press
+Release No: 136/17</em></a>, 20 Aralık 2017.<a href="#fnref4"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Vergi uzmanı Ozan Bingöl, “…taksi plakası sahiplerinin
+ÖTV’siz araç aldığını, KDV ve stopaj ödemediğini ve basit usülde gelir
+beyanında bulunarak büyük vergi avantajı sağladığını dile getirdi.
+2017’de basit usülde sınırın 43 bin TL olduğunu ve taksi plakası
+sahiplerinin yıllık 40 bin TL civarında gelir beyan ederek yılda sadece
+6 bin TL vergi ödediğini dile getirdi. Taksi plakası sahiplerinin yılda
+90-100 bin TL gelir ettiğini hatırlatan Bingöl, gerçek usülde ve hasılat
+üzerinden vergilendirme olması gerektiğini vurguladı.” <a
+href="http://www.cumhuriyet.com.tr/haber/ekonomi/942151/Taksici_100_bin_TL_kazanip_6_bin_TL_vergi_oduyor.html"><em>Cumhuriyet</em></a>,
+13 Mart 2018.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

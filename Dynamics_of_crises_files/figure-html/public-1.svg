@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='432.00pt' viewBox='0 0 720.00 432.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='-0.00000000000011' width='720.00' height='432.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDguNzF8NzE0LjUyfDUuNDh8MzYyLjQ5'>
+    <rect x='48.71' y='5.48' width='665.81' height='357.02' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDguNzF8NzE0LjUyfDUuNDh8MzYyLjQ5)'>
+<polyline points='48.71,307.07 714.52,307.07 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='48.71,197.95 714.52,197.95 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='48.71,88.83 714.52,88.83 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='78.98,346.27 165.44,196.17 251.91,321.50 338.38,225.98 424.85,213.18 511.32,276.80 597.79,181.09 684.26,240.88 ' style='stroke-width: 3.20; stroke: #103399; stroke-linecap: butt;' />
+<polyline points='78.98,264.70 165.44,320.50 251.91,280.22 338.38,307.54 424.85,252.71 511.32,204.54 597.79,265.01 684.26,324.39 ' style='stroke-width: 3.20; stroke: #C5000C; stroke-linecap: butt;' />
+<polyline points='78.98,21.71 165.44,30.89 251.91,139.41 338.38,116.56 424.85,251.36 511.32,194.23 597.79,203.36 684.26,198.99 ' style='stroke-width: 3.20; stroke: #FF9911; stroke-linecap: butt;' />
+<line x1='48.71' y1='307.07' x2='714.52' y2='307.07' style='stroke-width: 1.07; stroke: #00008B; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='43.78' y='311.07' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='22.20px' lengthAdjust='spacingAndGlyphs'>0.00</text>
+<text x='43.78' y='201.95' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='22.20px' lengthAdjust='spacingAndGlyphs'>0.05</text>
+<text x='43.78' y='92.83' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='22.20px' lengthAdjust='spacingAndGlyphs'>0.10</text>
+<polyline points='48.71,362.49 714.52,362.49 ' style='stroke-width: 0.53; stroke: #666666; stroke-linecap: butt;' />
+<text x='165.44' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='338.38' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='511.32' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='684.26' y='375.42' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='381.62' y='393.77' text-anchor='middle' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='42.84px' lengthAdjust='spacingAndGlyphs'>Period</text>
+<text transform='translate(15.48,183.99) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='177.20px' lengthAdjust='spacingAndGlyphs'>Public services growth rate</text>
+<rect x='292.24' y='408.10' width='178.75' height='18.43' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='292.24' y='408.10' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none;' />
+<line x1='294.08' y1='417.31' x2='308.82' y2='417.31' style='stroke-width: 3.20; stroke: #103399; stroke-linecap: butt;' />
+<rect x='353.65' y='408.10' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none;' />
+<line x1='355.49' y1='417.31' x2='370.23' y2='417.31' style='stroke-width: 3.20; stroke: #C5000C; stroke-linecap: butt;' />
+<rect x='415.06' y='408.10' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none;' />
+<line x1='416.90' y1='417.31' x2='431.64' y2='417.31' style='stroke-width: 3.20; stroke: #FF9911; stroke-linecap: butt;' />
+<text x='316.15' y='422.31' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>2001</text>
+<text x='377.56' y='422.31' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>2009</text>
+<text x='438.97' y='422.31' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>2019</text>
+</g>
+</svg>

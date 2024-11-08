@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+<meta name="date" content="2024-11-03" />
+
+<title>CBRT: An R Package for Easy Access to the CBRT Database (Version 0.1.1)</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Erol Taymaz R Papers" href="http://users.metu.edu.tr/etaymaz/rss.xml" />
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #008000; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.im { } /* Import */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #008080; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CBRT: An R Package for Easy Access to the
+CBRT Database (Version 0.1.1)</h1>
+
+	
+						<date>Erol Taymaz
+							  • 03 November 2024
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>Contents</h3>
+<ul>
+<li><a href="#the-package" id="toc-the-package">The package</a></li>
+<li><a href="#finding-and-downloading-variables"
+id="toc-finding-and-downloading-variables">Finding and downloading
+variables</a></li>
+<li><a href="#comments-and-suggestions"
+id="toc-comments-and-suggestions">Comments and suggestions</a></li>
+<li><a href="#r-bloggers" id="toc-r-bloggers">R-Bloggers</a></li>
+<li><a href="#r-weekly" id="toc-r-weekly">R Weekly</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="the-package" class="section level2">
+<h2>The package</h2>
+<p>The CBRT package includes functions for finding, and downloading data
+from the Central Bank of the Republic of Turkey’s database.</p>
+<p>The CBRT database covers more than 40,000 time series variables.</p>
+<p>With the change made in CBRT API in April 1924, the “key” value is
+required to be added to the HTTP Request Header in web service calls.
+The current version of the CBRT package (0.1.1) has been adapted to the
+required change. Since there is no change in function parameters, the
+users can use the code prepared for version 0.1.0 without any
+modification.</p>
+<p>You can install the package from the source by using the following
+command (the <strong>CBRT</strong> package depends on the
+<strong>data.table</strong> and <strong>curl</strong> packages):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;http://users.metu.edu.tr/etaymaz/files/CBRT_0.1.1.tar.gz&quot;</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>                 <span class="at">repos =</span> <span class="cn">NULL</span>, <span class="at">type =</span> <span class="st">&quot;source&quot;</span>)</span></code></pre></div>
+<p>You may also install it from GitHub. Install the the
+<a href="https://github.com/r-lib/devtools">devtools</a> package if not
+installed, then</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(devtools)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">install_github</span>(<span class="st">&quot;etaymaz/CBRT&quot;</span>)</span></code></pre></div>
+<p>Please kindly note that you need a <strong>key</strong> to download
+data from the CBRT’s database. To get the <strong>key</strong>, register
+at the CBRT’s
+<a href="https://evds2.tcmb.gov.tr/index.php?/" target="_blank">Electronic
+Data Delivery System</a>. Registration is free of charge and takes only
+a few minutes.</p>
+</div>
+<div id="finding-and-downloading-variables" class="section level2">
+<h2>Finding and downloading variables</h2>
+<p>All <strong>data series</strong> (variables) are classified into
+<strong>data groups</strong>, and data groups into <strong>data
+categories</strong>. There are 44 data categories (including the
+archieved ones), 496 data groups, and 40,826 data series.</p>
+<p>To find variables, use the <code>searchCBRT</code> function:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>))</span></code></pre></div>
+<pre><code>##            groupCode
+##               &lt;char&gt;
+##  1:       bie_toisso
+##  2:      bie_rkbigmy
+##  3:     bie_tsny2010
+##  4:        bie_uroto
+##  5:     bie_urkisi10
+##  6:     bie_ursaat10
+##  7:       bie_tisguc
+##  8:     bie_ysivils2
+##  9:        bie_imurk
+## 10:      bie_urucret
+## 11:        bie_imurs
+## 12:      bie_rssivil
+## 13:     bie_rssivily
+## 14:      bie_urimkap
+## 15:      bie_ururet2
+## 16:      bie_imurkkr
+## 17:       bie_imurkk
+## 18:       bie_imurkv
+## 19:       bie_imursv
+## 20:       bie_rkbigm
+## 21:     bie_sivilis2
+## 22:       bie_ursany
+## 23:      bie_ursan97
+## 24:    bie_ursanayi2
+## 25:    bie_ururetim4
+## 26:      bie_urur3ay
+## 27:       bie_tsanay
+## 28:       bie_tsny05
+## 29:     bie_tsny05n2
+## 30:      bie_imursur
+## 31:       bie_imursu
+## 32:       bie_urkisi
+## 33:       bie_ursaat
+## 34:     bie_altinadt
+## 35:      bie_altingr
+## 36:    bie_sanayrev4
+## 37:      bie_uraltin
+## 38:    bie_redkurigm
+## 39:  bie_elektuketim
+## 40:     bie_urkisi15
+## 41:     bie_ursaat15
+## 42:     bie_yisgucu2
+## 43:   bie_isgucarsiv
+## 44:   bie_sanayrev11
+## 45: bie_tsanaymt2021
+## 46:     bie_urkisi21
+## 47:     bie_ursaat21
+##            groupCode
+##                                                                                                                                          groupName
+##                                                                                                                                             &lt;char&gt;
+##  1: Establishments and Labourers Covered By Collective Bargaining Strikes and Lock Outs (Ministry of Labor and Social Security) (Number) (Archive)
+##  2:                                     Exchange Rates_Unit Labor Cost_Developed Countries Based Real Effective Exchange Rate (2003=100) (Archive)
+##  3:                                                                       Industrial Production Index (2010=100) (TURKSTAT) (NACE REV.2) (Archive)
+##  4:                                                                         OSD - Total Cars Production (AMA=Automotive Manufacturers Association)
+##  5:                                             Index of Production per Person Employed (2010=100) (Ministry of Industry and Technology) (Archive)
+##  6:                                                 Index of Production per Hour Worked (2010=100) (Ministry of Industry and Technology) (Archive)
+##  7:                                                               Seasonally adjusted main labour force indicators (TURKSTAT)(In thousands,15+age)
+##  8:                        Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)
+##  9:                                                  Index of Production Workers Working in Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 10:                                                                  Payments to Production Workers in Manufacturing Industry (TURKSTAT) (Archive)
+## 11:                                                     Index of Production Hours Worked In Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 12:                                                   Non_Institutional Civilian Population by Labour Force Status (TURKSTAT) (Thousand) (Archive)
+## 13:                                       Non_Institutional Civilian Population by Labour Force Status (New Series) (TURKSTAT) Thousand) (Archive)
+## 14:                      Capacity Utilization Rates In the Manufacturing Industry_Weighted By Production Value ISIC REV.3 (TURKSTAT) (%) (Archive)
+## 15:                       Capacity Utilization Rates In the Manufacturing Industry_Weighted By Production Value ISIC REV.3 (TURKSTAT) %) (Archive)
+## 16:                                          Index of Real Earning Per Production Worker in Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 17:                                               Index of Earning Per Production Worker in Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 18:                                                            Index of Partial Productivity Per Production Worker (1997=100) (TURKSTAT) (Archive)
+## 19:                                                       Index of Partial Productivity Per Production Hour Worked (1997=100) (TURKSTAT) (Archive)
+## 20:                                             Exchange Rates_ (Previous) Unit Labor Cost Based Real Effective Exchange Rate (2003=100) (Archive)
+## 21:                                      Non_Institutional Civilian Population by labour Force Status (After ABPRS) (TURKSAT) (Thousand) (Archive)
+## 22:                                                                           Production Amounts of Selected Industrial Goods (TURKSTAT) (Archive)
+## 23:                                                                           Production Amounts of Selected Industrial Goods (TURKSTAT) (Archive)
+## 24:                                                Production of Selected Industrial Goods (TURKSTAT, SEKA=Cellulose and Paper Industry) (Archive)
+## 25:                                                                                    Industrial Production Index (1992=100) (TURKSTAT) (Archive)
+## 26:                                                                                    Industrial Production Index (1997=100) (TURKSTAT) (Archive)
+## 27:                                                                                    Industrial Production Index (1997=100) (TURKSTAT) (Archive)
+## 28:                                                                     Industrial Production Index (2005=100) (TURKSTAT) (NACE REV.1.1) (Archive)
+## 29:                                                                       Industrial Production Index (2005=100) (TURKSTAT) (NACE REV.2) (Archive)
+## 30:                                       Index of Real Wages Per Production Hour Worked In Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 31:                                            Index of Wages Per Production Hour Worked In Manufacturing Industry (1997=100) (TURKSTAT) (Archive)
+## 32:                                     Index of Production per Person Employed (2005=100) Ministry of Science, Industry and Technology) (Archive)
+## 33:                                         Index of Production per Hour Worked (2005=100) Ministry of Science, Industry and Technology) (Archive)
+## 34:                                                                                     Republican Gold Demand _ Production Amount (MINT) (Pieces)
+## 35:                                                                                       Republican Gold Demand _ Production Amount (MINT) (Gram)
+## 36:                                                                                    TURKSTAT - Industrial Production Index (2015=100) (Archive)
+## 37:                                                                                    Gold Production of Mining Companies Declaration (BIST) (Kg)
+## 38:                                                                   Exchange Rates-Unit Labor Cost Based Real Effective Exchange Rate (2003=100)
+## 39:                                                                 TEIAS - Turkiye, Electricity (Production, Consumption, Exports, Imports) (MWh)
+## 40:                                              Index of Production per Person Employed (2015=100)(Ministry of Industry and Technology) (Archive)
+## 41:                                                  Index of Production per Hour Worked (2015=100)(Ministry of Industry and Technology) (Archive)
+## 42:                                                                                   Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 43:                                                                       Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+## 44:                                                             TURKSTAT - Industrial Production Index - Seasonal and Calendar Adjusted (2015=100)
+## 45:                                                             TURKSTAT - Industrial Production Index - Seasonal and Calendar Adjusted (2021=100)
+## 46:                                                        Index of Production per Person Employed (2015=100)(Ministry of Industry and Technology)
+## 47:                                                            Index of Production per Hour Worked (2015=100)(Ministry of Industry and Technology)
+##                                                                                                                                          groupName</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">field =</span> <span class="st">&quot;series&quot;</span>)</span></code></pre></div>
+<pre><code>##              seriesCode
+##                  &lt;char&gt;
+##   1: TP.IYA.CDUR2.S08.C
+##   2: TP.IYA.CNDU2.S08.C
+##   3: TP.IYA.CONS2.S08.C
+##   4: TP.IYA.FOBE2.S08.C
+##   5: TP.IYA.INTM2.S08.C
+##  ---                   
+## 671:     TP.YISGUCU2.G5
+## 672:     TP.YISGUCU2.G6
+## 673:        TP.RS.YAA03
+## 674:        TP.RS.YAA09
+## 675:        TP.RS.YAA13
+##                                                                                                     seriesName
+##                                                                                                         &lt;char&gt;
+##   1: 8.(SHORTAGE OF LABOUR FORCE) What main factors are currently limiting your production? (Percentage Share)
+##   2: 8.(SHORTAGE OF LABOUR FORCE) What main factors are currently limiting your production? (Percentage Share)
+##   3: 8.(SHORTAGE OF LABOUR FORCE) What main factors are currently limiting your production? (Percentage Share)
+##   4: 8.(SHORTAGE OF LABOUR FORCE) What main factors are currently limiting your production? (Percentage Share)
+##   5: 8.(SHORTAGE OF LABOUR FORCE) What main factors are currently limiting your production? (Percentage Share)
+##  ---                                                                                                          
+## 671:                                                                                       Not in labour force
+## 672:                                                                       Labour force participation rate (%)
+## 673:                                                                                    Labour force(Thousand)
+## 674:                                                                       Labour force participation rate (%)
+## 675:                                                                             Not in labour force(Thousand)
+##         groupCode
+##            &lt;char&gt;
+##   1:    bie_cdur2
+##   2:    bie_cndu2
+##   3:    bie_cons2
+##   4:    bie_fobe2
+##   5:    bie_intm2
+##  ---             
+## 671: bie_yisgucu2
+## 672: bie_yisgucu2
+## 673: bie_ysivils2
+## 674: bie_ysivils2
+## 675: bie_ysivils2
+##                                                                                                                    groupName
+##                                                                                                                       &lt;char&gt;
+##   1:                                                        Business Tendency Statistics-Durable Consumer Goods (NACE REV.2)
+##   2:                                                    Business Tendency Statistics-Non-durable Consumer Goods (NACE REV.2)
+##   3:                                                                Business Tendency Statistics-Consumer Goods (NACE REV.2)
+##   4:                                                              Business Tendency Statistics-Food &amp; Beverages (NACE REV.2)
+##   5:                                                            Business Tendency Statistics-Intermediate Goods (NACE REV.2)
+##  ---                                                                                                                        
+## 671:                                                            Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 672:                                                            Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 673: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)
+## 674: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)
+## 675: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">tags =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>##            seriesCode                            seriesName      groupCode
+##                &lt;char&gt;                                &lt;char&gt;         &lt;char&gt;
+##   1: TP.ISGUCARSIV.G1 Population 15 years and over(Archive) bie_isgucarsiv
+##   2: TP.ISGUCARSIV.G2                 Labour Force(Archive) bie_isgucarsiv
+##   3: TP.ISGUCARSIV.G3                     Employed(Archive) bie_isgucarsiv
+##   4: TP.ISGUCARSIV.G4                   Unemployed(Archive) bie_isgucarsiv
+##   5: TP.ISGUCARSIV.G5          Not in labour force(Archive) bie_isgucarsiv
+##  ---                                                                      
+## 413:   TP.YISGUCU2.G4                            Unemployed   bie_yisgucu2
+## 414:   TP.YISGUCU2.G5                   Not in labour force   bie_yisgucu2
+## 415:   TP.YISGUCU2.G6   Labour force participation rate (%)   bie_yisgucu2
+## 416:   TP.YISGUCU2.G7                   Employment rate (%)   bie_yisgucu2
+## 417:   TP.YISGUCU2.G8                 Unemployment rate (%)   bie_yisgucu2
+##                                                                     groupName
+##                                                                        &lt;char&gt;
+##   1: Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+##   2: Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+##   3: Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+##   4: Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+##   5: Basic Labour Force Indicators (TURKSTAT) (In thousands,15+age) (Archive)
+##  ---                                                                         
+## 413:             Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 414:             Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 415:             Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 416:             Main labour force indicators (TURKSTAT)(In thousands,15+age)
+## 417:             Main labour force indicators (TURKSTAT)(In thousands,15+age)</code></pre>
+<p>The package contains the lists of all data categories, data groups,
+and data series, as of 03 November 2024. You can update the lists by the
+following commands:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>allCBRTCategories <span class="ot">&lt;-</span> <span class="fu">getAllCategoriesInfo</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>allCBRTGroups <span class="ot">&lt;-</span> <span class="fu">getAllGroupsInfo</span>()</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>allCBRTSeries <span class="ot">&lt;-</span> <span class="fu">getAllSeriesInfo</span>()</span></code></pre></div>
+<p>After identifying the data group or data series, you can get some
+information about the data by <code>showGroupInfo</code> function:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">showGroupInfo</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
+<pre><code>##              Code
+##            &lt;char&gt;
+## 1: cid           
+## 2: groupCode     
+## 3: groupName     
+## 4: freq          
+## 5: source        
+## 6: sourceLink    
+## 7: revisionPolicy
+##                                                                            Variable
+##                                                                              &lt;char&gt;
+## 1: 1                                                                               
+## 2: bie_apifon                                                                      
+## 3: CBRT Net Funding (Business, Million TRY) and Weighted Average Funding Cost of th
+## 4: 2 (Work day)                                                                    
+## 5: CBRT                                                                            
+## 6:                                                                                 
+## 7:                                                                                 
+## * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</code></pre>
+<pre><code>##           seriesCode                                             seriesName
+##               &lt;char&gt;                                                 &lt;char&gt;
+##  1:   TP.APIFON1.IHA                             A1.Funding Through Auction
+##  2: TP.APIFON1.KOT.A A2a.BIST O/N Repo, Quotation Repo, Primary Dealer Repo
+##  3: TP.APIFON1.KOT.B                                        A2b.TRY Deposit
+##  4: TP.APIFON1.KOT.C                              A2c.LON Deposit, LON Repo
+##  5: TP.APIFON1.KOT.T                         A2.Total Funding Via Quotation
+##  6:   TP.APIFON1.TOP                                A.Total Funding (A1+A2)
+##  7:   TP.APIFON2.IHA                       B1.Sterilization Through Auction
+##  8:   TP.APIFON2.KOT                     B2.Sterilization Through Quotation
+##  9:   TP.APIFON2.TOP                          B.Total Sterilization (B1+B2)
+## 10:       TP.APIFON3                                 CBRT Net Funding (A-B)
+## 11:       TP.APIFON4              Weighted Average Cost of the CBRT Funding
+##     aggMethod
+##        &lt;char&gt;
+##  1:      last
+##  2:      last
+##  3:      last
+##  4:      last
+##  5:      last
+##  6:      last
+##  7:      last
+##  8:      last
+##  9:      last
+## 10:      last
+## 11:      last</code></pre>
+<p>If you want to get only names of series in a data group, use the
+following command:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">showSeriesNames</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
+<pre><code>##           seriesCode                                             seriesName
+##               &lt;char&gt;                                                 &lt;char&gt;
+##  1:   TP.APIFON1.IHA                             A1.Funding Through Auction
+##  2: TP.APIFON1.KOT.A A2a.BIST O/N Repo, Quotation Repo, Primary Dealer Repo
+##  3: TP.APIFON1.KOT.B                                        A2b.TRY Deposit
+##  4: TP.APIFON1.KOT.C                              A2c.LON Deposit, LON Repo
+##  5: TP.APIFON1.KOT.T                         A2.Total Funding Via Quotation
+##  6:   TP.APIFON1.TOP                                A.Total Funding (A1+A2)
+##  7:   TP.APIFON2.IHA                       B1.Sterilization Through Auction
+##  8:   TP.APIFON2.KOT                     B2.Sterilization Through Quotation
+##  9:   TP.APIFON2.TOP                          B.Total Sterilization (B1+B2)
+## 10:       TP.APIFON3                                 CBRT Net Funding (A-B)
+## 11:       TP.APIFON4              Weighted Average Cost of the CBRT Funding
+##     aggMethod
+##        &lt;char&gt;
+##  1:      last
+##  2:      last
+##  3:      last
+##  4:      last
+##  5:      last
+##  6:      last
+##  7:      last
+##  8:      last
+##  9:      last
+## 10:      last
+## 11:      last</code></pre>
+<p>You can download either one or more data series you specified, or all
+data series in a data group.</p>
+<p>To download individual data series, use the
+<code>getDataSeries</code> function:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="at">CBRTKey =</span> xxxxxx)</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx)</span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx,</span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>                            <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span></code></pre></div>
+<p>To download all data series in a group, use the
+<code>getDataGroup</code> function:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
+<p>If you create an object called <strong>myCBRTKey</strong> in R
+session to store your CBRT key, you do not need to define it for
+downloading:</p>
+<p><code>myCBRTKey &lt;-</code> <em>your-key</em></p>
+<p>Then,</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
+<p>You can also specify the frequency and the aggregation method for the
+series to be downloaded.</p>
+<p>The <code>freq</code> parameter defines the frequency of the data. If
+you do not define any frequency, the default frequency will be used.</p>
+<p>The <code>aggType</code> paremeter defines the method to be used to
+aggregate data series from high frequency to low frequency (for example,
+weekly data to monthly data). If no aggregation method is defined, the
+default will be used. (For the default values, use the
+<code>showGroupInfo</code> function.)</p>
+<p>For example, if you define monthly frequency for weekly data, and
+“sum” as the aggregation method, then the monthly totals will be
+returned. Since a data group includes more than one series, the
+<code>getDataGroup</code> function does not have any
+<code>aggType</code> parameter, and it aggregates data series by using
+their default aggregation method.</p>
+<p>The following frequencies are defined (from high frequency to low
+frequency):</p>
+<ul>
+<li><code>1</code> Day</li>
+<li><code>2</code> Work day</li>
+<li><code>3</code> Week</li>
+<li><code>4</code> Biweekly</li>
+<li><code>5</code> Month</li>
+<li><code>6</code> Quarter</li>
+<li><code>7</code> Six months</li>
+<li><code>8</code> Year</li>
+</ul>
+<p>The following aggregation methods are available:</p>
+<ul>
+<li><code>avg</code> Average value</li>
+<li><code>first</code> First observation</li>
+<li><code>last</code> Last observation</li>
+<li><code>max</code> Maximum value</li>
+<li><code>min</code> Minimum value</li>
+<li><code>sum</code> Sum</li>
+</ul>
+<p>The myData object is in <strong>data.table</strong> and
+<strong>data.frame</strong> classes, and it includes a
+<strong>time</strong> variable, and data series. The
+<strong>time</strong> variable will be either in <code>date</code> or
+<code>numeric</code> format depending on its frequency.</p>
+</div>
+<div id="comments-and-suggestions" class="section level2">
+<h2>Comments and suggestions</h2>
+<p>I would appreciate your comments, suggestions, and bug reports.
+Please <a href="mailto:etaymaz@metu.edu.tr">contact me by
+e-mail</a>.</p>
+</div>
+<div id="r-bloggers" class="section level2">
+<h2>R-Bloggers</h2>
+<p>Visit
+<a href="https://www.r-bloggers.com/" target="_blank">R-Bloggers</a>
+site about content contributed by more than 750 bloggers who write about
+R.</p>
+</div>
+<div id="r-weekly" class="section level2">
+<h2>R Weekly</h2>
+<p>Visit <a href="https://rweekly.org/" target="_blank">R Weekly</a>
+site for current news on <strong>R</strong>, <strong>R
+packages</strong>, and <strong>R events</strong>.</p>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

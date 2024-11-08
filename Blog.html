@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+
+
+<title>Blog</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+		<p><br/></p>
+<div class="col-ls">
+<h1>
+Blog
+</h1>
+</div>
+<div class="col-rb">
+<h1>
+</h1>
+<p><pres><a href="cbrt-2024.html">CBRT: An R Package for Easy Access to
+the CBRT Database</a> (Version 0.1.1)</pres> <date>03 November
+2024</date></p>
+<p><pres><a href="oy-gecisleri-2024.html">2023–2024 Seçimlerinde
+Partiler Arası Oy Geçişleri</a></pres> <date>23 Haziran 2024</date></p>
+<p><pres><a href="ittifak-siyaseti-2023.html">İttifak Siyaseti
+2023</a></pres> <date>23 Mayıs 2023</date></p>
+<p><pres><a href="oy-gecisleri-2023.html">2018–2023 Seçimlerinde
+Partiler Arası Oy Geçişleri</a></pres> <date>23 Mayıs 2023</date></p>
+<p><pres><a href="tuketimin_kuresellesmesi.html">Tüketimin
+Küreselleşmesi, Tüketim Tapınakları ve Hayalin Tüketimi</a></pres>
+<date>25 Ocak 2022</date></p>
+<p><pres><a href="gocun_ekonomisi.html">Göçün Ekonomisi</a></pres>
+<date>10 Eylül 2021</date></p>
+<p><pres><a href="https://sarkac.org/2020/07/salgin-devam-ederken-ekonomi-duzelebilir-mi/" target="_blank">Salgın
+Devam Ederken Ekonomi Düzelebilir mi? – Bir Mikrosimülasyon
+Analizi</a></pres> <date>9 Temmuz 2020</date></p>
+<p><pres><a href="https://yetkinreport.com/en/2020/04/30/civid-19-and-employment-losses-in-turkey/" target="_blank">Employment
+Losses Hit New High in Turkey with Covid-19</a></pres> <date>30 April
+2020</date></p>
+<p><pres><a href="https://yetkinreport.com/2020/04/30/turkiyede-covid-19-ve-istihdam-kayiplari/"  target="_blank">Covid-19’la
+İstihdam Kaybı Görülmemiş Düzeye Çıktı</a></pres> <date>30 Nisan
+2020</date><br/></p>
+<iframe width="650" height="365" src="https://www.youtube.com/embed/c4zCQ8eotMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><pres><a href="https://sarkac.org/2020/04/covid19-tedbirlerinin-turkiye-ekonomisine-etkisi-cozum-onerileri/" target="_blank">Covid-19
+Tedbirlerinin Türkiye Ekonomisine Etkisi ve Çözüm Önerileri</a></pres>
+<date>8 Nisan 2020</date></p>
+<p><pres><a href="Bilimsel-yayinlar.html">Bilimsel Yayınlar ve
+“Performans” Ölçütleri</a></pres> <date>21 Şubat 2020</date></p>
+<p><pres><a href="Dynamics_of_crises.html">Dynamics of Crises in
+Turkey</a></pres> <date>16 July 2019</date></p>
+<p><pres><a href="used-cars-2019.html">Determinants of Used Cars Prices
+in Turkey</a></pres> <date>27 March 2019</date></p>
+<p><pres><a href="cbrt-2019.html">CBRT: An R Package for Easy Access to
+the CBRT Database</a></pres> <date>26 January 2019</date></p>
+<p><pres><a href="uber.html">Uber ve Taksilerle Yeni Yaşam Biçimlerine
+Yolculuk</a></pres> <date>2 Nisan 2018</date></p>
+<p><pres><a href="oy-gecisleri-2018.html">2014 –2017 Seçimlerinde
+Partiler Arası Oy Geçişleri</a></pres> <date>29 Mayıs 2018</date></p>
+<p><pres><a href="referandum-tahminleri-2017.html">2017 Anayasa
+Referandumu Tahminleri</a></pres> <date>27 Mart 2017</date></p>
+<p><pres><a href="yenilik-kavrami.html">Yenilik Kavramı ve Yenilik
+Politikaları</a></pres> <date>17 Ağustos 2016</date></p>
+<p><pres><a href="secim-tahmin.html">Seçim Anketleri Ne Kadar
+Güvenilir?</a></pres> <date>9 Kasım 2015</date></p>
+<p><pres><a href="uluslararasi-uretim-zincirleri.html">Uluslararası
+Üretim Zincirlerinde Dönüşüm ve Türkiye’nin Konumu</a></pres> <date>17
+Mart 2012</date></p>
+<p><pres><a href="nelson-winter-model.html">Nelson Winter Model of
+Industrial Dynamics</a></pres> <date>17 March 2011</date></p>
+<p><pres><a href="labor-market-regulations-index.html">Labor Market
+Regulations Index</a></pres> <date>17 March 2011</date></p>
+<p><pres><a href="turkish-electricity-system.html">A Simulation Model of
+the Turkish Electricity System</a></pres> <date>17 March 2008</date></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

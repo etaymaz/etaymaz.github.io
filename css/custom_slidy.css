@@ -1,0 +1,195 @@
+/* CUSTOM CSS FILE FOR SLIDY PRESENTATIONS */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700,900&subset=latin-ext'); 
+
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title page left justified */
+div.slide.titlepage {
+  text-align: left;
+}
+
+/* Setting image size per page, add {.useSmallImage} next to the headline */
+.useSmallImage img {
+  width: 50% !important;
+}
+
+.useMedImage img {
+  width: 80% !important;
+}
+
+.useAutoImage img {
+  width: auto !important;
+}
+
+/* Image width */
+img {
+  width: 100%;
+  max-width: 1600px;
+}
+
+/* Stripped regression tables, add {.tableRegStrip} next to the heading */
+.tableRegStrip table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+}
+.tableRegStrip table tr:nth-of-type(3n+6) {background: #f5f5f5}
+.tableRegStrip table tr:nth-last-of-type(-n+8) {background: #fff}
+.tableRegStrip table tr:nth-of-type(2) {font-weight: 600}
+.tableRegStrip table tr:nth-of-type(1) {border-bottom: 2px solid #333}
+.tableRegStrip table tr:nth-of-type(5) {border-bottom: 2px solid #333}
+.tableRegStrip table tr:nth-last-of-type(2) {border-bottom: 2px solid #333}
+
+/* Stripped summary tables, add {.tableSumStrip} next to the heading */
+.tableSumStrip table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+}
+.tableSumStrip table tr:nth-of-type(2n+4) {background: #f5f5f5}
+.tableSumStrip table tr:nth-last-of-type(-n+1) {background: #fff}
+.tableSumStrip table tr:nth-of-type(1) {border-bottom: 2px solid #333}
+.tableSumStrip table tr:nth-of-type(2) {font-weight: 600}
+.tableSumStrip table tr:nth-of-type(3) {border-bottom: 2px solid #333}
+.tableSumStrip table tr:nth-last-of-type(1) {border-bottom: 2px solid #333}
+
+
+/* Minimum table size */
+/* table {min-width: 50%} */
+
+/* Margins */
+div.slide {
+margin: auto;
+padding-left: 1em;
+max-width: 1200px;
+}
+
+body.single_slide div.slide {margin-top: 25px}
+
+div.slide h1 {margin-top: .5em}
+
+p, pre, ul, ol, blockquote, h2, h3, h4, h5, h6, dl, table {margin-left: .1em}
+
+ul {padding-left: 1em}
+
+ol {padding-left: 0em}
+
+td, th {padding: 0 0.6em 0.1em 0.2em}
+
+td:hover {background-color:#eaecee}
+
+/* Colors and formats */
+h2, h3, h4, h5, h6 {
+  color: #393939;
+  font-family: "Source Sans Pro", Dejavu Sans, Arial, sans serif;
+  font-weight: 400 !important
+}
+
+h2 {
+  padding-bottom: 10px;
+  margin-bottom: 0.75em;
+  margin-right: 0.75em;
+  border-bottom: 1px solid #D4D5D7;
+}
+
+h1 {
+  font-family: "Source Sans Pro", Dejavu Sans, Arial, sans serif;
+  width: 97%;
+  border-bottom: 2px solid #D4D5D7;
+  font-weight: 300 !important;
+}
+
+h1.title {
+  border-style: none;
+  font-weight: 400 !important;
+}
+
+body {
+  color: #393939;
+  font-family: "Source Sans Pro", Dejavu Sans, Arial, sans serif;
+}
+
+li ul li {font-style: normal}
+
+li li {font-style: normal}
+
+
+
+/* Source code formatting */
+pre {
+  color: #515151;
+  background: #FEFEFE;
+  border: 1px solid #AEBDCC;
+  border-radius: 3px;
+  font-weight: normal;
+  display: block;
+  overflow: auto;
+}
+
+pre:hover {
+    box-shadow: 3px 3px 3px gray;
+    border: 1px solid #A2B2C0;
+}
+
+pre.sourceCode {
+  font-size: 95%;
+  background: #F6F6F6;
+}
+
+code.sourceCode {
+  font-size: 85%;
+  background: transparent
+}
+
+div.toolbar {
+	height: 1.3em;
+	font-size: 75%;
+	color: #a68898;
+	background-color: #882288;
+	border-top: none;
+	top: 0;
+	bottom: auto;
+}
+
+.toolbar a:link {color: #a68898}
+.toolbar a:hover {color: #999}
+
+div.toolbar span.copyright {
+	color: #fff;
+	margin-left: 1em;
+}
+
+/* Columns */
+.col-l, .col-r, .col-B, .col-K {
+  position: absolute;
+  min-height: 1px;
+  padding: 0;
+  float: left;
+}
+
+.col-l {
+  width: 48%;
+  margin-left: 0;
+}
+
+.col-r {
+  width: 48%;
+  margin-left: 49%;
+}
+
+.col-B {
+  width: 64%;
+  margin-left: 0;
+}
+
+.col-K {
+  width: 32%;
+  margin-left: 65%;
+}
+
+

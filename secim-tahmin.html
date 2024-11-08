@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+
+<title>Seçim Anketleri Ne Kadar Güvenilir?</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Seçim Anketleri Ne Kadar Güvenilir?</h1>
+
+	
+						<date>Erol Taymaz
+							  • 9 Kasım 2015
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>İçindekiler</h3>
+<ul>
+<li><a href="#giriş" id="toc-giriş">Giriş</a></li>
+<li><a href="#hata-kaynakları" id="toc-hata-kaynakları">Hata
+kaynakları</a></li>
+<li><a href="#anketlerdeki-hata-oranları"
+id="toc-anketlerdeki-hata-oranları">Anketlerdeki hata oranları</a></li>
+<li><a href="#sonuçlar" id="toc-sonuçlar">Sonuçlar</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="giriş" class="section level2">
+<h2>Giriş</h2>
+<p>Türkiye’de son yıllarda seçim anketleri büyük ilgi görüyor. 7 Haziran
+seçimleri öncesi yapılan anketlerin önemli bir kısmı seçim sonuçlarını
+iyi tahmin edince bu anketlere duyulan güven artmıştı. Fakat 1 Kasım
+seçimleri öncesi yapılan anketlerin hemen hepsi benzer sonuçlara
+ulaşırken seçim sonuçlarının çok farklı çıkması, anketlere olan güveni
+sıfırladı.</p>
+<p>Seçim anketleri ne zaman ve nasıl başarılı olabilir? Seçim
+anketlerinin yanlış çıkmasının nedenleri nelerdir? Bu notumuzda seçim
+anketlerinin başarılı olma koşullarını kısaca tartıştıktan sonra 7
+Haziran ve 1 Kasım’da seçimlerine yönelik yapılan anketlerin sonuçlarını
+değerlendireceğiz.</p>
+<p><br/></p>
+</div>
+<div id="hata-kaynakları" class="section level2">
+<h2>Hata kaynakları</h2>
+<p>Seçim anketleri ile seçim sonuçları arasındaki farklılık, yani “hata”
+düzeyini belirleyen 7 etkenden bahsedebiliriz.</p>
+<p><strong>Örneklem hatası:</strong> İlk olarak, istatistikte “örneklem
+hatası” denilen bir hata söz konusudur. Anketler zaman ve maliyet
+nedeniyle tüm seçmenlere (evrene/popülasyona) değil, bir grup “temsili”
+kişiye uygulanır. Anket uygulanacak kişiler tesadüfi yöntem ile
+belirlenir. Bu nedenle, tesadüfi olarak seçilen bir gruptan elde edilen
+sonuçların seçilen kişilere bağlı olarak farklı olması mümkündür. Bu
+farkın, yani hatanın ne kadar olabileceği istatistiksel yöntemler ile
+saptanabilir. Örneğin bir ülkede 55 milyon seçmen varsa ve anket
+tesadüfi şekilde seçilmiş 3,000 kişiye uygulanıyorsa, oy oranı gerçekte
+% 50 olan bir partinin oy oranı anket sonucu % 95 olasılıkla % 48.2-%
+51.8 aralığında bulunacaktır. Bu, “% 95 güven aralığında % 50 ±1.8”
+olarak tanımlanır. Burada ±1.8’lik sapma “hata payı” olarak da
+tanımlanmaktadır. Araştırma şirketlerinin bir çoğu bu veriyi de
+yayınlamaktadır. Fakat araştırma şirketi bu veriyi yayınlamasa da anket
+yapılan kişi sayısından bunun yaklaşık olarak hesaplanması mümkündür.
+Örneklem hatasının azaltılması anket sayısının artırılmasıyla mümkündür.
+Örneğin 10,000 kişiye anket yapılırsa hata payı ±1’e düşecektir.</p>
+<p>“Seçim anketi” denildiğinde akla ilk gelen hata “örneklem hatası”dır.
+Seçim sonuçları anket tahminleri ile karşılaştırılırken genelde sadece
+bu hata oranları göz önüne alınır, fakat aşağıda belirtildiği gibi anket
+sonuçlarının farklı çıkmasına yol açabilecek başka nedenler de
+vardır.</p>
+<p><strong>Yanlış örneklem ve uygulama:</strong> Örneklem hatası
+açıklanırken, anket kapsamına alınacak kişilerin tesadüfi yöntemle
+seçilmesi gerektiğini özellikle vurguladık. Şayet örneklem tesadüfi
+yöntemle seçilmezse, örneklem hatasına ek olarak tahmin sonuçlarında
+sapmalar oluşacaktır. Örneğin Türkiye genelinde yapılacak bir tahminde,
+anket yapılan kişiler sadece bir ilden seçilirse tahmin sonuçları
+Türkiye ortalamasını yansıtmaz. Türkiye genelinden örneklem çekilmesi
+anket maliyetlerini artıracağı için genelde araştırma şirketleri
+seçmenleri çeşitli tabakalara/kotalara ayırmakta, örneklemi kendilerinin
+belirlediği bu tabakalar/kotalar üzerinden seçmektedir. Bu
+tabakaların/kotaların ağırlıklarının yanlış belirlenmesi veya bu
+birimler içerisinde anket yapılacak kişilerin tesadüfi olarak
+seçilmemesi durumunda da anket sonuçları hatalı olacaktır. Örneğin A
+kotasından 20 kişiye anket uygulanacaksa, bu 20 anketin hepsinin aynı
+mekanda veya sokakta yaşayan kişilere uygulanması hata payını
+artıracaktır.</p>
+<p>Yanlış örneklem veya uygulama sorularından kaynaklanan hatanın
+olmaması için araştırma şirketinin tüm seçmenlere (anket evrenine)
+ilişkin tam bilgiye sahip olması gereklidir, çünkü anket örneklemi bu
+evrene göre seçilecektir. Tüm seçmenlere ilişkin verilerin yanlış olması
+doğal olarak anket sonuçlarında da hatalara yol açabilecektir.</p>
+<p><strong>Kararsız seçmenler:</strong> Araştırma şirketi tüm seçmenler
+hakkında bilgiye sahipse ve uygun bir örneklem belirlemişse bile, anket
+yapmak için saptadığı kişilerin bir kısmı ankete cevap vermek
+istemeyebilir veya ankete cevap verenlerin bir kısmı hangi partiye oy
+vereceğine henüz bir karar vermemiş olabilir. Türkiye’deki araştırma
+şirketleri genelde ankete cevap vermeyen seçmenlere ilişkin bir veri
+yayınlamamaktadır. Kararsız seçmenlere ilişkin oranlar ise genellikle
+yayınlanmakta, fakat partilerin tahmini oy oranları belirlenirken,
+genelde kararsız seçmenlerin de kararını vermiş seçmenler gibi oy
+kullanacakları varsayılmaktadır. Örneğin, tercihini belirten
+katılımcıların %20’si A partisine oy vereceğini söylemişse,
+kararsızların da %20’sinin A partisine oy vereceği varsayılmaktadır.
+Ankete cevap vermeyen seçmenlerin de durumu aynıdır. Genelde ankete
+cevap vermeyen seçmenlerin tercihlerinin, cevap verenler ile aynı
+dağılıma sahip olduğu varsayılmaktadır. Fakat belirli bir partiye oy
+verme eğiliminde olan seçmenler, herhangi bir nedenle çekindikleri için
+ankete cevap vermezlerse, yani ankete cevap veren ve vermeyen
+seçmenlerin tercihleri farklı ise, bu durum da hataya yol açacaktır.
+(Ankete cevap vermeyen veya kararsız olan seçmenlere yönelik kontrol
+soruları ile tahmin hatası azaltılabilir, fakat her durumda
+cevapsız/kararsız seçmenlerin oranı, tahminlerdeki hata düzeyini olumsuz
+etkileyecektir.)</p>
+<p><strong>Anket sonuçlarının çarpıtılması:</strong> Yukarıda açıklanan
+üç etken, araştırma şirketinin iyi niyetli bir şekilde anket yaptığı
+koşullarda geçerlidir. Fakat araştırma şirketi müşterisini memnun etmek
+veya kamuoyunu belirli bir şekilde yönlendirmek için anket sonuçlarını
+kasıtlı olarak değiştirebilir veya bir anket yapmadan yapmış gibi
+davranabilir. Bu durumda anket sonuçlarının seçim sonuçları ile tutarlı
+olmaması doğaldır.</p>
+<p>Buraya kadar belirtilen etkenler, araştırma şirketlerinden veya anket
+yönteminden kaynaklanan hatalar ile ilgilidir. Fakat araştırma
+şirketinin dışında hataya yol açabilecek üç önemli etken daha
+vardır.</p>
+<p><strong>Tercihlerin değişmesi:</strong> Anketler, doğal olarak seçim
+gününden önce yapılmaktadır. Bu nedenle anket yapıldığı anda tercihler
+doğru belirtilse bile, seçim gününe kadar seçmenlerin kararlarını
+değiştirmesi mümkündür. Bu durumda anket sonuçları aslında hatalı
+değildir, fakat seçim sonuçları ile karşılaştırıldığında hatalı
+görünecektir.</p>
+<p><strong>Tercihlerin ankette veya seçimde doğru
+belirtilmemesi:</strong> Anketler, anket yapılan kişilerin beyanlarına
+dayalıdır. Ankete katılan kişiler çekindikleri için tercihlerini
+olduğundan farklı beyan ederlerse anket sonuçlarının da hatalı olması
+kaçınılmazdır. Tabii bunun tersi de geçerlidir. Ankete katılan kişi
+doğru beyanda bulunup, oy kullanacağı zaman herhangi bir nedenle tercihi
+dışında oy kullanmak zorunda kalırsa anket sonuçları hatalı
+görülecektir. Bu durumda aslında anket sonucu doğrudur, fakat
+seçmenlerin gerçek tercihi sandığa yansımamıştır.</p>
+<p><strong>Seçimlerde hile yapılması:</strong> Seçimlerde hile
+yapılması, seçmen tercihlerini doğru yansıtan bir anket ile seçim
+sonuçları arasında farklılığa yol açacaktır.</p>
+<p>Bu notta, anket sonuçları ile seçim sonuçları arasındaki tüm
+farklılıklar, nedenine bakılmaksızın kısaca “hata” olarak
+tanımlanmıştır.</p>
+<p><br/></p>
+</div>
+<div id="anketlerdeki-hata-oranları" class="section level2 useMedImage">
+<h2 class="useMedImage">Anketlerdeki hata oranları</h2>
+<p>Anket çalışmalarına ilişkin veriler Wikipedia’dan alınmıştır.<a
+href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Çalışmada kullanılan anketlere ilişkin genel istatistikler Tablo 1’de
+özetlenmiştir. 7 Haziran ve 1 Kasım seçimlerine yönelik olarak,
+sırasıyla, 64 ve 60 anket verisi kullanılmıştır.<a href="#fn2"
+class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Araştırma şirketlerinin büyük bir kısmı, anketi kaç kişi ile
+yaptıklarını açıklamıştır. Buna göre 7 Haziran (1 Kasım) seçimlerine
+yönelik olarak yapılan 55 (51) ankette ortalama 3,864 (6,889) kişi ile
+görüşülmüştür. 1 Kasım seçimlerine yönelik olarak
+ANAR-Denge-GENAR-Pollmark tarafından yaklaşık 160 bin kişi ile yapılan
+anket göz önüne alınmadığında, 1 Kasım seçimlerine yönelik 50 ankette
+görüşülen ortalama kişi sayısı 3,879 kişi olmaktadır. Anketlerin
+çoğunluğunda örneklem büyüklüğü 1,500-5,000 kişi arasındadır. Bir başka
+deyişle, örneklem tesadüfi olarak seçilmişse anketlerin hata payları
+±2.5 (1,500 kişi) ile ±1.4 (5,000 kişi) arasındadır.</p>
+<p>Anketler seçimlerden önceki 5 aylık süre içerisinde yapılmıştır.
+Seçimden önce ilk yapılan anket, yaklaşık 150 gün önce, son anket ise 3
+gün önce tamamlanmıştır.<a href="#fn3" class="footnote-ref"
+id="fnref3"><sup>3</sup></a> (7 Haziran seçimlerine yönelik yapılan bir
+anketin ne zaman yapıldığı belirtilmemiştir.) Anketlerin yapılma
+süreleri de farklılık göstermektedir. En kısa sürede yapılan anket 1 gün
+içerisinde tamamlanırken, en uzun sürede yapılan anket 18 günde
+tamamlanmıştır. Anketlerin ortalama uygulama süresi 5 gündür.</p>
+<p>Tablo 1’de 7 Haziran ve 1 Kasım seçimlerine yönelik %10 barajını aşan
+4 partinin oy oranı tahminleri ortalaması da sunulmuştur. Diğer tüm
+partilerin oy oranları toplanarak “diğer” kategorisi
+oluşturulmuştur.</p>
+<p><br /></p>
+<p><strong>Tablo 1a. 7 Haziran 2016 seçim anketleri</strong></p>
+<table style="text-align:center;">
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+N
+</td>
+<td>
+Ortalama
+</td>
+<td>
+Standart hata
+</td>
+<td>
+En küçük
+</td>
+<td>
+En büyük
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Anket süresi (gün)
+</td>
+<td>
+48
+</td>
+<td>
+5.3
+</td>
+<td>
+2.6
+</td>
+<td>
+1
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Kişi sayısı
+</td>
+<td>
+55
+</td>
+<td>
+3,863.7
+</td>
+<td>
+1,769.2
+</td>
+<td>
+1,500
+</td>
+<td>
+11,859
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Ak Parti
+</td>
+<td>
+64
+</td>
+<td>
+42.8
+</td>
+<td>
+3.9
+</td>
+<td>
+35.3
+</td>
+<td>
+50.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+CHP
+</td>
+<td>
+64
+</td>
+<td>
+26.4
+</td>
+<td>
+1.9
+</td>
+<td>
+23.0
+</td>
+<td>
+31.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+MHP
+</td>
+<td>
+64
+</td>
+<td>
+16.4
+</td>
+<td>
+1.9
+</td>
+<td>
+13.4
+</td>
+<td>
+23.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+HDP
+</td>
+<td>
+64
+</td>
+<td>
+9.9
+</td>
+<td>
+1.5
+</td>
+<td>
+6.7
+</td>
+<td>
+13.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Diğer
+</td>
+<td>
+64
+</td>
+<td>
+4.5
+</td>
+<td>
+1.3
+</td>
+<td>
+2.0
+</td>
+<td>
+8.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Hata düzeyi
+</td>
+<td>
+64
+</td>
+<td>
+6.0
+</td>
+<td>
+2.4
+</td>
+<td>
+2.3
+</td>
+<td>
+11.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Seçime kalan süre (gün)
+</td>
+<td>
+63
+</td>
+<td>
+54.8
+</td>
+<td>
+44.3
+</td>
+<td>
+4
+</td>
+<td>
+148
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<p><br /></p>
+<p><strong>Tablo 1b. 7 Haziran 2016 seçim anketleri</strong></p>
+<table style="text-align:center;">
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+N
+</td>
+<td>
+Ortalama
+</td>
+<td>
+Standart hata
+</td>
+<td>
+En küçük
+</td>
+<td>
+En büyük
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Anket süresi (gün)
+</td>
+<td>
+56
+</td>
+<td>
+4.6
+</td>
+<td>
+3.1
+</td>
+<td>
+1
+</td>
+<td>
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Kişi sayısı
+</td>
+<td>
+51
+</td>
+<td>
+6,898.7
+</td>
+<td>
+21,875.6
+</td>
+<td>
+1,074
+</td>
+<td>
+157,907
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Ak Parti
+</td>
+<td>
+60
+</td>
+<td>
+42.1
+</td>
+<td>
+1.9
+</td>
+<td>
+38.2
+</td>
+<td>
+47.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+CHP
+</td>
+<td>
+60
+</td>
+<td>
+26.8
+</td>
+<td>
+1.1
+</td>
+<td>
+24.8
+</td>
+<td>
+29.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+MHP
+</td>
+<td>
+60
+</td>
+<td>
+15.1
+</td>
+<td>
+1.3
+</td>
+<td>
+12.6
+</td>
+<td>
+18.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+HDP
+</td>
+<td>
+60
+</td>
+<td>
+12.6
+</td>
+<td>
+1.1
+</td>
+<td>
+10.3
+</td>
+<td>
+14.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Diğer
+</td>
+<td>
+60
+</td>
+<td>
+3.3
+</td>
+<td>
+1.0
+</td>
+<td>
+1.2
+</td>
+<td>
+6.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Hata düzeyi
+</td>
+<td>
+60
+</td>
+<td>
+8.5
+</td>
+<td>
+2.2
+</td>
+<td>
+3.2
+</td>
+<td>
+13.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Seçime kalan süre (gün)
+</td>
+<td>
+60
+</td>
+<td>
+50.5
+</td>
+<td>
+37.1
+</td>
+<td>
+3
+</td>
+<td>
+146
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<p><br /></p>
+<p>Anket tahminleri ile seçim sonuçları arasındaki fark, yani hata
+düzeyi, aşağıdaki şekilde tanımlanmıştır:</p>
+<p><span class="math display">\[\sqrt{\sum_i (a_i - s_i)^2}\]</span></p>
+<p>Bu denklemde <em>i</em> siyasi partileri, <em>a</em> ilgili parti
+için tahmin edilen oy oranını ve <em>s</em> o partinin seçimlerde aldığı
+oy oranını göstermektedir. 45 milyon seçmenin geçerli oy kullandığı bir
+seçime yönelik olarak 1,500 kişi için yapılan bir ankette beklenen
+(örneklemden kaynaklanan) hata düzeyi 1.9, 5,000 kişi ile yapılan
+ankette ise 1.1’dir. Tablo 1’deki verilere göre, 7 Haziran seçimleri
+anketlerinde ortalama hata düzeyi 6.0 olmuştur. En başarılı anketin hata
+düzeyi 2.3 olmuştur. 1 Kasım seçimlerinde ise hem en başarılı anketin
+(3.2), hem de tüm anketlerin ortalamasının (8.5) hata düzeyi daha
+yüksektir.</p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-4-1.png" /></p>
+<p><br /></p>
+<p>Şekil 1’de 7 Haziran ve 1 Kasım seçimlerine ilişkin anketlerin hata
+düzeyleri (düşey eksen), anketin tamamlandığı günden seçime kadar olan
+süreye göre (yatay eksen) sunulmuştur. Şekildeki düz çizgiler anket
+sonuçlarının ortalamasını göstermektedir. Bu şekilde de açıkça görüldüğü
+gibi her iki seçime yönelik anketlerin hata düzeyleri oldukça yüksektir
+(anketlerin hemen hepsinin hata düzeyi 3-12 arasındadır). 7 Haziran
+seçim anketlerinin hata düzeyi, seçime yaklaşıldıkça ciddi oranda
+azalırken, 1 Kasım seçim anketlerinin hata düzeyi, seçimden önceki 5 ay
+boyunca hemen hemen aynı kalmıştır. 7 Haziran seçimleri tahminindeki
+hata payının seçim gününe yaklaşıldıkça azalmasının nedeni, seçmen
+tercihlerinin zaman içerisinde değişmesi olabilir. Fakat 1 Kasım
+seçimlerine yönelik olarak hata düzeyinin değişmemesi ve çok yüksek
+düzeyde sabit kalmasını (ortalama 8.5 düzeyinde) açıklamak zordur.</p>
+<p>Araştırma şirketleri farklı yöntemler kullanabileceği için,
+anketlerin hata düzeyindeki değişimi araştırma şirketleri için ayrı ayrı
+değerlendirmek uygun olacaktır. Şekil 2a’da 7 Haziran seçim anketlerinin
+hata düzeyi, araştırma şirketi bazında gösterilmiştir. 2 ve daha az
+anket yapan şirketlerin tamamı “Diğer” firma grubunda toplanmıştır.</p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-5-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-6-1.png" /></p>
+<p><br /></p>
+<p>Şekil 2a’da görüleceği gibi, seçmen davranışının değişmesi varsayımı
+ile uygun olarak (AKAM ve KamuAR hariç) tüm araştırma şirketleri için,
+anketin uygulandığı tarih seçim tarihine yaklaştıkça hata düzeyi
+azalmaktadır. Araştırma şirketlerinin ortalamasını gösteren çizgiler
+arasındaki farklar, bu şirketlerin hata düzeyleri arasında sistemli
+farklar olduğunu göstermektedir.</p>
+<p>1 Kasım seçimleri için aynı veriler Şekil 2b’de sunulmuştur. 5
+şirketin hata düzeyleri seçime yaklaştıkça kısmen azalırken, beklenmedik
+bir şekilde 4 şirketin hata düzeylerinde artış gerçekleşmiştir. Tüm
+anketlere bakıldığında ise seçime yaklaşıldıkça hata düzeylerinde bir
+değişim yoktur. Bu durum, 7 Haziran seçimlerinden sonra, 1 Kasım
+seçimlerine kadar seçmenlerin tutumunda bir değişim olmadığı şeklinde
+yorumlanabilir. Fakat anketlerin hata düzeylerinin çok yüksek olması bu
+yorumun benimsenmesini zorlaştırmaktadır.</p>
+<p>Yukarıda belirtildiği gibi anketlerin örneklem büyüklüğü artıkça
+örneklem hatası azalacağı için hata düzeyinin düşmesi beklenir. Ayrıca,
+seçim gününe yakın dönemde yapılan anketlerin, seçmen davranışlarının
+değişme olasılığı azaldığı için, daha doğru sonuç vermesi gerekir. Bu
+etkileri belirlemek amacıyla, her iki seçim anketleri için ayrı ayrı,
+hata düzeyini i) seçime kalan süre, ii) anketin uygulama süresi, iii)
+örneklem büyüklüğü (logaritmik) ve iv) araştırma şirketleri ile
+açıklayan regresyon modelleri tahmin edilmiştir.</p>
+<p>Bu tahmin sonuçlarına göre, beklentilerimizin aksine, örneklem
+büyüklüğünün hata düzeyine istatistiksel olarak anlamlı bir etkisi
+bulunmamıştır: daha büyük örneklem ile yapılan anketlerin hata düzeyi
+daha düşük değildir. Bu beklenmeyen sonucun bir nedeni, yapılan
+anketlerin çoğunluğunun örneklem büyüklüğünün birbirine yakın olması
+olabilir.</p>
+<p>Anketin uygulama süresinin de hata payına bir etkisi bulunmamıştır.
+Bir günde yapılan anket ile 10 günde yapılan anket benzer hata paylarına
+sahiptir.</p>
+<p>Şekil 1’de de gözlemlendiği gibi, 7 Haziran seçim anketlerinde, anket
+seçim tarihine kadar yakın bir günde yapılmış ise hata düzeyi o oranda
+düşük olmaktadır ve bu etki istatistiksel (%1 düzeyinde) olarak
+anlamlıdır. 1 Kasım seçim anketlerinde ise, seçime kalan sürenin hata
+düzeyinde herhangi bir etkisi yoktur.</p>
+<p>Araştırma şirketleri arasında da anlamlı farklılıklar bulunmuştur. 7
+Haziran seçimlerinde (seçime kadar olan süre kontrol edildiğinde) hata
+düzeyi en düşük anketler AKAM, SONAR, Metropoll ve Andy-AR tarafından
+yapılmıştır. Bu şirketlerin hata düzeyleri istatistiksel olarak 2’den
+farklı değildir. Bu şirketleri 3-3.5 puan düzeyinde hata düzeyi ile
+KONDA ve Gezici izlemiştir. 1 Kasım seçimlerinde ise tüm şirketlerin
+hata düzeyleri 6 puanın üzerinde olmuştur ve bu hata düzeyleri
+istatistiksel olarak anlamlıdır.</p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-7-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-8-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-9-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-10-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-11-1.png" /></p>
+<p><br /></p>
+<p>Partilerin oy oranı tahminlerine bakıldığında, seçime kadar olan süre
+kontrol edildiğinde anket sonuçlarının yansız sonuç verdiği
+görülmektedir. (Şekil 3a-3d’de bu durum görülmektedir.) Araştırma
+şirketlerinin tahminlerinin ortalaması Ak Parti, CHP ve MHP’nin aldığı
+oy oranlarına yakındır. 7 Haziran seçim tahminlerinde en büyük sapma
+HDP’nin oy oranında gözlenmiştir. Araştırma şirketlerinin 10’u HDP’nin
+aldığı oy oranının gerçekleşenin altında olacağını tahmin etmiş, sadece
+2 şirketin tahmini (AKAM ve KONDA) gerçekleşen değerden (istatistiksel
+olarak %1 düzeyinde) farksız olmuştur.</p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-12-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-13-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-14-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-15-1.png" /></p>
+<p><br /></p>
+<p><img
+src="img/secim_tahmin_files/figure-markdown/unnamed-chunk-16-1.png" /></p>
+<p><br /></p>
+<p><strong>Tablo 2a. 7 Haziran 2015 seçim anketleri, parti düzeyinde
+hata oranları</strong></p>
+<table style="text-align:center">
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="5">
+Bağımlı değişken: Hata düzeyi
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<div style="width: 100px">
+<p>Ak Parti</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>CHP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>MHP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>HDP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>Diğer</p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Seçime kalan süre
+</td>
+<td>
+0.027<sup>***</sup>
+</td>
+<td>
+-0.009<sup>**</sup>
+</td>
+<td>
+-0.009<sup>***</sup>
+</td>
+<td>
+-0.017<sup>***</sup>
+</td>
+<td>
+0.008<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.004)
+</td>
+<td>
+(0.002)
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Diğer
+</td>
+<td>
+1.042<sup>*</sup>
+</td>
+<td>
+1.947<sup>***</sup>
+</td>
+<td>
+-0.143
+</td>
+<td>
+-1.964<sup>***</sup>
+</td>
+<td>
+-0.882<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.536)
+</td>
+<td>
+(0.367)
+</td>
+<td>
+(0.209)
+</td>
+<td>
+(0.232)
+</td>
+<td>
+(0.301)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+AKAM
+</td>
+<td>
+-2.598<sup>***</sup>
+</td>
+<td>
+2.443<sup>***</sup>
+</td>
+<td>
+1.741<sup>***</sup>
+</td>
+<td>
+-0.470
+</td>
+<td>
+-1.116<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.956)
+</td>
+<td>
+(0.654)
+</td>
+<td>
+(0.372)
+</td>
+<td>
+(0.414)
+</td>
+<td>
+(0.538)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Andy-AR
+</td>
+<td>
+1.287
+</td>
+<td>
+0.404
+</td>
+<td>
+0.797<sup>*</sup>
+</td>
+<td>
+-1.822<sup>***</sup>
+</td>
+<td>
+-0.666
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.137)
+</td>
+<td>
+(0.778)
+</td>
+<td>
+(0.442)
+</td>
+<td>
+(0.493)
+</td>
+<td>
+(0.639)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Denge
+</td>
+<td>
+3.977<sup>***</sup>
+</td>
+<td>
+0.913
+</td>
+<td>
+-0.821<sup>*</sup>
+</td>
+<td>
+-2.672<sup>***</sup>
+</td>
+<td>
+-1.398<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.104)
+</td>
+<td>
+(0.756)
+</td>
+<td>
+(0.430)
+</td>
+<td>
+(0.479)
+</td>
+<td>
+(0.621)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+GENAR
+</td>
+<td>
+3.531<sup>***</sup>
+</td>
+<td>
+0.773
+</td>
+<td>
+-1.061<sup>**</sup>
+</td>
+<td>
+-2.488<sup>***</sup>
+</td>
+<td>
+-0.755
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.108)
+</td>
+<td>
+(0.758)
+</td>
+<td>
+(0.431)
+</td>
+<td>
+(0.480)
+</td>
+<td>
+(0.623)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Gezici
+</td>
+<td>
+-3.490<sup>***</sup>
+</td>
+<td>
+4.512<sup>***</sup>
+</td>
+<td>
+1.627<sup>***</sup>
+</td>
+<td>
+-1.325<sup>***</sup>
+</td>
+<td>
+-1.324<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.811)
+</td>
+<td>
+(0.555)
+</td>
+<td>
+(0.316)
+</td>
+<td>
+(0.351)
+</td>
+<td>
+(0.456)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+KamuAR
+</td>
+<td>
+-6.136<sup>***</sup>
+</td>
+<td>
+2.540<sup>***</sup>
+</td>
+<td>
+6.372<sup>***</sup>
+</td>
+<td>
+-5.022<sup>***</sup>
+</td>
+<td>
+2.245<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.108)
+</td>
+<td>
+(0.758)
+</td>
+<td>
+(0.431)
+</td>
+<td>
+(0.480)
+</td>
+<td>
+(0.623)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+KONDA
+</td>
+<td>
+0.464
+</td>
+<td>
+1.873<sup>**</sup>
+</td>
+<td>
+-1.294<sup>***</sup>
+</td>
+<td>
+-0.655
+</td>
+<td>
+-0.388
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.108)
+</td>
+<td>
+(0.758)
+</td>
+<td>
+(0.431)
+</td>
+<td>
+(0.480)
+</td>
+<td>
+(0.623)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+MAK
+</td>
+<td>
+3.685<sup>***</sup>
+</td>
+<td>
+0.641
+</td>
+<td>
+-0.912<sup>**</sup>
+</td>
+<td>
+-3.020<sup>***</sup>
+</td>
+<td>
+-0.393
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.956)
+</td>
+<td>
+(0.655)
+</td>
+<td>
+(0.372)
+</td>
+<td>
+(0.415)
+</td>
+<td>
+(0.538)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Metropoll
+</td>
+<td>
+0.220
+</td>
+<td>
+2.383<sup>***</sup>
+</td>
+<td>
+0.786<sup>**</sup>
+</td>
+<td>
+-1.887<sup>***</sup>
+</td>
+<td>
+-1.502<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.794)
+</td>
+<td>
+(0.543)
+</td>
+<td>
+(0.309)
+</td>
+<td>
+(0.344)
+</td>
+<td>
+(0.446)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+ORC
+</td>
+<td>
+6.043<sup>***</sup>
+</td>
+<td>
+-0.836
+</td>
+<td>
+-1.537<sup>***</sup>
+</td>
+<td>
+-3.156<sup>***</sup>
+</td>
+<td>
+-0.514
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.823)
+</td>
+<td>
+(0.563)
+</td>
+<td>
+(0.320)
+</td>
+<td>
+(0.357)
+</td>
+<td>
+(0.463)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+SONAR
+</td>
+<td>
+-2.031<sup>*</sup>
+</td>
+<td>
+2.270<sup>***</sup>
+</td>
+<td>
+1.903<sup>***</sup>
+</td>
+<td>
+-2.194<sup>***</sup>
+</td>
+<td>
+0.053
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.021)
+</td>
+<td>
+(0.699)
+</td>
+<td>
+(0.397)
+</td>
+<td>
+(0.443)
+</td>
+<td>
+(0.574)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Gözlem sayısı
+</td>
+<td>
+63
+</td>
+<td>
+63
+</td>
+<td>
+63
+</td>
+<td>
+63
+</td>
+<td>
+63
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.857
+</td>
+<td>
+0.747
+</td>
+<td>
+0.886
+</td>
+<td>
+0.955
+</td>
+<td>
+0.486
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.820
+</td>
+<td>
+0.681
+</td>
+<td>
+0.857
+</td>
+<td>
+0.943
+</td>
+<td>
+0.352
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Not:</em>
+</td>
+<td colspan="5" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05;
+<sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><br /></p>
+<p><strong>Tablo 2b. 1 Kasım 2015 seçim anketleri, parti düzeyinde hata
+oranları</strong></p>
+<table style="text-align:center">
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="5">
+Bağımlı değişken: Hata düzeyi
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<div style="width: 100px">
+<p>Ak Parti</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>CHP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>MHP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>HDP</p>
+</div>
+</td>
+<td>
+<div style="width: 100px">
+<p>Diğer</p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Seçime kalan süre
+</td>
+<td>
+-0.001
+</td>
+<td>
+-0.011<sup>***</sup>
+</td>
+<td>
+0.006
+</td>
+<td>
+-0.005
+</td>
+<td>
+0.009<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.004)
+</td>
+<td>
+(0.005)
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Diğer
+</td>
+<td>
+-6.770<sup>***</sup>
+</td>
+<td>
+1.405<sup>***</sup>
+</td>
+<td>
+2.627<sup>***</sup>
+</td>
+<td>
+2.265<sup>***</sup>
+</td>
+<td>
+0.498<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.463)
+</td>
+<td>
+(0.263)
+</td>
+<td>
+(0.337)
+</td>
+<td>
+(0.221)
+</td>
+<td>
+(0.247)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+AKAM
+</td>
+<td>
+-9.222<sup>***</sup>
+</td>
+<td>
+3.175<sup>***</sup>
+</td>
+<td>
+1.164
+</td>
+<td>
+4.235<sup>***</sup>
+</td>
+<td>
+0.764
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.070)
+</td>
+<td>
+(0.608)
+</td>
+<td>
+(0.777)
+</td>
+<td>
+(0.511)
+</td>
+<td>
+(0.571)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Andy-AR
+</td>
+<td>
+-6.281<sup>***</sup>
+</td>
+<td>
+2.218<sup>***</sup>
+</td>
+<td>
+2.731<sup>***</sup>
+</td>
+<td>
+2.128<sup>***</sup>
+</td>
+<td>
+-0.715
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.942)
+</td>
+<td>
+(0.535)
+</td>
+<td>
+(0.684)
+</td>
+<td>
+(0.450)
+</td>
+<td>
+(0.503)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Gezici
+</td>
+<td>
+-8.782<sup>***</sup>
+</td>
+<td>
+2.112<sup>***</sup>
+</td>
+<td>
+3.510<sup>***</sup>
+</td>
+<td>
+2.842<sup>***</sup>
+</td>
+<td>
+0.392
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.673)
+</td>
+<td>
+(0.382)
+</td>
+<td>
+(0.489)
+</td>
+<td>
+(0.322)
+</td>
+<td>
+(0.359)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+KONDA
+</td>
+<td>
+-7.372<sup>***</sup>
+</td>
+<td>
+1.936<sup>***</sup>
+</td>
+<td>
+2.698<sup>***</sup>
+</td>
+<td>
+2.388<sup>***</sup>
+</td>
+<td>
+0.382
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.810)
+</td>
+<td>
+(0.460)
+</td>
+<td>
+(0.588)
+</td>
+<td>
+(0.387)
+</td>
+<td>
+(0.432)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+MAK
+</td>
+<td>
+-5.299<sup>***</sup>
+</td>
+<td>
+1.550<sup>**</sup>
+</td>
+<td>
+2.119<sup>***</sup>
+</td>
+<td>
+1.101<sup>**</sup>
+</td>
+<td>
+0.625
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.041)
+</td>
+<td>
+(0.591)
+</td>
+<td>
+(0.756)
+</td>
+<td>
+(0.497)
+</td>
+<td>
+(0.556)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Metropoll
+</td>
+<td>
+-7.155<sup>***</sup>
+</td>
+<td>
+1.138<sup>**</sup>
+</td>
+<td>
+3.252<sup>***</sup>
+</td>
+<td>
+3.139<sup>***</sup>
+</td>
+<td>
+-0.251
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.866)
+</td>
+<td>
+(0.492)
+</td>
+<td>
+(0.629)
+</td>
+<td>
+(0.414)
+</td>
+<td>
+(0.462)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+ORC
+</td>
+<td>
+-5.453<sup>***</sup>
+</td>
+<td>
+2.436<sup>***</sup>
+</td>
+<td>
+2.142<sup>***</sup>
+</td>
+<td>
+0.947<sup>**</sup>
+</td>
+<td>
+0.014
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.871)
+</td>
+<td>
+(0.495)
+</td>
+<td>
+(0.632)
+</td>
+<td>
+(0.416)
+</td>
+<td>
+(0.465)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Perspektif
+</td>
+<td>
+-7.784<sup>***</sup>
+</td>
+<td>
+2.415<sup>***</sup>
+</td>
+<td>
+2.990<sup>***</sup>
+</td>
+<td>
+1.533<sup>***</sup>
+</td>
+<td>
+0.937
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.086)
+</td>
+<td>
+(0.617)
+</td>
+<td>
+(0.788)
+</td>
+<td>
+(0.519)
+</td>
+<td>
+(0.580)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+SONAR
+</td>
+<td>
+-8.728<sup>***</sup>
+</td>
+<td>
+1.846<sup>***</sup>
+</td>
+<td>
+4.451<sup>***</sup>
+</td>
+<td>
+2.061<sup>***</sup>
+</td>
+<td>
+0.441
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.051)
+</td>
+<td>
+(0.597)
+</td>
+<td>
+(0.764)
+</td>
+<td>
+(0.502)
+</td>
+<td>
+(0.561)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Gözlem sayısı
+</td>
+<td>
+60
+</td>
+<td>
+60
+</td>
+<td>
+60
+</td>
+<td>
+60
+</td>
+<td>
+60
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.957
+</td>
+<td>
+0.719
+</td>
+<td>
+0.887
+</td>
+<td>
+0.897
+</td>
+<td>
+0.548
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.947
+</td>
+<td>
+0.655
+</td>
+<td>
+0.862
+</td>
+<td>
+0.874
+</td>
+<td>
+0.446
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Not:</em>
+</td>
+<td colspan="5" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05;
+<sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><br /> 1 Kasım seçimlerinde ise tüm şirketlerin tahminleri yanlı
+olmuştur (tahminler için bkz. Şekil 4a-4d). Hemen hemen tüm anketlerde
+Ak Parti’nin oy oranı gerçekleşenin altında, CHP, MHP ve HDP’nin oy
+oranları da gerçekleşenin üstünde tahmin edilmiştir. (“Diğer” partilerin
+toplam oy oranı genelde anketlerin hata payı içerisinde tahmin
+edilmiştir.) 1 Kasım seçimlerinde en az hatalı tahminler MAK, ORC ve
+Andy-AR anketlerinde gerçekleşmiştir fakat bu şirketlerin anketlerindeki
+hata düzeyi 6-7 puan düzeyinde olup örneklem hatası düzeyinin çok
+üstündedir. Tablo 2b’de görüldüğü gibi, partiler ayrımında bakıldığında
+tüm şirketlerin yaptığı anketlerin ortalamaları Ak Parti’nin alacağı oy
+oranını gerçekleşenin çok altında tahmin etmiş (en az fark 5 puandan
+fazla), aynı şekilde hepsi CHP ve HDP’nin oy oranını gerçekleşenden
+fazla tahmin etmiştir. Bir şirket dışında MHP’nin oy oranı da
+gerçekleşenden yüksek tahmin edilmiştir ve bu farkların hepsi
+istatistiksel olarak (%1 düzeyinde) anlamlıdır.</p>
+<p><br/></p>
+</div>
+<div id="sonuçlar" class="section level2">
+<h2>Sonuçlar</h2>
+<p>Özetlemek gerekirse:</p>
+<ol style="list-style-type: decimal">
+<li><p>7 Haziran seçimlerinde araştırma şirketlerinin önemli bir
+kısmının tahminleri doğru çıkmıştır.</p></li>
+<li><p>Tüm anketlerin sonuçlarına göre Ocak 2015’den Haziran 2015’e
+kadar olan dönemde Ak Parti’nin oy oranı azalmış (yaklaşık 4 puan), CHP
+ve MHP’nin oy oranı kısmen (yaklaşık 1.4 puan) ve HDP’nin oy oranı ciddi
+bir şekilde (2.6 puan) artmıştır.</p></li>
+<li><p>7 Haziran seçimlerinde bazı araştırma şirketlerinin tahminleri
+“örneklem hatası”nın çok üzerinde hatalı çıkmıştır. Bu durum araştırma
+şirketlerinin örneklem hatası dışında sistemli hata yapmış olabileceğini
+göstermektedir.</p></li>
+<li><p>1 Kasım seçimlerinde tüm araştırma şirketlerinin tahminleri ciddi
+derecede hatalı olmuştur.</p></li>
+<li><p>Hem 7 Haziran, hem de 1 Kasım anketlerinde, örneklem büyüklüğü
+ile hata düzeyi arasında bir ilişki tespit edilememiştir. Bu durum
+araştırma şirketlerinin önemli bir kısmında yöntemsel sorunlar
+olabileceğini düşündürmektedir.</p></li>
+<li><p>7 Haziran-1 Kasım arasında Türkiye’de yaşanan olağanüstü
+gelişmeler sonucu 1 Kasım seçimleri öncesi “normal” bir seçim ortamının
+olmadığı açıktır. Fakat bu olağanüstü koşullara rağmen anket
+tahminlerinin bu kadar hatalı olması açıklamak zordur. Araştırma
+şirketleri 7 Haziran ve 1 Kasım seçimlerinde benzer anket yöntemleri
+kullanmışsa, bu yöntemlerin 1 Kasım seçimleri gibi seçmen davranışını
+kısa sürede etkileyebilecek olağanüstü koşullarda geçerli olmadığı da
+düşünülebilir. Bu çalışmada, seçim anketlerine ilişkin çok kısıtlı bilgi
+(anketin uygulama tarihi, uygulama süresi ve örneklem büyüklüğü)
+kullanılmıştır. Araştırma şirketlerinin anket yöntemine ilişkin
+(örneklem seçimi, ağırlıklandırma, cevapsız ve kararsız seçmenlerin
+değerlendirilmesi, vb) bilgileri kullanıcılara belirli bir standart
+formatta sunması anket sonuçlarının güvenilirliğinin test edilmesi
+açısından yararlı olacaktır.</p></li>
+</ol>
+<p>Bu notta kısaca özetlenen, bir kısmı araştırma şirketlerinin
+kontrolünde olan, bir kısmı da bu şirketlerin dışındaki nedenlerle anket
+sonuçları gerçekleşen sonuçlardan farklı çıkabilir, bu doğaldır. Fakat
+bu farklılığın normal “örneklem hatası”ndan daha fazla olması durumunda,
+araştırma şirketleri farklılığın nedenlerini açıklayabilmelidir. Ancak
+bu açıklamalar inandırıcı bir şekilde yapıldığı taktirde anketler tekrar
+güvenilir olabilecektir.<a href="#fn4" class="footnote-ref"
+id="fnref4"><sup>4</sup></a></p>
+<p><br/></p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Veri kaynakları: <a
+href="https://tr.wikipedia.org/wiki/Haziran_2015_Türkiye_genel_seçimleri_için_yapılan_anketler">7
+Haziran anketleri</a>, <a
+href="https://tr.wikipedia.org/wiki/Kasım_2015_Türkiye_genel_seçimleri_için_yapılan_anketler">1
+Kasım anketleri</a>.<a href="#fnref1"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>7 Haziran seçimlerine yönelik olarak hata düzeyi çok
+yüksek olan (aykırı değer) bir anket analize dahil edilmemiştir.<a
+href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Bazı anketlerin yapıldığı tarih yerine sonuçlarının
+açıklandığı tarih bilinmektedir. Bu anketlerin yapıldığı tarih olarak
+sonuçlarının açıklandığı gün alınmıştır.<a href="#fnref3"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Türkiye Araştırmacılar Derneği (TÜAD) araştırma
+şirketlerinin yaptığı çalışmaların belirli standartlarda olması için
+çalışmalar yapmaktadır. 1 Kasım seçimlerinden sonra TÜAD, araştırma
+şirketlerinin “araştırma sonuçları ile gerçekleşen seçim sonucundaki
+oranlar arasında açıklanabilir sapma sınırının üzerinde bir fark olması
+nedeniyle” bir inceleme yapma kararı aldı. Araştırma şirketlerinin
+önemli bir kısmının TÜAD üyesi olmaması nedeniyle bu inceleme
+“gönüllülük” esasına göre yapılacak (bilgi için bkz. <a
+href="http://tuad.org.tr" class="uri">http://tuad.org.tr</a>).<br />
+Seçim anketlerinin bir bütün olarak yanılması Türkiye’ye özgü bir sorun
+değil. Örneğin İngiltere’de 7 Mayıs 2015’de yapılan seçimlerde araştırma
+şirketleri İşçi Partisi ve Muhafazakar Parti’nin % 33-34 oy alacağını
+tahmin etmiş fakat seçimlerdeki oy oranları, sırasıyla, %30.4 ve %36.9
+olmuştu. Anket sonuçlarındaki “örneklem hatası”nı aşan bu yanılma
+üzerine British Polling Council (BPC) hatanın nedenlerinin belirlenmesi
+amacıyla kapsamlı bir araştırma başlattı. Araştırmanın ilk sonuçlarının
+19 Ocak 2016 günü açıklanması bekleniyor.<a href="#fnref4"
+class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

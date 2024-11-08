@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='432.00pt' viewBox='0 0 720.00 432.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='-0.00000000000011' width='720.00' height='432.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDUuNzJ8NzE0LjUyfDUuNDh8MzkxLjg4'>
+    <rect x='45.72' y='5.48' width='668.80' height='386.40' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDUuNzJ8NzE0LjUyfDUuNDh8MzkxLjg4)'>
+<polyline points='45.72,374.32 714.52,374.32 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='45.72,253.04 714.52,253.04 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='45.72,131.77 714.52,131.77 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='45.72,10.50 714.52,10.50 ' style='stroke-width: 0.21; stroke: #777777; stroke-linecap: butt;' />
+<rect x='55.55' y='242.48' width='59.01' height='131.83' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='121.12' y='23.04' width='59.01' height='351.27' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='186.69' y='221.59' width='59.01' height='152.72' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='252.26' y='313.82' width='59.01' height='60.49' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='317.83' y='286.45' width='59.01' height='87.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='383.40' y='202.90' width='59.01' height='171.42' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='448.97' y='261.37' width='59.01' height='112.95' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='514.53' y='158.65' width='59.01' height='215.67' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='580.10' y='334.67' width='59.01' height='39.65' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='645.67' y='135.65' width='59.01' height='238.66' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='40.78' y='378.31' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='6.40px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='40.78' y='257.04' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='19.20px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='40.78' y='135.77' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='19.20px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='40.78' y='14.49' text-anchor='end' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='19.20px' lengthAdjust='spacingAndGlyphs'>300</text>
+<polyline points='45.72,391.88 714.52,391.88 ' style='stroke-width: 0.53; stroke: #666666; stroke-linecap: butt;' />
+<text x='85.06' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='58.59px' lengthAdjust='spacingAndGlyphs'>Agriculture</text>
+<text x='150.63' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='78.00px' lengthAdjust='spacingAndGlyphs'>Manufacturing</text>
+<text x='216.20' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='67.66px' lengthAdjust='spacingAndGlyphs'>Construction</text>
+<text x='281.76' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='17.09px' lengthAdjust='spacingAndGlyphs'>ICT</text>
+<text x='347.33' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='40.47px' lengthAdjust='spacingAndGlyphs'>Finance</text>
+<text x='412.90' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='57.66px' lengthAdjust='spacingAndGlyphs'>Real estate</text>
+<text x='478.47' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='64.76px' lengthAdjust='spacingAndGlyphs'>Professional</text>
+<text x='544.04' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='31.71px' lengthAdjust='spacingAndGlyphs'>Public</text>
+<text x='609.61' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='55.50px' lengthAdjust='spacingAndGlyphs'>Other serv</text>
+<text x='675.18' y='404.80' text-anchor='middle' style='font-size: 11.20px; font-family: "Noto Sans";' textLength='58.19px' lengthAdjust='spacingAndGlyphs'>Taxes-subs</text>
+<text transform='translate(15.48,198.68) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Noto Sans";' textLength='152.65px' lengthAdjust='spacingAndGlyphs'>Value added (billion TL)</text>
+</g>
+</svg>

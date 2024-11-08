@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Erol Taymaz" />
+
+
+<title>2014 –2017 Seçimlerinde Partiler Arası Oy Geçişleri</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/d3-4.5.0/d3.min.js"></script>
+<script src="site_libs/sankey-1/sankey.js"></script>
+<script src="site_libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">2014 –2017 Seçimlerinde Partiler Arası Oy
+Geçişleri</h1>
+
+	
+						<date>Erol Taymaz
+							  • 29 Mayıs 2018
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>İçindekiler</h3>
+<ul>
+<li><a href="#giriş" id="toc-giriş">Giriş</a></li>
+<li><a href="#geçmiş-dört-seçimdeki-oy-geçişi-tahminleri"
+id="toc-geçmiş-dört-seçimdeki-oy-geçişi-tahminleri">Geçmiş dört
+seçimdeki oy geçişi tahminleri</a></li>
+<li><a href="#sonuçlar" id="toc-sonuçlar">Sonuçlar</a></li>
+<li><a href="#parti-bazında-detaylı-gözlemler"
+id="toc-parti-bazında-detaylı-gözlemler">Parti bazında detaylı
+gözlemler</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="giriş" class="section level2 useSmallImage">
+<h2 class="useSmallImage">Giriş</h2>
+<p>Türkiye son 4 yılda dört önemli seçim yaşadı: 10 Ağustos 2014
+Cumhurbaşkanı seçimi, 7 Haziran 2015 Milletvekili Genel Seçimi, 1 Kasım
+2015 Milletvekili Genel Seçimi ve 16 Nisan 2017 Anayasa Değişikliği
+Referandumu. Bu yıl da 24 Haziran’da Milletvekili Genel Seçimi ve
+Cumhurbaşkanı seçimi birlikte yapılacak.<a href="#fn1"
+class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Her seçimde olduğu gibi 24 Haziran seçimlerinde de partilerin ve
+adayların alacakları oy oranlarının tahminine ilişkin pek çok anket ve
+analiz yapılıyor. Bu tahmin ve tartışmalarda en önemli konulardan biri
+seçmen tercihlerindeki değişimleri yansıtan oy geçişleri, çünkü
+partilerin/adayların bir önceki seçimden farklı oy alması için seçmen
+tercihlerinin değişmesi gerekiyor.</p>
+<p>İki seçim arasında oy geçişlerinin tahmin edilmesine yönelik olarak
+genellikle iki yöntem kullanılıyor: seçmen anketleri ve istatistiksel
+yöntemler.</p>
+<p>Seçmen anketlerinde seçmenlere iki seçimde nasıl oy kullandıkları
+soruluyor. Seçmen anketlerinin doğru olmasının ön koşulu seçmenlerin
+doğru cevap vermesi ve anket örnekleminin tüm seçmenleri yansıtması.
+Seçmenlerin bir bölümü, örneğin bir partiye oy veren seçmenler,
+tercihlerini açıklamak istemezlerse anket sonuçlarında yanlılık
+olabiliyor. Ayrıca anketlerin örneklem büyüklüğü genelde ülke düzeyinde
+tahmin verecek şekilde belirleniyor, çünkü bölge düzeyinde tahmin yapmak
+istendiğinde anket maliyeti artıyor.</p>
+<p>Oy geçişleri tahmininde kullanılan ikinci yöntem, istatistiksel
+yöntemler. Bu yöntemlerde iki seçim sonuçları kullanılarak oy geçişleri
+istatistiksel olarak tahmin ediliyor.</p>
+<p>İstatistiksel yöntemlere bir örnek vermek gerekirse, iki seçim
+olduğunu ve seçimlere A, B ve C partilerinin girdiğini varsayalım.</p>
+<p>İki seçim bölgesindeki oy dağılımı tablolardaki gibi olsun. Her iki
+seçim bölgesinde de 200 seçmen var.</p>
+<p><img src="img/oy-gecisleri-tablo2.jpg" /></p>
+<p>Tablolardaki son sütun 1. seçimde partilerin aldığı oyları, son satır
+da 2. seçimde alınan oyları gösteriyor. Tablodaki verilere göre 1. Seçim
+Bölgesinde A, B ve C partilerine 1. seçimde 100, 60 ve 40, 2. seçimde de
+ise 40, 65, 95 oy verilmiş. Bu değerler gözlenebilen değerler. 1. Seçim
+Bölgesinde 1. seçimde A partisine oy veren 100 seçmenden 40’ı 2. seçimde
+A partisine, 10’u B partisine ve 50’si C partisine oy vermiştir. Oy
+geçişlerine ilişkin bu değerler <em>gözlenemeyen değerler</em>.</p>
+<p>İstatistiksel yöntemde oy geçişlerine ilişkin değerler, iki seçimde
+kullanılan oy verilerinden tahmin ediliyor. Sadece bir seçim bölgesine
+ilişkin veriler kullanıldığında tahmin yapmak mümkün değil, çünkü seçim
+sonuçlarını açıklayacak sonsuz sayıda çözüm bulunuyor. Fakat seçmenlerin
+benzer şekilde davrandığı birden fazla seçim bölgesine ilişkin sonuçlar
+olduğunda istatistiksel yöntemler kullanılarak oy geçişlerinin büyüklüğü
+tahmin edilebiliyor.</p>
+<p>Örneğin iki farklı seçim bölgesindeki sonuçlara bakıldığında, 2.
+seçimde C partisinin oy oranının arttığı ve bu artışın ilk seçimde A
+partisinin çok oy aldığı seçim bölgelerinde daha fazla olduğu
+gözleniyor. Bu nedenle 1. seçimde A partisine oy veren seçmenlerin
+önemli bir kesiminin 2. seçimde C partisine oy verdiği tahmin
+edilebilir. Seçim bölgesi sayısı fazla olduğunda ve kullanılan seçim
+bölgelerinde seçmenler benzer şekilde davrandığında oy geçişlerine
+ilişkin geçerli tahmin yapılabiliyor.</p>
+<p><br/></p>
+</div>
+<div id="geçmiş-dört-seçimdeki-oy-geçişi-tahminleri"
+class="section level2">
+<h2>Geçmiş dört seçimdeki oy geçişi tahminleri</h2>
+<p>Oy geçişleri tahmininde farklı teknikler kullanılabiliyor. Bu
+çalışmada her il için mahalle düzeyindeki veriler kullanılarak ekolojik
+çıkarım (ecological inference-ei) yöntemi ile oy geçişleri tahmin edildi
+<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
+<p>İl düzeyinde seçmen davranışları farklılaşabileceği için tahminler
+her il için ayrı ayrı yapıldı. Analiz sonuçlarının daha rahat
+görülebilmesi amacıyla sonuçlar Türkiye geneli ve 5 ayrı bölge için
+birleştirildi. Bölgeler Haziran 2015 seçimlerinde alınan oylara göre
+aşağıdaki şekilde tanımlandı:</p>
+<p><strong>1. Bölge:</strong> CHP’nin %30 ve daha fazla oy aldığı 15 il
+(Antalya, Artvin, Aydın, Balıkesir, Bartın, Denizli, Edirne, Eskişehir,
+Hatay, Kırklareli, Muğla, Tekirdağ, Zonguldak, Çanakkale, İzmir).</p>
+<p><strong>2. Bölge:</strong> HDP’nin %30 ve daha fazla oy aldığı 16 il
+(Ardahan, Ağrı, Batman, Bingöl, Bitlis, Diyarbakır, Hakkari, Iğdır,
+Kars, Mardin, Muş, Siirt, Tunceli, Van, Şanlıurfa, Şırnak).</p>
+<p><strong>3. Bölge:</strong> İlk iki bölge dışında kalan ve AKP’nin %50
+ve daha fazla oy aldığı 28 il (Adıyaman, Afyonkarahisar, Aksaray,
+Bayburt, Bolu, Düzce, Elazığ, Erzurum, Gümüşhane, Giresun,
+Kahramanmaraş, Karaman, Kayseri, Kırıkkale, Konya, Kütahya, Malatya,
+Nevşehir, Ordu, Rize, Sakarya, Samsun, Sivas, Tokat, Trabzon, Yozgat,
+Çankırı, Çorum).</p>
+<p><strong>4. Bölge:</strong> Diğer 21 il (Adana, Amasya, Ankara,
+Burdur, Bursa, Bilecik, Erzincan, Gaziantep, Isparta, Karabük,
+Kastamonu, Kırşehir, Kocaeli, Kilis, Manisa, Mersin, Niğde, Osmaniye,
+Sinop, Uşak, Yalova).</p>
+<p><strong>5. Bölge:</strong> İstanbul – Nüfus açısından Türkiye’nin en
+büyük ili olan İstanbul tek başına bir bölge olarak değerlendirildi.</p>
+<p>Oy geçişleri 10 Ağustos 2014 Cumhurbaşkanı Seçimi, 7 Haziran 2015
+Genel Seçimleri, 1 Kasım 2015 Genel Seçimleri ve 16 Nisan 2017 Anayasa
+Değişikliği Referandumu için tahmin edildi.</p>
+<p>Aşağıdaki şekillerde Türkiye geneli ve 5 bölge için oy geçişleri
+özetleniyor. Bu şekillerde ilk sütun Ağustos 2014 Cumhurbaşkanı
+seçiminde üç adayın aldığı oyları gösteriyor. Adaylar: RTE (Recep Tayyip
+Erdoğan), SD (Selahattin Demirtaş), Eİ (Ekmeleddin İhsanoğlu).</p>
+<p>İkinci ve üçüncü sütunlarda Haziran 2015 ve Kasım 2015 seçimlerinde
+siyasi partilerin aldığı oylar bulunuyor. AKP (Ak Parti), CHP
+(Cumhuriyet Halk Partisi), HDP (Halkların Demokratik Partisi), MHP
+(Milliyetçi Hareket Partisi), SP (Saadet Partisi) ve BBP (Büyük Birlik
+Partisi) dışındaki tüm partilerin ve bağımsız adayların oyları “Diğer”
+kategorisinde birleştirildi.</p>
+<p>Son sütunda ise Nisan 2017 referandumu sonuçları yer alıyor.</p>
+<p>Bu şekillerde “SeçimDışı” kategorisi, seçime katılmayan veya geçersiz
+oy kullanan seçmenler ile o seçimde ilk (veya son) kez oy kullanan
+seçmenleri kapsıyor.</p>
+<p>Okuyucunun tüm verileri görebilmesi ve istediği akışları detaylı
+olarak değerlendirebilmesi için şekiller etkileşimli olarak hazırlandı.
+İmleç (cursor) sütunlar üzerinde 1-2 saniye tutulduğunda ilgili
+adayın/partinin aldığı (model tarafından tahmin edilen) oy sayısı
+gösteriliyor. İmleç bir akış bandı üzerinde tutulduğunda ise, o akış
+bandı koyulaşıyor ve iki seçimde ilgili adaylar/partiler arasında
+değişen oy sayısı gözüküyor. Bu sayılar bin kişi olarak ifade ediliyor;
+yani 458 sayısı 458bin kişi, 16360 sayısı 16 milyon 360 bin kişi
+anlamına geliyor.</p>
+<p>İmleç bir kutu üzerinde tıklanıp yukarı/aşağı doğru hareket
+ettirilerek seçilen kutunun yeri değiştirilebilir. Böylece okuyucu
+şekildeki kutuların yerini istediği şekilde düzenleyebilir.</p>
+<h4></h4>
+<h2>Türkiye</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-40540969513fa236eac3" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-40540969513fa236eac3">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[292,164,9912,892,16360,99,362,1423,1096,95,3695,2507,538,3122,477,1570,313,80,206,343,351,126,226,527,1708,211,545,6988,10461,90,302,170,25,67,759,150,17614,1385,297,576,315,2582,172,102,4790,63,40,194,248,77,52,45,4559,13,15,149,34,47,39,26,125,15,50,35,49,42,28,43,18,50,61,68,100,49,29,237,77,345,320,725,644,82,369,5447,235,20722,621,409,126,106,158,1426,11021,575,4453,3702,86,62,129,2612,381,1238,456,713,101,76,316,5336]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<h2>CHP'nin güçlü olduğu iller</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-56dd8bda7352bb02b5ce" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-56dd8bda7352bb02b5ce">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[70,80,3501,351,2832,26,83,244,253,32,878,543,43,203,208,177,38,23,37,47,90,39,67,63,247,40,165,1369,3714,19,134,54,9,42,190,59,3063,290,41,73,31,269,59,22,1161,13,13,28,60,35,10,10,457,2,3,21,9,8,8,4,14,3,9,9,9,8,5,6,3,9,18,14,18,6,7,81,15,111,47,81,53,19,67,1274,77,3543,106,47,20,20,32,137,3941,106,1139,426,15,14,36,721,144,179,108,59,18,12,90,1119]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<h2>HDP'nin güçlü olduğu iller</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-84b5c1452ab2417e9670" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-84b5c1452ab2417e9670">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[24,10,44,30,824,16,35,126,45,11,45,55,275,1748,15,682,10,7,6,10,78,13,13,42,267,78,32,624,47,10,9,28,2,5,19,22,941,62,135,12,112,188,9,7,43,15,1,3,14,7,8,5,2331,3,4,68,1,3,2,5,1,1,4,2,4,2,6,1,2,5,3,11,2,19,3,5,13,17,36,32,263,8,17,638,26,1280,42,240,7,8,28,288,72,85,32,1788,4,3,7,208,22,100,16,402,4,6,18,719]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<h2>AKP'nin güçlü olduğu iller</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-ec71d4c739d07c9c792e" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ec71d4c739d07c9c792e">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[91,23,1205,152,5154,13,86,459,378,11,990,635,74,179,63,90,116,12,66,113,62,27,42,60,531,27,127,1558,1256,27,55,41,5,6,52,28,5460,498,39,204,71,682,39,32,1204,15,11,8,60,13,13,11,216,3,2,18,9,17,14,6,33,3,16,9,17,14,6,12,4,16,15,20,39,8,8,39,22,111,133,187,76,26,52,1292,40,6379,194,27,33,28,45,440,1326,174,1028,199,29,19,33,453,77,422,141,44,31,25,69,1296]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<h2>Diğer iller</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-4208996ef980b7111336" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4208996ef980b7111336">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[75,37,2856,321,4453,29,111,432,369,28,1440,783,87,444,133,301,105,25,61,92,90,33,65,118,417,34,117,1717,3050,26,94,41,7,9,194,33,4818,431,74,183,87,643,58,31,1791,16,11,32,81,16,14,16,691,4,3,25,11,13,12,7,34,5,13,11,15,14,8,10,6,15,17,17,18,9,8,76,19,99,94,247,119,22,85,1374,68,5755,257,69,38,35,46,367,3255,152,1598,619,26,14,30,782,106,369,165,77,29,27,86,1369]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<h2>İstanbul</h2>
+<h3>Ağustos 2014 &gt; Haziran 2015 &gt; Kasım 2015 &gt; Nisan 2017</h3>
+<div id="htmlwidget-024fe0f5600ad28b10f7" style="width:900px;height:600px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-024fe0f5600ad28b10f7">{"x":{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18,11,12,13,14,15,16,17,18],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21],"value":[32,13,2307,38,3098,14,47,163,51,13,342,492,59,548,59,319,44,13,37,81,30,14,40,244,246,33,105,1720,2394,8,10,7,2,5,304,7,3331,104,8,104,14,799,6,9,591,4,3,123,34,6,7,4,865,2,3,18,4,6,3,3,43,2,7,4,5,3,3,13,3,5,8,6,22,6,3,36,9,8,10,178,133,7,149,869,25,3766,22,26,29,15,7,195,2426,57,657,669,14,12,23,447,33,169,26,131,19,5,52,833]},"nodes":{"name":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"],"group":["RTE","SD","EI","SeçimDışı","CHP","AKP","MHP","HDP","SP","Diğer","SeçimDışı","CHP","AKP","MHP","HDP","SP","BBP","Diğer","SeçimDışı","Evet","Hayır","SeçimDışı"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal().domain([\"AKP\", \"CHP\",\"MHP\", \"HDP\", \"SP\", \"BBP\", \n\"SeçimDışı\", \"Diğer\", \"Evet\", \"Hayır\", \"RTE\", \"SD\", \"EI\"]).\n  range([\"orange\", \"red\" , \"#333333\", \"#ac1480\", \"lightblue\", \"black\", \n\"#ffffff\", \"#32cd32\", \"#8B4513\", \"#1E90FF\", \"orange\", \"#ac1480\", \"#aa0000\"])","fontSize":18,"fontFamily":"Source Sans Pro","nodeWidth":20,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<br/>
+<p><br/></p>
+</div>
+<div id="sonuçlar" class="section level2">
+<h2>Sonuçlar</h2>
+<p>Oy geçişlerinin parti bazındaki detaylı sonuçlarını yazının en
+sonunda okuyabilirsiniz.</p>
+<p>Özet olarak, son 4 seçimdeki oy geçişleri üzerine yapılan tahminler,
+CHP seçmenlerinin oy verme davranışı açısından en istikrarlı seçmen
+grubu olduğunu gösteriyor. CHP seçmeni ile diğer partiler ve “seçim
+dışı” arasında oy geçişleri oldukça düşük. Bir başka deyişle, CHP
+seçmeni her şeye karşın kendi partisine oy vermeye devam ediyor. Bu
+durum, CHP’den diğer partilere oy geçişi olmaması anlamında CHP
+açısından olumlu olmakla birlikte, diğer partilerden, yeni seçmenlerden
+ve seçim dışı seçmenlerden CHP’ye oy geçişinin de az olduğu
+görülüyor.</p>
+<p>Oy geçişgenliği en çok olan partilerden biri AKP. AKP’nin oyları MHP,
+seçim dışı ve (HDP’nin güçlü olduğu illerde) HDP ile önemli ölçüde
+geçişler gösteriyor.</p>
+<p>MHP-AKP arasında önemli oy kaymaları gözleniyor. Fakat Nisan 2017
+Referandum sonuçları göz önüne alındığında MHP seçmeninin iki gruba
+ayrıştığı söylenebilir. 2017 Referandumunda Hayır oyu veren MHP
+seçmeninin ne kadarının tamamen partiden ayrılacağı (AKP veya İP’ye
+gideceği) 24 Haziran seçimlerinde belli olacak.</p>
+<p>HDP, Haziran 2015 seçimlerinde (2014 Cumhurbaşkanı seçimlerine göre)
+oylarını en çok artıran parti olmuştu. Bu artışın en önemli kaynağını
+Cumhurbaşkanı seçimlerine katılmayan seçmenler oluşturmuş (1.6 milyon
+kişi). Buna ek olarak HDP, Erdoğan ve İhsanoğlu’na oy veren yaklaşık 1
+milyon kişinin de oyunu almış. Kasım 2015 ve 2017 Referandumu’nda
+HDP’nin oyları büyük ölçüde seçmenlerinin seçim dışına çıkması ve kısmen
+de AKP’ye oy vermesi ile azalmış.</p>
+<p>Oy geçişlerine ilişkin analiz sonuçları, 24 Haziran seçimlerinin de
+nasıl sonuçlanabileceği konusunda bilgi veriyor. 24 Haziran seçimlerini
+belirleyecek olan 3 faktör öne çıkıyor:</p>
+<ol style="list-style-type: decimal">
+<li>HDP seçmeninin seçim dışına çıkma eğiliminin devam etmesi durumunda
+HDP Kasım 2015’deki oy oranına ulaşamayacak ve %10 barajını aşamayacak.
+Bunun aksine, HDP’nin Kasım 2015 ve Nisan 2017’de seçim dışı kalan (ve
+kısmen AKP’ye giden) seçmenlerden tekrar oy alabilmesi durumunda Haziran
+2015’deki orana ulaşması, yani %10 barajını aşması mümkün olacak.
+HDP’nin baraji aşıp/aşmaması 24 Haziran seçim sonuçları açısından
+belirleyici bir unsur.</li>
+<li>Tahmin sonuçlarına göre MHP’nin Kasım 2015’deki 5.6 milyon
+seçmeninin %80’i 2017 Referandumunda Hayır oyu vermiş. Bu oyların ne
+kadarının İP’ye geçeceği MHP’nin kaderini belirleyecek. İP diğer
+partilerden ve şimdiye kadar seçim dışı kalan seçmenden de bir miktar oy
+alabilir.</li>
+<li>AKP’nin oy geçişleri %10-20 düzeyinde olabiliyor. 24 Haziran’da AKP
+seçmeninin Haziran 2015’de olduğu gibi önemli ölçüde seçim dışı kalması
+durumunda Cumhur İttifakı TBMM’nde %50 çoğunluğu sağlayamayacak.</li>
+</ol>
+<p><br/></p>
+</div>
+<div id="parti-bazında-detaylı-gözlemler" class="section level2">
+<h2>Parti bazında detaylı gözlemler</h2>
+<p><strong>AKP</strong></p>
+<p>2014 Cumhurbaşkanı seçiminde Recep Tayyip Erdoğan yaklaşık 20.6
+milyon, Haziran 2015 seçimlerinde ise AKP 18.3 milyon oy almış. 2014’te
+Erdoğan’a oy veren seçmenlerin önemli bir bölümü (1.7 milyon) Haziran
+2015’de “Seçim Dışı” kalmış (oy vermemiş veya geçersiz oy vermiş, 1
+milyondan fazlası MHP’ye ve bir kısmı da (yaklaşık 500 bin kişi) HDP’ye
+oy vermiş.</p>
+<p>AKP’nin Kasım 2015 seçimlerinde oy oranını artırmasının temel nedeni,
+Haziran 2015’de oylarına ek olarak MHP’den (1.4 milyon), seçim dışı
+kalan seçmenden (2.6 milyon) ve SP+BBP’den (600 bin) oy alabilmesi
+olmuş. Bu oyların 1.2 milyonu Nisan 2017 referandumunda tekrar seçim
+dışı kalmış ve küçük bir kısmı (600 bin) Hayır’a gitmiş.</p>
+<p>AKP’nin Haziran-Kasım 2015 arasında oyları %25 artmış, Nisan 2017
+Referandumu’nda ise Kasım 2015’deki seçmenlerinin yaklaşık %10’u Evet
+oyu vermemiş. Bu durum AKP seçmen sayısının iki seçim arasında %10-20
+düzeyinde değişebileceğini gösteriyor. AKP’nin oy geçişgenliğinin en çok
+“seçim dışı”na ve MHP’ye yönelik olduğu görülüyor.</p>
+<p>AKP oylarındaki geçişkenlik HDP’nin güçlü olduğu illerde farklılık
+gösteriyor. Bu bölgede Ağustos 2014’de Erdoğan’ın aldığı oyların önemli
+bir kısmı (yaklaşık %18’i) Haziran 2015’de HDP’ye gitmiş. HDP’ye giden
+bu oyların yaklaşık yarısı Kasım 2015’de AKP’ye dönmüş, Nisan 2017
+Referandumu’nda ise hemen hemen aynı sayıda HDP seçmeni “Evet” oyu
+vermiş. HDP’nin güçlü olduğu illerde MHP’nin oyu az olduğu için, AKP-MHP
+arasındaki oy geçişleri de az olmuş.</p>
+<p><strong>CHP</strong></p>
+<p>Bir bütün olarak bakıldığında oy geçişlerinin en az olduğu parti
+CHP’dir. Ağustos 2014’de Ekmeleddin İhsanoğlu için oy kullanan
+seçmenlerin 10 milyonu Haziran 2015’de CHP’ye oy vermiş, Haziran 2015’de
+CHP’ye oy veren 10.4 milyon kişi Kasım 2015’de de aynı yönde oy
+kullanmış. Kasım 2015’de CHP’yi tercih eden seçmenlerin de hemen hepsi
+Nisan 2017 Referandumunda “Hayır” demiş. CHP seçmeni ile “seçim dışı”
+arasında kısmi geçişler olmakla birlikte, “seçim dışı” olarak tanımlanan
+seçmenin seçimlere yeni katılan/seçimlerden çıkan seçmeni de kapsadığı
+göz önüne alındığında, bu geçişkenliğin çok fazla olmadığı
+söylenebilir.</p>
+<p>CHP’nin oy geçişlerinde bölgeler arası ciddi bir farklılık
+bulunmuyor.</p>
+<p><strong>HDP</strong></p>
+<p>HDP’nin “seçim dışı” grubu ile oy geçişkenliğinin olduğu görülüyor.
+2014 Cumhurbaşkanı seçiminde Demirtaş’ın 3.9 milyon oy almasına karşın
+Haziran 2015 seçimlerinde HDP’nin oyu 5.8 milyona çıkmış. HDP’nin
+oylarındaki yaklaşık %50 artış yoğun bir tartışma konusu olmuştu. Tahmin
+sonuçlarımıza göre 2014-2015 arasında HDP’nin oyunun artmasını sağlayan
+en önemli etken, 2014’de oy kullanmayan 1.6 milyon kişinin Haziran
+2015’de HDP’yi tercih etmesiydi. Bir başka deyişle HDP oy kullanmayan
+önemli bir kesimini ilk kez parti olarak girdiği seçimlerde (Haziran
+2015) kendisine çekebilmiş. Ayrıca 2014’de İhsanoğlu’na oy veren
+yaklaşık 500 bin kişi Haziran 2015’de HDP’ye oy vermiş. Haziran 2015’de
+HDP, Cumhurbaşkanı seçiminde Erdoğan’a oy veren 500 bin kişinin de oyunu
+almış.</p>
+<p>HDP’nin Haziran 2015’den Kasım 2015’e oyu yaklaşık 1 milyon azaldı.
+Bu azalışta en büyük payı “seçim dışı”na giden, yani oy
+kullanmayan/kullanamayan seçmenler oluşturmuş (yaklaşık 650 bin kişi).
+Kasım 2015’de HDP’den AKP’ye yaklaşık 300 bin ve CHP’ye 170 bin oy
+kayması olmuş. 2017 Referandumunda Kasım 2015’de HDP’ye oy verenlerin
+büyük bir kısmı Hayır oyu vermiş (3.7 milyon), Evet diyenlerin sayısı
+400 binde kalmış. 2017 Referandumunda da HDP’nin “seçim dışı”na çıkan
+seçmen sayısı oldukça fazla (700 binden fazla).</p>
+<p>Haziran 2015 ve Kasım 2015 seçimlerinde bazı CHP seçmenlerinin HDP’ye
+seçim barajını aşması için oy verdiği iddia edilmiş ve bu oylar “emanet
+oy” olarak tanımlanmıştı. 2014’de İhsanoğlu’na oy veren 500 bin kişi
+Haziran 2015’de HDP’ye oy vermiş. Buna ek olarak Haziran 2015’de CHP’ye
+oy veren 35 bin kişi Kasım 2015’de HDP’ye oy vermiş. Bu sayılar CHP’den
+HDP’ye geçen ve “emanet oy” olarak tanımlanan oyların üst sınırını
+gösteriyor. Haziran 2015’de HDP’ye oy veren 170 bin kişinin Kasım
+2015’de CHP’ye oy verdiği göz önüne alındığında (emanet oylar dahil)
+CHP-HDP arasındaki oy geçişinin 200-500 bin arasında olduğu
+söylenebilir.</p>
+<p>HDP’nin oyları 2014’de Demirtaş’ın aldığı oya göre 2015 Haziran’ında
+yaklaşık 2 milyon artmış. Bu artışın bir milyonu HDP’nin, 200 bini
+CHP’nin, 100 bini AKP’nin güçlü olduğu illerde, 300 bini diğer illerde
+ve 350 bini İstanbul’da gerçekleşmiş. Tüm bölgelerde HDP’nin oylarındaki
+artışın en önemli kaynağı Referandum’da “seçim dışı” kalan seçmen olmuş.
+CHP’nin güçlü olduğu illerde İhsanoğlu’na oy veren seçmenden HDP’ye
+yönelik (oransal olarak önemli) bir geçiş olmuş (yaklaşık 200 bin
+oy).</p>
+<p>HDP’nin güçlü olduğu illerde Cumhurbaşkanı seçiminde Erdoğan’a oy
+veren önemli bir kesim (275 bin kişi) Haziran 2015’de HDP’yi tercih
+etmiş, Kasım 2015’de HDP’den AKP’ye 135 bin, Kasım 2015’den 2017
+Referandumuna HDP’den Evet’e 240 bin kişi geçmiş. Bir başka deyişle AKP,
+Haziran 2015’de HDP’ye giden oylarını Nisan 2017’ye kadar geri almıştır.
+HDP’nin Kasım 2015’de oylarının azalmasının ve HDP’nin güçlü olduğu
+illerde 2017’de Referandumda Hayır oylarının (HDP seçmeni sayısına göre)
+azalmasının en önemli nedeni HDP seçmeninin seçim dışı kalması olmuş
+(Kasım 2015’de 260 bin, 2017 Referandumunda 400 bin kişi). Bu veriler
+HDP’nin güçlü olduğu bölgelerde Kasım 2015 ve Nisan 2017’de HDP
+oylarındaki azalmanın en önemli nedeninin HDP seçmeninin oy kullanmaması
+veya kullanamaması olduğunu gösteriyor.</p>
+<p>HDP’nin güçlü olduğu illerden biri de İstanbul. İstanbul’da da
+Haziran-Kasım 2015 ve Haziran 2015-2017 Referandumu arasında seçim
+dışına çıkan seçmen oranı, HDP’nin güçlü olduğu illerdekine yakın.
+HDP’den AKP’ye oy geçişleri ise İstanbul’da çok fazla değil. Bu sonuç,
+İstanbul’da HDP seçmeninin HDP’ye oy vermemesi durumunda diğer partilere
+de oy vermediğini gösteriyor. HDP’nin güçlü olduğu illerde AKP ve HDP
+arasında (HDP oylarının %10, AKP oylarının %15-20’si düzeyinde) önemli
+bir oy geçişi var.</p>
+<p><strong>MHP</strong></p>
+<p>MHP’nin Haziran 2015’de aldığı yaklaşık 7.4 milyon oyun 3.7 milyonu
+İhsanoğlu’na ve 1.1 milyonu Erdoğan’a oy veren seçmenler. Cumhurbaşkanı
+seçiminde seçim dışı kalan 2.5 milyon seçmen de Haziran 2015’de MHP’ye
+oy vermiş. Bir başka deyişle Cumhurbaşkanı seçiminde Haziran 2015’deki
+MHP seçmeninin yarısı İhsanoğlu’na oy verirken, %35’i oy vermemiş, %15’i
+de Erdoğan’a oy vermiş. Kasım 2015 seçimlerinde ise, Haziran 2015’deki
+MHP seçmeninin önemli bir kısmı AKP’ye oy vermiş (1.4 milyon kişi),
+bunun yaklaşık yarısı kadar seçmen de oy kullanmamış.</p>
+<p>Nisan 2017 Referandumunda MHP’nin parti olarak “Evet”i desteklemesine
+karşın, Kasım 2015’de aldığı 6.5 milyon oyun sadece 600’bini “Evet”e
+dönüşmüş, çok büyük bir çoğunluğu ise (4.5 milyon) “Hayır” oyu
+vermiştir. 450 bin MHP seçmeni Referandumda seçim dışı kalmış.</p>
+<p>Bölgesel düzeyde, MHP’den AKP’ye olan oy geçişgenliği, AKP’nin güçlü
+olduğu illerde Türkiye ortalamasının üzerinde, İstanbul’da ise
+ortalamanın altında olmuş.</p>
+<p>MHP-AKP arasındaki oy geçişgenliği, 2015 seçimleri baz alındığında
+MHP oylarının %20-25’i düzeyine ulaşıyor. Kasım 2015 seçimi ve 2017
+Referandumu sonuçları birlikte değerlendirildiğinde, MHP’den AKP’ye
+kayışın büyük ölçüde tamamlandığı söylenebilir. Partinin politikasına
+rağmen 2017 Referandumunda “Hayır” oyu veren MHP’li seçmenin önemli bir
+kısmının 24 Haziran seçimlerinde İyi Parti’ye (İP) geçeceği
+söylenebilir.</p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Bu yazı ilk önce Türkiye’nin bağımsız Bilim Akademisi
+çatısı altında oluşmuş popüler bilim
+platformu<a href="https://sarkac.org/2018/05/partiler-arasi-oy-gecisleri/" target="_blank">SARKAÇ</a>’ta
+yayımlanmıştır.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Bildiğimiz kadarıyla bu yöntem kullanılarak Türkiye
+üzerine en kapsamlı çalışmalar
+<a href="cilekagaci.com">cilekagaci.com</a> sitesi tarafından yapıldı.
+Bu çalışmada aynı yöntem kullanılmakla birlikte oy grupları kısmen
+farklı tanımlandı. Bu farklılığa karşın iki çalışmanın tahminleri büyük
+ölçüde çakışıyor. Son 4 seçimdeki oy geçişleri bir bütün olarak
+değerlendirildiği çalışmamızdaki tahminler
+<a href="https://www.r-projects.org">R</a> programı ile
+<a href="https://cran.r-project.org/web/packages/ei/index.html">ei</a>
+paketi kullanılarak yapıldı, şekiller networkD3 paketi ile hazırlandı.
+Yöntem hakkında detaylı bilgi, ei paketinden veya cilekagaci.com’un
+ilgili yazılarından temin edilebilir.
+<a href="https://www.r-projects.org">R</a>,
+<a href="https://cran.r-project.org/web/packages/ei/index.html">ei</a>
+ve
+<a href="https://cran.r-project.org/web/packages/networkD3/index.html">networkD3</a>
+açık kaynak kodlu özgür yazılımlardır ve ilgili bağlantılardan ücretsiz
+temin edilebilir.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

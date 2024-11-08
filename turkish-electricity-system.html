@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<meta name="author" content="Serdal Bahce and Erol Taymaz" />
+
+<meta name="date" content="2008-03-17" />
+
+<title>A Simulation Model of the Turkish Electricity System</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/html_styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EROL TAYMAZ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Blog.html">Blog</a>
+</li>
+<li>
+  <a href="Presentations.html">Presentations</a>
+</li>
+<li>
+  <a href="Publications.html">Publications</a>
+</li>
+<li>
+  <a href="Courses.html">Courses</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">A Simulation Model of the Turkish
+Electricity System</h1>
+
+	
+						<date>Serdal Bahce and Erol Taymaz
+							  • 17 March 2008
+						</date><br/>
+			
+	
+</div>
+
+<div id="TOC" class="col-ls">
+<h3>Contents</h3>
+<ul>
+<li><a href="#tess" id="toc-tess">TESS</a></li>
+<li><a href="#paper" id="toc-paper">Paper</a></li>
+<li><a href="#download" id="toc-download">Download</a></li>
+</ul>
+</div>
+
+		<div class="col-rb">
+		<div id="section" class="section level5">
+<h5></h5>
+</div>
+<div id="tess" class="section level2 useSMImage">
+<h2 class="useSMImage">TESS</h2>
+<p>TESS is a simulation model of the Turkish electricity system. TESS is
+designed to simulate the welfare implications of alternative electricity
+distribution mechanisms. Currently, there are three mechanisms
+implemented in the model:</p>
+<ul>
+<li>Administered Price Regulation Case (similar to the one that
+currently exists in Turkey)</li>
+<li>Free Consumer Case</li>
+<li>Distributional Monopoly Case.</li>
+</ul>
+<p>The model simulates hourly demand and generation schedules at each
+bus for the selected case, and calculates generators’ profits,
+distribution companies’ profits, consumer surplus, and total social
+welfare.</p>
+<p><img src="img/trnet.jpg"></p>
+<p>The model rests upon the DC Flow approximation method in which the
+reactive generation side is ignored. Using such a framework, we avoid
+getting stuck into the technical complexities of the electricity system,
+and focus on the impact of various market mechanisms on the system’s
+performance.</p>
+<p>The model solves a non-linear Optimal Power Flow (OPF) problem for
+the Turkish electricity system. The OPF approach provides a wider
+framework than that the traditional Power Flow approach by ensuring
+node-level supply-demand equilibrium. OPF provides a basis for a
+synthesis of economics and engineering. In economics, sector-specific
+models only deal with measures of allocative or productive efficiency;
+these abstract models do not take sector specific technical conditions
+into consideration. OPF approach can be used to find out the optimal
+power flows, which satisfy both allocative and productive efficiency
+and, also do not violate technical conditions. Although the OPF approach
+requires a larger number of constraints and variables, efficient
+non-linear optimization algorithms like Newton–Raphson method, or most
+recent evolutionary techniques, overcome computational problems.
+Moreover, the OPF approach allows analyst to choose any type of
+objective function suitable for his analysis. One can choose social
+welfare maximization (which incorporates consumer and producer
+surpluses), or loss minimization as a goal.</p>
+<p><br/></p>
+</div>
+<div id="paper" class="section level2">
+<h2>Paper</h2>
+<p>For more information, see:</p>
+<p>Bahçe, S. and Taymaz, E. (2008), “The Impact of Electricity Market
+Liberalization in Turkey: ‘Free Consumer’ vs Distributional Monopoly
+Cases”,
+<a href="http://www.sciencedirect.com/science/journal/01409883"><i>Energy
+Economics</i></A> (30): 1603-1624.</p>
+<p><br/></p>
+</div>
+<div id="download" class="section level2">
+<h2>Download</h2>
+<p>TESS is available for non-profit research purposes. If you would like
+to run simulations with TESS, please first read the
+<a href="files/tess_manual.pdf">TESS Manual</a>.</p>
+<p>The executable file, the source code and the input file are zipped
+together and available here for downloading:
+<a href="files/tess.zip">TESS Model</a>.</p>
+</div>
+	
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

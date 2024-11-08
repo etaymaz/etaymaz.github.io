@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Erol Taymaz R Papers</title>
+    <link>http://users.metu.edu.tr/etaymaz/</link>
+    <atom:link href="http://users.metu.edu.tr/etaymaz/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Personal blog for R-related papers</description>
+      <item>
+        <title>CBRT: An R Package for Easy Access to the CBRT Database</title>
+        <link>http://users.metu.edu.tr/etaymaz/cbrt-2019.html</link>
+        <guid>http://users.metu.edu.tr/etaymaz/cbrt-2019.html</guid>
+        <description>The Central Bank of The Republic of Turkey provides (CBRT) hosts
+                      an extensive database (more than 22,000 variables) on the Turkish
+                      Economy. The CBRT package includes functions for finding, and 
+                      downloading data from the CBRT’s database.</description>
+        <pubDate>Sat, 26 Jan 2002 13:00:00 GMT</pubDate> 
+      </item>
+    </channel>
+  </rss>
