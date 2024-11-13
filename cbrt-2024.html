@@ -312,16 +312,20 @@ The current version of the CBRT package (0.1.1) has been adapted to the
 required change. Since there is no change in function parameters, the
 users can use the code prepared for version 0.1.0 without any
 modification.</p>
+<p>The package is now available at
+<a href="https://github.com/etaymaz/CBRT">CRAN</a> (November 13, 2024),
+and can be installed by</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;CBRT&quot;</span>)</span></code></pre></div>
 <p>You can install the package from the source by using the following
 command (the <strong>CBRT</strong> package depends on the
 <strong>data.table</strong> and <strong>curl</strong> packages):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;http://users.metu.edu.tr/etaymaz/files/CBRT_0.1.1.tar.gz&quot;</span>,</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>                 <span class="at">repos =</span> <span class="cn">NULL</span>, <span class="at">type =</span> <span class="st">&quot;source&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;http://users.metu.edu.tr/etaymaz/files/CBRT_0.1.1.tar.gz&quot;</span>,</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>                 <span class="at">repos =</span> <span class="cn">NULL</span>, <span class="at">type =</span> <span class="st">&quot;source&quot;</span>)</span></code></pre></div>
 <p>You may also install it from GitHub. Install the the
 <a href="https://github.com/r-lib/devtools">devtools</a> package if not
 installed, then</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(devtools)</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">install_github</span>(<span class="st">&quot;etaymaz/CBRT&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">library</span>(devtools)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">install_github</span>(<span class="st">&quot;etaymaz/CBRT&quot;</span>)</span></code></pre></div>
 <p>Please kindly note that you need a <strong>key</strong> to download
 data from the CBRT’s database. To get the <strong>key</strong>, register
 at the CBRT’s
@@ -336,7 +340,7 @@ a few minutes.</p>
 categories</strong>. There are 44 data categories (including the
 archieved ones), 496 data groups, and 40,826 data series.</p>
 <p>To find variables, use the <code>searchCBRT</code> function:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>))</span></code></pre></div>
 <pre><code>##            groupCode
 ##               &lt;char&gt;
 ##  1:       bie_toisso
@@ -437,7 +441,7 @@ archieved ones), 496 data groups, and 40,826 data series.</p>
 ## 46:                                                        Index of Production per Person Employed (2015=100)(Ministry of Industry and Technology)
 ## 47:                                                            Index of Production per Hour Worked (2015=100)(Ministry of Industry and Technology)
 ##                                                                                                                                          groupName</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">field =</span> <span class="st">&quot;series&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">field =</span> <span class="st">&quot;series&quot;</span>)</span></code></pre></div>
 <pre><code>##              seriesCode
 ##                  &lt;char&gt;
 ##   1: TP.IYA.CDUR2.S08.C
@@ -490,7 +494,7 @@ archieved ones), 496 data groups, and 40,826 data series.</p>
 ## 673: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)
 ## 674: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)
 ## 675: Labour Force Status by non_Institutional Population (By the New Population Projections) (TURKSTAT) (Thousand) (Archive)</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">tags =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">searchCBRT</span>(<span class="fu">c</span>(<span class="st">&quot;production&quot;</span>, <span class="st">&quot;labor&quot;</span>, <span class="st">&quot;labour&quot;</span>), <span class="at">tags =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>##            seriesCode                            seriesName      groupCode
 ##                &lt;char&gt;                                &lt;char&gt;         &lt;char&gt;
 ##   1: TP.ISGUCARSIV.G1 Population 15 years and over(Archive) bie_isgucarsiv
@@ -520,12 +524,12 @@ archieved ones), 496 data groups, and 40,826 data series.</p>
 <p>The package contains the lists of all data categories, data groups,
 and data series, as of 03 November 2024. You can update the lists by the
 following commands:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>allCBRTCategories <span class="ot">&lt;-</span> <span class="fu">getAllCategoriesInfo</span>()</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>allCBRTGroups <span class="ot">&lt;-</span> <span class="fu">getAllGroupsInfo</span>()</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>allCBRTSeries <span class="ot">&lt;-</span> <span class="fu">getAllSeriesInfo</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>allCBRTCategories <span class="ot">&lt;-</span> <span class="fu">getAllCategoriesInfo</span>()</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>allCBRTGroups <span class="ot">&lt;-</span> <span class="fu">getAllGroupsInfo</span>()</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>allCBRTSeries <span class="ot">&lt;-</span> <span class="fu">getAllSeriesInfo</span>()</span></code></pre></div>
 <p>After identifying the data group or data series, you can get some
 information about the data by <code>showGroupInfo</code> function:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">showGroupInfo</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">showGroupInfo</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
 <pre><code>##              Code
 ##            &lt;char&gt;
 ## 1: cid           
@@ -573,7 +577,7 @@ information about the data by <code>showGroupInfo</code> function:</p>
 ## 11:      last</code></pre>
 <p>If you want to get only names of series in a data group, use the
 following command:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">showSeriesNames</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">showSeriesNames</span>(<span class="st">&quot;bie_apifon&quot;</span>)</span></code></pre></div>
 <pre><code>##           seriesCode                                             seriesName
 ##               &lt;char&gt;                                                 &lt;char&gt;
 ##  1:   TP.APIFON1.IHA                             A1.Funding Through Auction
@@ -604,22 +608,22 @@ following command:</p>
 data series in a data group.</p>
 <p>To download individual data series, use the
 <code>getDataSeries</code> function:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="at">CBRTKey =</span> xxxxxx)</span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx)</span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx,</span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>                            <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="at">CBRTKey =</span> xxxxxx)</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx)</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">CBRTKey =</span> xxxxxx,</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>                            <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span></code></pre></div>
 <p>To download all data series in a group, use the
 <code>getDataGroup</code> function:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
 <p>If you create an object called <strong>myCBRTKey</strong> in R
 session to store your CBRT key, you do not need to define it for
 downloading:</p>
 <p><code>myCBRTKey &lt;-</code> <em>your-key</em></p>
 <p>Then,</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>)</span>
-<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>))</span>
-<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span>
-<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="st">&quot;TP.D1TOP&quot;</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>))</span>
+<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a>mySeries <span class="ot">&lt;-</span> <span class="fu">getDataSeries</span>(<span class="fu">c</span>(<span class="st">&quot;TP.D1TOP&quot;</span>, <span class="st">&quot;TP.D2HAZ&quot;</span>, <span class="st">&quot;TP.D4TCMB&quot;</span>), <span class="at">startDate=</span><span class="st">&quot;01-01-2010&quot;</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="fu">getDataGroup</span>(<span class="st">&quot;bie_dbafod&quot;</span>)</span></code></pre></div>
 <p>You can also specify the frequency and the aggregation method for the
 series to be downloaded.</p>
 <p>The <code>freq</code> parameter defines the frequency of the data. If
